@@ -31,7 +31,7 @@ class LoginViewController: RxViewController {
 
     @IBAction func loginHandle() {
         let intent = Intent()
-        intent.setObject(key: "a", value: "Hello world")
+        intent.setObject(key: "a", value: "Hello world1")
         pop(resultCode: 0, intent: intent)
         //viewModel.inputs.submit()
     }
