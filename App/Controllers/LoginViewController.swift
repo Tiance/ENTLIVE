@@ -15,7 +15,7 @@ class LoginViewController: RxViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
 
-        print(intent!.data["a"] ?? "")
+        print(intent!.data["b"] ?? "")
         viewModel.outputs.loginResult.subscribe(onNext: { rlt in
             print(rlt)
         }).disposed(by: disposeBag)

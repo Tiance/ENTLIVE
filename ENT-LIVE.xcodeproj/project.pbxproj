@@ -96,7 +96,7 @@
 		A31FDD48B08A83C3E8B2B9BD /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD88DF06C4E5F244F4268 /* RxImagePickerDelegateProxy.swift */; };
 		A31FDD540617E61F33D73DE0 /* AccessTokenCheckerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD79F3E33F03529FBA017 /* AccessTokenCheckerPlugin.swift */; };
 		A31FDD75D6307BCE3B09A838 /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD24C9798BFBF4C753617 /* RouterType.swift */; };
-		A31FDDC1F43E177CE1480740 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD582084DC9E33D04AC67 /* UIViewController+Extension.swift */; };
+		A31FDDC1F43E177CE1480740 /* UIViewController+Preparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD582084DC9E33D04AC67 /* UIViewController+Preparation.swift */; };
 		A31FDDD5DE252B1473AF6555 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD7BB2FC9ED2295F53553 /* LoginViewController.swift */; };
 		A31FDDE1741C0877C8A80E6A /* UITraitEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD467BDD00256FF500E69 /* UITraitEnvironment.swift */; };
 		A31FDE29D9B9F02E281CAAA9 /* UINavigationBarLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD6F7EE167202BD851DAB /* UINavigationBarLenses.swift */; };
@@ -237,7 +237,7 @@
 		A31FD485FE40E3131C8BEAC6 /* CGSizeLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSizeLenses.swift; sourceTree = "<group>"; };
 		A31FD49EEB215C7FCD26CA20 /* UIProgressViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIProgressViewLenses.swift; sourceTree = "<group>"; };
 		A31FD4EB05C6D67F54E29B0B /* UIViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewLenses.swift; sourceTree = "<group>"; };
-		A31FD582084DC9E33D04AC67 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		A31FD582084DC9E33D04AC67 /* UIViewController+Preparation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Preparation.swift"; sourceTree = "<group>"; };
 		A31FD591DC1D3F33A08E53EA /* UIWebViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWebViewLenses.swift; sourceTree = "<group>"; };
 		A31FD5AE12EED11EF42A2268 /* TXLiveStreamService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TXLiveStreamService.swift; sourceTree = "<group>"; };
 		A31FD64FFAB246077A416416 /* CommonAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonAccessToken.swift; sourceTree = "<group>"; };
@@ -468,7 +468,7 @@
 				A31FDA312DE44FF8A07AA2E0 /* CacheType.swift */,
 				A31FDC4A9D05A0FF77E8D1D6 /* HistoryViewState.swift */,
 				A31FD83CC671A46D29EA42FA /* HistoryAbleType.swift */,
-				A31FD582084DC9E33D04AC67 /* UIViewController+Extension.swift */,
+				A31FD582084DC9E33D04AC67 /* UIViewController+Preparation.swift */,
 				A31FD2ED261218B7EDD8AB9A /* RouterDefine.swift */,
 				A31FD9EEB99AA2D7BDCE3CD0 /* UIViewController+Environment.swift */,
 			);
@@ -1248,7 +1248,7 @@
 				A31FDB57E2BF02BE68D8AE07 /* Intent.swift in Sources */,
 				A31FDD75D6307BCE3B09A838 /* RouterType.swift in Sources */,
 				A31FD3D89C9C3314E3990575 /* OauthAccessToken.swift in Sources */,
-				A31FDDC1F43E177CE1480740 /* UIViewController+Extension.swift in Sources */,
+				A31FDDC1F43E177CE1480740 /* UIViewController+Preparation.swift in Sources */,
 				A31FDB0B80C12441C0F58B44 /* RouterDefine.swift in Sources */,
 				A31FDC394FDB6DB4B5AE8AE3 /* UIViewController+Environment.swift in Sources */,
 			);
@@ -1477,6 +1477,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7H22EA3T35;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vendor/IM",
@@ -1484,7 +1485,7 @@
 				INFOPLIST_FILE = App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -Xfrontend -warn-long-function-bodies=100 -Xfrontend -warn-long-expression-type-checking=100";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -Xfrontend -warn-long-function-bodies=200 -Xfrontend -warn-long-expression-type-checking=200";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yamazhiki.ENT-LIVE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "App/ENTLIVE-Bridging-Header.h";
@@ -1501,6 +1502,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7H22EA3T35;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vendor/IM",

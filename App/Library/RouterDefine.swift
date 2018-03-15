@@ -38,3 +38,13 @@ enum AppControllerRouter: String, ControllerRouterType {
 enum MessageRouter: MessageRouterType {
     case gift(name: String)
 }
+
+extension MessageRouter: Equatable {
+
+}
+
+func ==(lhs: MessageRouter, rhs: MessageRouter) -> Bool {
+    switch (lhs, rhs) {
+    case (.gift(name: _), .gift(name: _)): return true
+    }
+}

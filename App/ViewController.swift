@@ -11,19 +11,24 @@ import Prelude
 import RxSwift
 import Api
 
-class ViewController: UIViewController {
+class ViewController: RxViewController {
 
     var requestCode: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(String(describing: self))
+        AppEnvironment.current.router.notification
+                .subscribe(onNext: {
+                    if case MessageRouter.gift(let name) = $0 {
+                        print(name)
+                    }
+                })
+                .disposed(by: disposeBag)
         // Do any additional setup after loading the view, typically from a nib.
         _ = view
                 |> UIView.lens.layer.cornerRadius .~ 2
 
     }
-
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

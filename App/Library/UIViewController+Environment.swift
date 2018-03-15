@@ -33,6 +33,7 @@ class RouterManager<T: MessageRouterType> {
 
     fileprivate func dismiss(vc: UIViewController) {
         stack.removeValue(forKey: vc)
+        assert(stack[vc] == nil)
     }
 
     func send(message: T) {
