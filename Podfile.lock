@@ -1,0 +1,50 @@
+PODS:
+  - Alamofire (4.7.0)
+  - IGListKit (3.2.0):
+    - IGListKit/Default (= 3.2.0)
+  - IGListKit/Default (3.2.0):
+    - IGListKit/Diffing
+  - IGListKit/Diffing (3.2.0)
+  - Kickstarter-Prelude (0.0.2):
+    - Runes (~> 4.1.0)
+  - Moya (11.0.1):
+    - Moya/Core (= 11.0.1)
+  - Moya/Core (11.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Moya/RxSwift (11.0.1):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - Result (3.2.4)
+  - Runes (4.1.0)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
+  - TXLiteAVSDK_Professional (4.2.3423)
+  - XLPagerTabStrip (8.0.0)
+
+DEPENDENCIES:
+  - IGListKit
+  - Kickstarter-Prelude
+  - Moya
+  - Moya/RxSwift
+  - RxCocoa
+  - RxSwift
+  - TXLiteAVSDK_Professional
+  - XLPagerTabStrip
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  IGListKit: ffe6f98a728ab0250aceea22e7957aa5477c5048
+  Kickstarter-Prelude: b4b2f7de1af0b1d209a947168f5c64604806bdcf
+  Moya: 3d594ada51a21cc02b18739ab578a1984f900c8a
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  Runes: 72a67a5bbbe1b5fdae08b5a01b10c60d83fc69aa
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  TXLiteAVSDK_Professional: caa066fc13a5439ac6d9ef10025b18a5cdc55ab1
+  XLPagerTabStrip: d1ab378af0923320ec0b5eab11d7b2f803d31261
+
+PODFILE CHECKSUM: 288a8ac5d21c20f2c94605bc09ab5c020b2d3812
+
+COCOAPODS: 1.4.0
