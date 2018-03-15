@@ -32,7 +32,10 @@ class TXIMService: IMServiceType {
         var msg: TIMMessage = TIMMessage()
         switch container.type {
         case .text:
-            msg = IMMsgFactory.textMessage(text: container.body)
+            msg = IMMsgFactory.textMsg(text: container.body)
+        case .custom:
+            assert(container.ext != nil, "自定义消息不能为空")
+            msg = IMMsgFactory.customMsg(message: container.ext!)
         default: break
         }
         conversion?.send(msg, succ: nil, fail: nil)

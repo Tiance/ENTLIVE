@@ -14,12 +14,13 @@ enum IMMsgType {
     case text
     case image
     case location
+    case custom
 }
 
 
 struct IMMsgFactory {
-    static func textMessage<T>(type: IMSDK = IMSDK.tencent,
-                               text: String = "") -> T {
+    static func textMsg<T>(type: IMSDK = IMSDK.tencent,
+                           text: String = "") -> T {
         switch type {
         case .tencent:
             let msg = TIMMessage()
@@ -27,13 +28,12 @@ struct IMMsgFactory {
             el.text = text
             msg.add(el)
             return msg as! T
-
         }
 
     }
 
-    static func createImgMsg<T>(type: IMSDK = IMSDK.tencent,
-                                path: String = "") -> T {
+    static func imageMsg<T>(type: IMSDK = IMSDK.tencent,
+                            path: String = "") -> T {
         switch type {
         case .tencent:
             let msg = TIMMessage()
@@ -42,6 +42,18 @@ struct IMMsgFactory {
             msg.add(el)
             return msg as! T
 
+        }
+    }
+
+    static func customMsg<T>(type: IMSDK = IMSDK.tencent,
+                             message: IMMessage) -> T {
+        switch type {
+        case .tencent:
+            let msg = TIMMessage()
+            let el = TIMCustomElem()
+            el.data = try! AppEnvironment.current.encoder.encode(message)
+            msg.add(el)
+            return msg as! T
         }
     }
 

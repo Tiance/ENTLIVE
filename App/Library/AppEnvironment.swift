@@ -63,14 +63,32 @@ struct AppEnvironment {
     }
 
     private static func replace(user: User = current.currentUser,
-                                api: ENTApiProvider<ENTTarget> = current.api) {
+                                api: ENTApiProvider<ENTTarget> = current.api,
+                                imService: IMServiceType = current.imService,
+                                reachability: ReachabilityService = current.reachability,
+                                cache: MemoryCache = current.cache,
+                                router: RouterManager<MessageRouter> = current.router,
+                                encoder: JSONEncoder = current.encoder,
+                                decoder: JSONDecoder = current.decoder) {
         replace(env: Environment(user: user,
-                api: api))
+                api: api,
+                imService: imService,
+                reachability: reachability,
+                cache: cache,
+                router: router,
+                encoder: encoder,
+                decoder: decoder))
     }
 
     static func replace(env: Environment = Environment(
             user: current.currentUser,
-            api: current.api
+            api: current.api,
+            imService: current.imService,
+            reachability: current.reachability,
+            cache: current.cache,
+            router: current.router,
+            encoder: current.encoder,
+            decoder: current.decoder
     )) {
         stack.append(env)
         stack.remove(at: stack.count - 2)

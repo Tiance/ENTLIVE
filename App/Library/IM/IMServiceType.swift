@@ -33,8 +33,14 @@ struct IMMsgContainer {
     let lat: Double
     let long: Double
 
+    let ext: IMMessage?
+
     static func text(body: String) -> IMMsgContainer {
-        return IMMsgContainer(type: .text, body: body, imagePath: "", lat: 0, long: 0)
+        return IMMsgContainer(type: .text, body: body, imagePath: "", lat: 0, long: 0, ext: nil)
+    }
+
+    static func custom(msg: IMMessage) -> IMMsgContainer {
+        return IMMsgContainer(type: .custom, body: "", imagePath: "", lat: 0, long: 0, ext: msg)
     }
 }
 

@@ -27,20 +27,32 @@ struct Environment {
     let cache: MemoryCache
 
     /*路由管理器*/
-    let router: RouterManager<MessageRouter> = RouterManager<MessageRouter>()
+    let router: RouterManager<MessageRouter>
+
+    /*JSON Encoder*/
+    let encoder: JSONEncoder
+
+    /*JSON DeCoder*/
+    let decoder: JSONDecoder
 
     init(
             user: User = User.template,
             api: ENTApiProvider<ENTTarget> = ENTApiProvider.provider,
             imService: IMServiceType = TXIMService(),
             reachability: ReachabilityService = try! DefaultReachabilityService(),
-            cache: MemoryCache = MemoryCache()
+            cache: MemoryCache = MemoryCache(),
+            router: RouterManager<MessageRouter> = RouterManager<MessageRouter>(),
+            encoder: JSONEncoder = JSONEncoder(),
+            decoder: JSONDecoder = JSONDecoder()
     ) {
         self.currentUser = user
         self.api = api
         self.imService = imService
         self.reachability = reachability
         self.cache = cache
+        self.router = router
+        self.encoder = encoder
+        self.decoder = decoder
     }
 }
 
