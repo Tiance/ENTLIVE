@@ -69,7 +69,6 @@
 		A31FD999DE356B42AAE87647 /* UILabelLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDAAFB984F996AF1FBE9E /* UILabelLenses.swift */; };
 		A31FD99D2C45C871CF07A1E3 /* JWTTokenAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD966571D73C0A9E1E8C7 /* JWTTokenAccess.swift */; };
 		A31FD9EB356DFF9C94155B6B /* CGPointLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD1ACDDA0BECB0AA583E5 /* CGPointLenses.swift */; };
-		A31FDA26AADC4696846F8273 /* HistoryAbleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD83CC671A46D29EA42FA /* HistoryAbleType.swift */; };
 		A31FDA591CB108524757B0D6 /* UINavigationItemLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD2058D5E220DD15C32E9 /* UINavigationItemLenses.swift */; };
 		A31FDA68687648073C092AA9 /* Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD87DDA281E0771586595 /* Moya.swift */; };
 		A31FDA6DEA4C22E3B13CFAE8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD7BB2FC9ED2295F53553 /* LoginViewController.swift */; };
@@ -111,7 +110,6 @@
 		A31FDF64F03309D9507204FB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDA2E876E73A9F545F902 /* User.swift */; };
 		A31FDFA2D74B636EBFE148FD /* OauthAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD2429A5A3D4E8A683B3E /* OauthAccessToken.swift */; };
 		A31FDFDF9B5FB7FD6A4886ED /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD85387CD7E99D6DA21F6 /* ReachabilityService.swift */; };
-		A31FDFE06E5ADC10E3CC726C /* HistoryViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDC4A9D05A0FF77E8D1D6 /* HistoryViewState.swift */; };
 		A71E74885A5D62D3214AA566 /* Pods_Api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF0D218FB2E2130CCC67735 /* Pods_Api.framework */; };
 		ED81EDD720525D1400A63733 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81EDD620525D1400A63733 /* AppDelegate.swift */; };
 		ED81EDD920525D1400A63733 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81EDD820525D1400A63733 /* ViewController.swift */; };
@@ -246,7 +244,6 @@
 		A31FD78F3AEDD89D6C93F3E4 /* UITabBarLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarLenses.swift; sourceTree = "<group>"; };
 		A31FD79F3E33F03529FBA017 /* AccessTokenCheckerPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenCheckerPlugin.swift; sourceTree = "<group>"; };
 		A31FD7BB2FC9ED2295F53553 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		A31FD83CC671A46D29EA42FA /* HistoryAbleType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryAbleType.swift; sourceTree = "<group>"; };
 		A31FD85387CD7E99D6DA21F6 /* ReachabilityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
 		A31FD87DDA281E0771586595 /* Moya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moya.swift; sourceTree = "<group>"; };
 		A31FD88DF06C4E5F244F4268 /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
@@ -270,7 +267,6 @@
 		A31FDBA6431128C0329257D0 /* IMMsgFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMMsgFactory.swift; sourceTree = "<group>"; };
 		A31FDC12292250907F6A29DD /* LoginViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModelType.swift; sourceTree = "<group>"; };
 		A31FDC3280BAAB51B20741D4 /* UITableViewCellLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellLenses.swift; sourceTree = "<group>"; };
-		A31FDC4A9D05A0FF77E8D1D6 /* HistoryViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewState.swift; sourceTree = "<group>"; };
 		A31FDC5B4550FE4E4EA9C9C7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A31FDC82068513EDC9F7298D /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
 		A31FDCFD6079E08C21DF64D8 /* UITableViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewLenses.swift; sourceTree = "<group>"; };
@@ -468,8 +464,6 @@
 				A31FDA46AFA5DDBDD8CEB29B /* Reachability.swift */,
 				A31FD85387CD7E99D6DA21F6 /* ReachabilityService.swift */,
 				A31FDA312DE44FF8A07AA2E0 /* CacheType.swift */,
-				A31FDC4A9D05A0FF77E8D1D6 /* HistoryViewState.swift */,
-				A31FD83CC671A46D29EA42FA /* HistoryAbleType.swift */,
 				A31FD582084DC9E33D04AC67 /* UIViewController+Preparation.swift */,
 				A31FD2ED261218B7EDD8AB9A /* RouterDefine.swift */,
 				A31FD9EEB99AA2D7BDCE3CD0 /* UIViewController+Environment.swift */,
@@ -1245,8 +1239,6 @@
 				A31FD31AA982B13BA902A481 /* RxImagePickerDelegateProxy.swift in Sources */,
 				A31FD3A8FF271E2F00516AE2 /* UIImagePickerController+Rx.swift in Sources */,
 				A31FDCBCD30C1AEF0395338B /* CacheType.swift in Sources */,
-				A31FDFE06E5ADC10E3CC726C /* HistoryViewState.swift in Sources */,
-				A31FDA26AADC4696846F8273 /* HistoryAbleType.swift in Sources */,
 				A31FD233F76ED5CB64920180 /* MySpaceViewController.swift in Sources */,
 				A31FDB57E2BF02BE68D8AE07 /* Intent.swift in Sources */,
 				A31FDD75D6307BCE3B09A838 /* RouterType.swift in Sources */,
