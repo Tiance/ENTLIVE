@@ -27,6 +27,11 @@ struct AppEnvironment {
     private static let userUpdateSubject = PublishSubject<EnvironmentChangedReason>()
     private static var type = EnvironmentType.simulate
 
+
+    private static let defaults_user_key = "com.ent.live.user"
+    private static let defaults_token_key = "com.ent.live.token"
+    private static let defaults_tokenType_key = "com.ent.live.tokenType"
+
     static var current: Environment {
         return stack.last!
     }
@@ -63,7 +68,7 @@ struct AppEnvironment {
                 api: api))
     }
 
-    private static func replace(env: Environment = Environment(
+    static func replace(env: Environment = Environment(
             user: current.currentUser,
             api: current.api
     )) {
@@ -72,6 +77,16 @@ struct AppEnvironment {
     }
 
     static func fromStorage() -> Environment {
-        return Environment()
+        var user = User.template
+        if let data = UserDefaults.standard.data(forKey: defaults_user_key),
+           let t = try? JSONDecoder().decode(User.self, from: data) {
+            user = t
+        }
+
+        if let type = AccessTokenType(rawValue: UserDefaults.standard.integer(forKey: defaults_tokenType_key)),
+           let tokenStr = UserDefaults.standard.string(forKey: defaults_token_key) {
+            auth(accessToken: token(type: type, token: tokenStr))
+        }
+        return Environment(user: user)
     }
 }

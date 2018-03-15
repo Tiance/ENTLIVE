@@ -33,7 +33,7 @@ class LoginViewController: RxViewController {
         let intent = Intent()
         intent.setObject(key: "a", value: "Hello world2")
         pop(resultCode: 0, intent: intent)
-        //viewModel.inputs.submit()
+        viewModel.inputs.submit()
     }
 
 
