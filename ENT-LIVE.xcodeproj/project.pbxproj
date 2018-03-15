@@ -23,7 +23,6 @@
 		A31FD19E2D230C2A77781065 /* UserLenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD338D542FDB4E0977BB3 /* UserLenes.swift */; };
 		A31FD1A69CB44145A5E7480A /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD389C46C1C8CE7B03AC3 /* Environment.swift */; };
 		A31FD20515142CDAAB66F31A /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD06CCB40155F7792BF7E /* AppEnvironment.swift */; };
-		A31FD233F76ED5CB64920180 /* MySpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD08F2E56095D0304E839 /* MySpaceViewController.swift */; };
 		A31FD23EDB1E74025237DB9D /* UIBarItemLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD91B4CA534AD36DAB5A6 /* UIBarItemLenses.swift */; };
 		A31FD29B5B062976903A5321 /* NSMutableParagraphStyleLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD0F9E59EFDDEF7808A88 /* NSMutableParagraphStyleLenses.swift */; };
 		A31FD2B397C34BE72ED921D8 /* UITableViewCellLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDC3280BAAB51B20741D4 /* UITableViewCellLenses.swift */; };
@@ -82,6 +81,7 @@
 		A31FDB8339F969C473BFE220 /* ServerConfigType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDAD3BBE8C9CE31DA3759 /* ServerConfigType.swift */; };
 		A31FDBE77CF57091EFEFDC00 /* UIViewControllerLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD040B446515364030FA2 /* UIViewControllerLenses.swift */; };
 		A31FDBEEE9E2A561A5DDD6C7 /* UITextFieldLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDE91B63193ED84E5812D /* UITextFieldLenses.swift */; };
+		A31FDC2774140E21C420B7D3 /* TXIMMessageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD80AF10C70C5BD60C30D /* TXIMMessageUtils.swift */; };
 		A31FDC394FDB6DB4B5AE8AE3 /* UIViewController+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD9EEB99AA2D7BDCE3CD0 /* UIViewController+Environment.swift */; };
 		A31FDC6C9286691A7E930C14 /* UITraitCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDF0201F9BEC9D8DD7593 /* UITraitCollection.swift */; };
 		A31FDC90CD9153860DC9AC8A /* GeolocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD909C5139D8102F04DA4 /* GeolocationService.swift */; };
@@ -204,7 +204,6 @@
 		A31FD0292DE88A79ED90F74F /* BearerAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearerAccessToken.swift; sourceTree = "<group>"; };
 		A31FD040B446515364030FA2 /* UIViewControllerLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerLenses.swift; sourceTree = "<group>"; };
 		A31FD06CCB40155F7792BF7E /* AppEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
-		A31FD08F2E56095D0304E839 /* MySpaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySpaceViewController.swift; sourceTree = "<group>"; };
 		A31FD0F53BD1C55480CC12BD /* UIImageViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewLenses.swift; sourceTree = "<group>"; };
 		A31FD0F9E59EFDDEF7808A88 /* NSMutableParagraphStyleLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMutableParagraphStyleLenses.swift; sourceTree = "<group>"; };
 		A31FD133E4B81B1DBB89E3C7 /* OauthAccessTokenType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OauthAccessTokenType.swift; sourceTree = "<group>"; };
@@ -244,6 +243,7 @@
 		A31FD78F3AEDD89D6C93F3E4 /* UITabBarLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarLenses.swift; sourceTree = "<group>"; };
 		A31FD79F3E33F03529FBA017 /* AccessTokenCheckerPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenCheckerPlugin.swift; sourceTree = "<group>"; };
 		A31FD7BB2FC9ED2295F53553 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A31FD80AF10C70C5BD60C30D /* TXIMMessageUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TXIMMessageUtils.swift; sourceTree = "<group>"; };
 		A31FD85387CD7E99D6DA21F6 /* ReachabilityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
 		A31FD87DDA281E0771586595 /* Moya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moya.swift; sourceTree = "<group>"; };
 		A31FD88DF06C4E5F244F4268 /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
@@ -549,7 +549,6 @@
 			children = (
 				A31FD7BB2FC9ED2295F53553 /* LoginViewController.swift */,
 				A31FD8D4237CBF1B0F8AFAA2 /* BaseViewController.swift */,
-				A31FD08F2E56095D0304E839 /* MySpaceViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -690,6 +689,7 @@
 			isa = PBXGroup;
 			children = (
 				A31FD9B4193ED226B1445EAB /* TXIMService.swift */,
+				A31FD80AF10C70C5BD60C30D /* TXIMMessageUtils.swift */,
 			);
 			path = TX;
 			sourceTree = "<group>";
@@ -1239,7 +1239,6 @@
 				A31FD31AA982B13BA902A481 /* RxImagePickerDelegateProxy.swift in Sources */,
 				A31FD3A8FF271E2F00516AE2 /* UIImagePickerController+Rx.swift in Sources */,
 				A31FDCBCD30C1AEF0395338B /* CacheType.swift in Sources */,
-				A31FD233F76ED5CB64920180 /* MySpaceViewController.swift in Sources */,
 				A31FDB57E2BF02BE68D8AE07 /* Intent.swift in Sources */,
 				A31FDD75D6307BCE3B09A838 /* RouterType.swift in Sources */,
 				A31FD3D89C9C3314E3990575 /* OauthAccessToken.swift in Sources */,
@@ -1247,6 +1246,7 @@
 				A31FDB0B80C12441C0F58B44 /* RouterDefine.swift in Sources */,
 				A31FDC394FDB6DB4B5AE8AE3 /* UIViewController+Environment.swift in Sources */,
 				A31FD8E341417F9F3CCB44B6 /* IMMessageDefine.swift in Sources */,
+				A31FDC2774140E21C420B7D3 /* TXIMMessageUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

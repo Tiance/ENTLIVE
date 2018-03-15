@@ -6,12 +6,15 @@
 import Foundation
 import RxSwift
 
-class TXIMService: IMServiceType {
+class TXIMService: NSObject, IMServiceType {
 
     private let manager: TIMManager
 
-    init() {
+    private let messageSubject: PublishSubject<[IMMessage]> = PublishSubject<[IMMessage]>()
+
+    override init() {
         manager = TIMManager.init()
+        super.init()
     }
 
     func login(id: IMUserIdentifier) {
@@ -21,10 +24,12 @@ class TXIMService: IMServiceType {
         param.appidAt3rd = id.appId
 
         manager.login(param, succ: {
-
+            self.manager.add(self)
         }, fail: { code, msg in
 
         })
+
+
     }
 
     func send(type: IMConversionType, container: IMMsgContainer, receiver: String) -> Observable<Int> {
@@ -44,5 +49,31 @@ class TXIMService: IMServiceType {
 
     func logout() {
         manager.logout(nil, fail: nil)
+        manager.remove(self)
+    }
+}
+
+extension TXIMService: TIMMessageListener {
+
+    func onNewMessage(_ msgs: [Any]!) {
+
+        var rlt: [IMMessage] = []
+
+        for item in msgs {
+            if let m = item as? TIMMessage {
+                for i in 0...m.elemCount() {
+                    let el = m.getElem(i)
+                    if el is TIMTextElem {
+
+                    } else if el is TIMImageElem {
+
+                    } else if el is TIMCustomElem {
+                        rlt.append(IMMessage(cmd: .none, cmdType: .none))
+                    }
+                }
+            }
+        }
+
+        messageSubject.onNext(rlt)
     }
 }

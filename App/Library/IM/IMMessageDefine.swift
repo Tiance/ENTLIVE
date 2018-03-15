@@ -17,3 +17,7 @@ struct IMMessage: Codable {
     let cmd: IMCmd
     let cmdType: IMCommandType
 }
+
+extension IMMessage {
+    
+}
