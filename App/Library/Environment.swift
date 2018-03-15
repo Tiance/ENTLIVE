@@ -27,7 +27,7 @@ struct Environment {
     let cache: MemoryCache
 
     /*路由管理器*/
-    let router: RouterManager = RouterManager.instance
+    let router: RouterManager<MessageRouter> = RouterManager<MessageRouter>()
 
     init(
             user: User = User.template,

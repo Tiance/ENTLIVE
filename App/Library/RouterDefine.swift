@@ -1,12 +1,13 @@
 //
-// Created by yamazhiki on 14/03/2018.
+// Created by yamazhiki on 15/03/2018.
 // Copyright (c) 2018 斌王. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-enum AppRouter: String, RouterType {
+
+enum AppControllerRouter: String, ControllerRouterType {
     case one
     case two
     case login
@@ -31,4 +32,9 @@ enum AppRouter: String, RouterType {
 
         fatalError("没有能够找到\(typeStr)ViewController")
     }
+}
+
+
+enum MessageRouter: MessageRouterType {
+    case gift(name: String)
 }

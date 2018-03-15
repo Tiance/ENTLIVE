@@ -6,36 +6,7 @@
 import Foundation
 import UIKit
 import Prelude
-
-fileprivate struct RouterNode {
-    let pre: UIViewController
-    let requestCode: Int
-}
-
-class RouterManager {
-
-    static let instance = RouterManager()
-
-    private var stack: [UIViewController: RouterNode] = [:]
-
-    private init() {
-
-    }
-
-    fileprivate func add(_ from: UIViewController, to: UIViewController) {
-        let node = RouterNode.init(pre: from, requestCode: 0)
-        stack[to] = node
-    }
-
-    fileprivate func node(vc: UIViewController) -> RouterNode? {
-        return stack[vc]
-    }
-
-    fileprivate func dismiss(vc: UIViewController) {
-        stack.removeValue(forKey: vc)
-    }
-
-}
+import RxSwift
 
 private func swizzle(_ vc: UIViewController.Type) {
 
@@ -96,43 +67,12 @@ extension UIViewController {
     }
 
 
-    func push(routerType: RouterType, requestCode: Int, intent: Intent? = nil) {
-        assert(self.navigationController != nil, "没有发现可用的UINavigationController")
-        let vc = routerType.controller
-        vc.intent = intent
-        RouterManager.instance.add(self, to: vc)
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-
-    func present(routerType: RouterType, requestCode: Int) {
-        self.present(routerType.controller, animated: true, completion: nil)
-    }
-
-    func pop(resultCode: Int, intent: Intent? = nil) {
-        if let node = RouterManager.instance.node(vc: self) {
-            node.pre.onRequestResult(intent)
-        }
-
-        RouterManager.instance.dismiss(vc: self)
-        navigationController?.popViewController(animated: true)
-    }
-
-    func dismiss(resultCode: Int, intent: Intent? = nil) {
-
-    }
-
-    @objc func onRequestResult(_ intent: Intent?) {
-
-    }
-
-
     @objc public func ent_traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         self.ent_traitCollectionDidChange(previousTraitCollection)
     }
 
     private struct AssociatedKeys {
         static var hasViewAppeared = "hasViewAppeared"
-        static var intent = "intent"
     }
 
     // Helper to figure out if the `viewWillAppear` has been called yet
@@ -143,19 +83,6 @@ extension UIViewController {
         set {
             objc_setAssociatedObject(self,
                     &AssociatedKeys.hasViewAppeared,
-                    newValue,
-                    .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        }
-    }
-
-
-    private (set) var intent: Intent? {
-        get {
-            return objc_getAssociatedObject(self, &AssociatedKeys.intent) as? Intent
-        }
-        set {
-            objc_setAssociatedObject(self,
-                    &AssociatedKeys.intent,
                     newValue,
                     .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }

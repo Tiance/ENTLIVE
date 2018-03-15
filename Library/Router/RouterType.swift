@@ -6,6 +6,10 @@
 import Foundation
 import UIKit
 
-protocol RouterType {
+protocol ControllerRouterType {
     var controller: UIViewController { get }
+}
+
+protocol MessageRouterType {
+    
 }
