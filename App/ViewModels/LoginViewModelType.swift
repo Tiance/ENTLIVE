@@ -20,8 +20,12 @@ internal protocol LoginViewModelType {
 }
 
 internal struct LoginViewModel: LoginViewModelInputs, LoginViewModelOutputs, LoginViewModelType {
-    var inputs: LoginViewModelInputs { return self }
-    var outputs: LoginViewModelOutputs { return self }
+    var inputs: LoginViewModelInputs {
+        return self
+    }
+    var outputs: LoginViewModelOutputs {
+        return self
+    }
 
     private let loginResultSubject = PublishSubject<Int>()
 

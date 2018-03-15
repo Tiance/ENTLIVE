@@ -33,6 +33,7 @@
 		A31FD31AA982B13BA902A481 /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD88DF06C4E5F244F4268 /* RxImagePickerDelegateProxy.swift */; };
 		A31FD365F9E5C81A88DF9A58 /* ServerConfigImpTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDD88A4FCD88F7966769D /* ServerConfigImpTest.swift */; };
 		A31FD3A8FF271E2F00516AE2 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDA7A5D19B17DE6DF7D79 /* UIImagePickerController+Rx.swift */; };
+		A31FD3D89C9C3314E3990575 /* OauthAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD2429A5A3D4E8A683B3E /* OauthAccessToken.swift */; };
 		A31FD3E038520EC75C17276E /* UITabBarLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD78F3AEDD89D6C93F3E4 /* UITabBarLenses.swift */; };
 		A31FD3F143C031431962FAE6 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDA7A5D19B17DE6DF7D79 /* UIImagePickerController+Rx.swift */; };
 		A31FD4247C35310ACE8E0364 /* CALayerLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD36D838E2026C37251BB /* CALayerLenses.swift */; };
@@ -50,7 +51,7 @@
 		A31FD62A2E0959A0B084B9F2 /* UIAccessibilityLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD92AF41D6F34E11F8119 /* UIAccessibilityLenses.swift */; };
 		A31FD66E363C3C2EA40FAFEE /* UIWebViewLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD591DC1D3F33A08E53EA /* UIWebViewLenses.swift */; };
 		A31FD68B242FBA5425BA2338 /* NSTextContainerLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD1F615639710A911716C /* NSTextContainerLenses.swift */; };
-		A31FD6A0B66A326CE421DF23 /* UIViewController+Preparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD48F51CDBC118A7952DB /* UIViewController+Preparation.swift */; };
+		A31FD6A0B66A326CE421DF23 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD48F51CDBC118A7952DB /* UIViewController+Extensions.swift */; };
 		A31FD6A363319B0085F4E104 /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD22A8B58AF78A329B6B1 /* UIEdgeInsets.swift */; };
 		A31FD6B362FDBD2BAE8DCFF1 /* ServerConfigImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDED83604103C4EF0FB2C /* ServerConfigImp.swift */; };
 		A31FD6BD52B72D8C235D4497 /* UIActivityIndicatorViewLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD470F1DBC61D647EFCCB /* UIActivityIndicatorViewLenses.swift */; };
@@ -107,6 +108,7 @@
 		A31FDF370B2AF0DA3DCD24A4 /* TXIMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD9B4193ED226B1445EAB /* TXIMService.swift */; };
 		A31FDF3F5C1F6C5852A98A5D /* UIImageViewLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD0F53BD1C55480CC12BD /* UIImageViewLenses.swift */; };
 		A31FDF64F03309D9507204FB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDA2E876E73A9F545F902 /* User.swift */; };
+		A31FDFA2D74B636EBFE148FD /* OauthAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD2429A5A3D4E8A683B3E /* OauthAccessToken.swift */; };
 		A31FDFDF9B5FB7FD6A4886ED /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD85387CD7E99D6DA21F6 /* ReachabilityService.swift */; };
 		A31FDFE06E5ADC10E3CC726C /* HistoryViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDC4A9D05A0FF77E8D1D6 /* HistoryViewState.swift */; };
 		A71E74885A5D62D3214AA566 /* Pods_Api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF0D218FB2E2130CCC67735 /* Pods_Api.framework */; };
@@ -215,6 +217,7 @@
 		A31FD2058D5E220DD15C32E9 /* UINavigationItemLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationItemLenses.swift; sourceTree = "<group>"; };
 		A31FD21F222A4E61FA1CCC37 /* UIButtonLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonLenses.swift; sourceTree = "<group>"; };
 		A31FD22A8B58AF78A329B6B1 /* UIEdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; };
+		A31FD2429A5A3D4E8A683B3E /* OauthAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OauthAccessToken.swift; sourceTree = "<group>"; };
 		A31FD24C9798BFBF4C753617 /* RouterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
 		A31FD2C6EE6E53641CCE1B73 /* CommonAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonAccessToken.swift; sourceTree = "<group>"; };
 		A31FD2D1696BE05C27747134 /* UINavigationControllerLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerLenses.swift; sourceTree = "<group>"; };
@@ -233,7 +236,7 @@
 		A31FD467BDD00256FF500E69 /* UITraitEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITraitEnvironment.swift; sourceTree = "<group>"; };
 		A31FD470F1DBC61D647EFCCB /* UIActivityIndicatorViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorViewLenses.swift; sourceTree = "<group>"; };
 		A31FD485FE40E3131C8BEAC6 /* CGSizeLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSizeLenses.swift; sourceTree = "<group>"; };
-		A31FD48F51CDBC118A7952DB /* UIViewController+Preparation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Preparation.swift"; sourceTree = "<group>"; };
+		A31FD48F51CDBC118A7952DB /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		A31FD49EEB215C7FCD26CA20 /* UIProgressViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIProgressViewLenses.swift; sourceTree = "<group>"; };
 		A31FD4EB05C6D67F54E29B0B /* UIViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewLenses.swift; sourceTree = "<group>"; };
 		A31FD591DC1D3F33A08E53EA /* UIWebViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWebViewLenses.swift; sourceTree = "<group>"; };
@@ -267,6 +270,7 @@
 		A31FDC12292250907F6A29DD /* LoginViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModelType.swift; sourceTree = "<group>"; };
 		A31FDC3280BAAB51B20741D4 /* UITableViewCellLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellLenses.swift; sourceTree = "<group>"; };
 		A31FDC4A9D05A0FF77E8D1D6 /* HistoryViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewState.swift; sourceTree = "<group>"; };
+		A31FDC5B4550FE4E4EA9C9C7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A31FDC82068513EDC9F7298D /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
 		A31FDCFD6079E08C21DF64D8 /* UITableViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewLenses.swift; sourceTree = "<group>"; };
 		A31FDD88A4FCD88F7966769D /* ServerConfigImpTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConfigImpTest.swift; sourceTree = "<group>"; };
@@ -538,7 +542,7 @@
 		A31FDD90AB7D96DA44392727 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				A31FD48F51CDBC118A7952DB /* UIViewController+Preparation.swift */,
+				A31FD48F51CDBC118A7952DB /* UIViewController+Extensions.swift */,
 				A31FD3917B67781E1F0E7A92 /* Router */,
 			);
 			path = Library;
@@ -575,6 +579,7 @@
 				A31FDC82068513EDC9F7298D /* RxCLLocationManagerDelegateProxy.swift */,
 				A31FD88DF06C4E5F244F4268 /* RxImagePickerDelegateProxy.swift */,
 				A31FDA7A5D19B17DE6DF7D79 /* UIImagePickerController+Rx.swift */,
+				A31FD2429A5A3D4E8A683B3E /* OauthAccessToken.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -606,6 +611,7 @@
 				E36F53417B562FBF6E013B98 /* Pods */,
 				226EBA70ECC39FF60C0A195D /* Frameworks */,
 				A31FDD90AB7D96DA44392727 /* Library */,
+				A31FDC5B4550FE4E4EA9C9C7 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1243,7 +1249,8 @@
 				A31FDD75D6307BCE3B09A838 /* RouterType.swift in Sources */,
 				A31FD04C8F6820227479DED2 /* RouterProvider.swift in Sources */,
 				A31FD5351FCD73DF009C626A /* AppRouter.swift in Sources */,
-				A31FD6A0B66A326CE421DF23 /* UIViewController+Preparation.swift in Sources */,
+				A31FD6A0B66A326CE421DF23 /* UIViewController+Extensions.swift in Sources */,
+				A31FD3D89C9C3314E3990575 /* OauthAccessToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1267,6 +1274,7 @@
 				A31FDD48B08A83C3E8B2B9BD /* RxImagePickerDelegateProxy.swift in Sources */,
 				A31FD3F143C031431962FAE6 /* UIImagePickerController+Rx.swift in Sources */,
 				A31FD001CEEB8E0C96AB3E9C /* CacheType.swift in Sources */,
+				A31FDFA2D74B636EBFE148FD /* OauthAccessToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

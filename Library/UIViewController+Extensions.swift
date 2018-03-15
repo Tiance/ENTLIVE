@@ -7,10 +7,6 @@ import Foundation
 import UIKit
 import Prelude
 
-protocol RequestResultType {
-    func onRequestResult(_ requestCode: Int, resultCode: Int, intent: Intent?)
-}
-
 fileprivate struct RouterNode {
     let pre: UIViewController
     let requestCode: Int
@@ -113,15 +109,19 @@ extension UIViewController {
     }
 
     func pop(resultCode: Int, intent: Intent? = nil) {
-        if let node = RouterManager.instance.node(vc: self),
-           let m = node.pre as? RequestResultType {
-            m.onRequestResult(0, resultCode: 0, intent: intent)
+        if let node = RouterManager.instance.node(vc: self) {
+            node.pre.onRequestResult(intent)
         }
+
         RouterManager.instance.dismiss(vc: self)
         navigationController?.popViewController(animated: true)
     }
 
     func dismiss(resultCode: Int, intent: Intent? = nil) {
+
+    }
+
+    @objc func onRequestResult(_ intent: Intent?) {
 
     }
 

@@ -15,7 +15,7 @@ class LoginViewController: RxViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
 
-        print(intent!.getObject(key: "b")!)
+        print(intent!.data["a"] ?? "")
         viewModel.outputs.loginResult.subscribe(onNext: { rlt in
             print(rlt)
         }).disposed(by: disposeBag)
@@ -28,10 +28,14 @@ class LoginViewController: RxViewController {
 
 
     }
+    
+    
+    override func bindViewModel() {
+        
+    }
 
     @IBAction func loginHandle() {
-        let intent = Intent()
-        intent.setObject(key: "a", value: "Hello world2")
+        let intent = Intent(data: ["a": "hello world"])
         pop(resultCode: 0, intent: intent)
         viewModel.inputs.submit()
     }

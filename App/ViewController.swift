@@ -11,7 +11,7 @@ import Prelude
 import RxSwift
 import Api
 
-class ViewController: UIViewController, RequestResultType {
+class ViewController: UIViewController {
 
     var requestCode: Int = 0
 
@@ -44,8 +44,7 @@ class ViewController: UIViewController, RequestResultType {
     }
 
     @IBAction func toLogin() {
-        let intent = Intent()
-        intent.setObject(key: "b", value: "ISA")
+        let intent = Intent(data: ["b": "ISA"])
         push(routerType: AppRouter.login, requestCode: 0, intent: intent)
     }
 
@@ -53,9 +52,8 @@ class ViewController: UIViewController, RequestResultType {
         return AppEnvironment.current.api.request(target: .singleUser(id: id))
     }
 
-    func onRequestResult(_ requestCode: Int, resultCode: Int, intent: Intent?) {
-        let a: String? = intent?.getObject(key: "a")
-        print(a ?? "")
+    override func onRequestResult(_ intent: Intent?) {
+        print(intent?.data["a"] ?? "")
     }
 }
 

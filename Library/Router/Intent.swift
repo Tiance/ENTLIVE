@@ -5,14 +5,10 @@
 
 import Foundation
 
-class Intent {
-    private var data: [String: Any] = [:]
+@objc class Intent: NSObject {
+    let data: [String: Any]
 
-    func setObject<T>(key: String, value: T) {
-        data[key] = value
-    }
-
-    func getObject<T>(key: String) -> T? {
-        return data[key] as? T
+    init(data: [String: Any] = [:]) {
+        self.data = data
     }
 }
