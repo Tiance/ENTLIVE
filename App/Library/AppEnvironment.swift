@@ -50,7 +50,7 @@ struct AppEnvironment {
     }
 
     private static func generateApiAndReplace(accessToken: OauthAccessTokenType = CommonAccessToken.template) {
-        let endpointClosure = { (target: ENTDynamicTarget) -> Endpoint in
+        let endpointClosure = { (target: DynamicTarget) -> Endpoint in
             let endpoint: Endpoint = Endpoint(url: ServerConfigImp.simulation.apiBaseURL.appendingPathComponent(target.path).absoluteString,
                     sampleResponseClosure: { .networkResponse(type.stubDelay, target.sampleData) },
                     method: target.method,
@@ -58,12 +58,12 @@ struct AppEnvironment {
                     httpHeaderFields: target.headers)
             return endpoint
         }
-        let api = ENTApiProvider<ENTTarget>(endpointClosure: endpointClosure, stubClosure: type.stubClosure(), plugins: [NetworkLoggerPlugin(), AccessTokenCheckerPlugin(accessTokenType: accessToken)], baseURL: type.serverConfig.apiBaseURL)
+        let api = ApiProvider<Client>(endpointClosure: endpointClosure, stubClosure: type.stubClosure(), plugins: [NetworkLoggerPlugin(), AccessTokenCheckerPlugin(accessTokenType: accessToken)], baseURL: type.serverConfig.apiBaseURL)
         replace(env: Environment(api: api))
     }
 
     private static func replace(user: User = current.currentUser,
-                                api: ENTApiProvider<ENTTarget> = current.api,
+                                api: ApiProvider<Client> = current.api,
                                 imService: IMServiceType = current.imService,
                                 reachability: ReachabilityService = current.reachability,
                                 cache: MemoryCache = current.cache,

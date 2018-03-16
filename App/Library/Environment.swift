@@ -12,7 +12,7 @@ struct Environment {
     let currentUser: User
 
     /// 数据交互Api管理类
-    let api: ENTApiProvider<ENTTarget>
+    let api: ApiProvider<Client>
 
     /// 实时聊天
     let imService: IMServiceType
@@ -37,7 +37,7 @@ struct Environment {
 
     init(
             user: User = User.template,
-            api: ENTApiProvider<ENTTarget> = ENTApiProvider.provider,
+            api: ApiProvider<Client> = ApiProvider.provider,
             imService: IMServiceType = TXIMService(),
             reachability: ReachabilityService = try! DefaultReachabilityService(),
             cache: MemoryCache = MemoryCache(),
@@ -81,9 +81,9 @@ extension EnvironmentType {
 }
 
 
-extension ENTApiProvider {
-    static var provider: ENTApiProvider {
-        return ENTApiProvider(baseURL: EnvironmentType.dev.serverConfig.apiBaseURL)
+extension ApiProvider {
+    static var provider: ApiProvider {
+        return ApiProvider(baseURL: EnvironmentType.dev.serverConfig.apiBaseURL)
     }
 }
 

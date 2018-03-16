@@ -21,29 +21,6 @@ struct IMUserIdentifier {
     let appId: String
 }
 
-struct IMMsgContainer {
-    let type: IMMsgType
-    //文字消息
-    let body: String
-
-    //图片消息
-    let imagePath: String
-
-    //地理坐标
-    let lat: Double
-    let long: Double
-
-    let ext: IMMessage?
-
-    static func text(body: String) -> IMMsgContainer {
-        return IMMsgContainer(type: .text, body: body, imagePath: "", lat: 0, long: 0, ext: nil)
-    }
-
-    static func custom(msg: IMMessage) -> IMMsgContainer {
-        return IMMsgContainer(type: .custom, body: "", imagePath: "", lat: 0, long: 0, ext: msg)
-    }
-}
-
 
 protocol IMServiceType {
     func login(id: IMUserIdentifier)

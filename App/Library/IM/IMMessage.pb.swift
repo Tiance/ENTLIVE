@@ -17,7 +17,6 @@ import SwiftProtobuf
 fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
   struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {
   }
-
   typealias Version = _2
 }
 

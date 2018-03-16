@@ -45,6 +45,7 @@
 		A31FD5B9B365E60A580620AB /* UIButtonLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD21F222A4E61FA1CCC37 /* UIButtonLenses.swift */; };
 		A31FD5C61B8DCFE08CFEC45F /* LiveStreamType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD44F22498D0DD5771383 /* LiveStreamType.swift */; };
 		A31FD610E66B295334C01108 /* UITextInputTraitsLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDF40C9A7714F9D0A745F /* UITextInputTraitsLenses.swift */; };
+		A31FD611D463C4384559454C /* ClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD1D6CB5CE0FC6A1BC461 /* ClientMock.swift */; };
 		A31FD61842570EDCABB1DD22 /* UITableViewLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDCFD6079E08C21DF64D8 /* UITableViewLenses.swift */; };
 		A31FD62A2E0959A0B084B9F2 /* UIAccessibilityLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD92AF41D6F34E11F8119 /* UIAccessibilityLenses.swift */; };
 		A31FD66E363C3C2EA40FAFEE /* UIWebViewLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD591DC1D3F33A08E53EA /* UIWebViewLenses.swift */; };
@@ -89,14 +90,15 @@
 		A31FDCA6BB29FC1D4B1C3128 /* CommonAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD64FFAB246077A416416 /* CommonAccessToken.swift */; };
 		A31FDCBCD30C1AEF0395338B /* CacheType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDA312DE44FF8A07AA2E0 /* CacheType.swift */; };
 		A31FDCDA81FCFAB0FEA7A919 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDA46AFA5DDBDD8CEB29B /* Reachability.swift */; };
-		A31FDCEA40ADF922717274E4 /* ENTApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD8FD87BF942A0D29E19F /* ENTApiProvider.swift */; };
+		A31FDCEA40ADF922717274E4 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD8FD87BF942A0D29E19F /* ApiProvider.swift */; };
 		A31FDD11360FB1F3A27869BB /* CGRectLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDA3A591DFA9ABDA4C436 /* CGRectLenses.swift */; };
-		A31FDD3BCDE88DD0C9D88974 /* ENTApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD8FD87BF942A0D29E19F /* ENTApiProvider.swift */; };
+		A31FDD3BCDE88DD0C9D88974 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD8FD87BF942A0D29E19F /* ApiProvider.swift */; };
 		A31FDD40351FFC10885D2CE4 /* UIViewLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD4EB05C6D67F54E29B0B /* UIViewLenses.swift */; };
 		A31FDD48B08A83C3E8B2B9BD /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD88DF06C4E5F244F4268 /* RxImagePickerDelegateProxy.swift */; };
 		A31FDD540617E61F33D73DE0 /* AccessTokenCheckerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD79F3E33F03529FBA017 /* AccessTokenCheckerPlugin.swift */; };
 		A31FDD75D6307BCE3B09A838 /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD24C9798BFBF4C753617 /* RouterType.swift */; };
 		A31FDDC1F43E177CE1480740 /* UIViewController+Preparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD582084DC9E33D04AC67 /* UIViewController+Preparation.swift */; };
+		A31FDDCE04667479C4C093B3 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDFD616F4832146ECCE2E /* Client.swift */; };
 		A31FDDD5DE252B1473AF6555 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD7BB2FC9ED2295F53553 /* LoginViewController.swift */; };
 		A31FDDE1741C0877C8A80E6A /* UITraitEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD467BDD00256FF500E69 /* UITraitEnvironment.swift */; };
 		A31FDE29D9B9F02E281CAAA9 /* UINavigationBarLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD6F7EE167202BD851DAB /* UINavigationBarLenses.swift */; };
@@ -210,6 +212,7 @@
 		A31FD1588A310C9EB8E503AF /* LensHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LensHolder.swift; sourceTree = "<group>"; };
 		A31FD1A0F410708F759F377B /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		A31FD1ACDDA0BECB0AA583E5 /* CGPointLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointLenses.swift; sourceTree = "<group>"; };
+		A31FD1D6CB5CE0FC6A1BC461 /* ClientMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientMock.swift; sourceTree = "<group>"; };
 		A31FD1DDEADE34B2D37FFDBC /* ServerConfigImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConfigImp.swift; sourceTree = "<group>"; };
 		A31FD1F615639710A911716C /* NSTextContainerLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTextContainerLenses.swift; sourceTree = "<group>"; };
 		A31FD2058D5E220DD15C32E9 /* UINavigationItemLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationItemLenses.swift; sourceTree = "<group>"; };
@@ -250,7 +253,7 @@
 		A31FD87DDA281E0771586595 /* Moya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moya.swift; sourceTree = "<group>"; };
 		A31FD88DF06C4E5F244F4268 /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
 		A31FD8D4237CBF1B0F8AFAA2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		A31FD8FD87BF942A0D29E19F /* ENTApiProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENTApiProvider.swift; sourceTree = "<group>"; };
+		A31FD8FD87BF942A0D29E19F /* ApiProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
 		A31FD909C5139D8102F04DA4 /* GeolocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeolocationService.swift; sourceTree = "<group>"; };
 		A31FD91B4CA534AD36DAB5A6 /* UIBarItemLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarItemLenses.swift; sourceTree = "<group>"; };
 		A31FD92AF41D6F34E11F8119 /* UIAccessibilityLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAccessibilityLenses.swift; sourceTree = "<group>"; };
@@ -283,6 +286,7 @@
 		A31FDF40C9A7714F9D0A745F /* UITextInputTraitsLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextInputTraitsLenses.swift; sourceTree = "<group>"; };
 		A31FDF53E5EDEF784C7F0E03 /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
 		A31FDF96B4C4ED31E3EA2D90 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A31FDFD616F4832146ECCE2E /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		AE683CFAA648B812E4A498D9 /* Pods_ENTLIVETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ENTLIVETests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBAA1A10048D44EDC3B9D8C9 /* Pods_ENTLIVEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ENTLIVEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED14F4DB6B3488F813293188 /* Pods-ApiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApiTests/Pods-ApiTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -442,6 +446,15 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		A31FD4629B82757FF985CD51 /* ClientApi */ = {
+			isa = PBXGroup;
+			children = (
+				A31FDFD616F4832146ECCE2E /* Client.swift */,
+				A31FD1D6CB5CE0FC6A1BC461 /* ClientMock.swift */,
+			);
+			path = ClientApi;
+			sourceTree = "<group>";
+		};
 		A31FD548F8F55C80E260B8C1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -468,6 +481,7 @@
 				A31FD582084DC9E33D04AC67 /* UIViewController+Preparation.swift */,
 				A31FD2ED261218B7EDD8AB9A /* RouterDefine.swift */,
 				A31FD9EEB99AA2D7BDCE3CD0 /* UIViewController+Environment.swift */,
+				A31FD4629B82757FF985CD51 /* ClientApi */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -646,7 +660,7 @@
 			children = (
 				EDF884CA20525D76004554B9 /* Api.h */,
 				EDF884CB20525D76004554B9 /* Info.plist */,
-				A31FD8FD87BF942A0D29E19F /* ENTApiProvider.swift */,
+				A31FD8FD87BF942A0D29E19F /* ApiProvider.swift */,
 				A31FD548F8F55C80E260B8C1 /* Model */,
 				A31FDED83604103C4EF0FB2C /* ServerConfigImp.swift */,
 				A31FDD88A4FCD88F7966769D /* ServerConfigImpTest.swift */,
@@ -1266,6 +1280,8 @@
 				A31FDC394FDB6DB4B5AE8AE3 /* UIViewController+Environment.swift in Sources */,
 				A31FDC2774140E21C420B7D3 /* TXIMMessageUtils.swift in Sources */,
 				A31FD06FF8FE704E5BE1E028 /* IMMessage.pb.swift in Sources */,
+				A31FDDCE04667479C4C093B3 /* Client.swift in Sources */,
+				A31FD611D463C4384559454C /* ClientMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1304,7 +1320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A31FDCEA40ADF922717274E4 /* ENTApiProvider.swift in Sources */,
+				A31FDCEA40ADF922717274E4 /* ApiProvider.swift in Sources */,
 				A31FDF64F03309D9507204FB /* User.swift in Sources */,
 				A31FD821A9226327D0E7EAA5 /* ServerConfigImp.swift in Sources */,
 				A31FD0796B33018AE5FF3379 /* ServerConfigType.swift in Sources */,
@@ -1320,7 +1336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A31FDD3BCDE88DD0C9D88974 /* ENTApiProvider.swift in Sources */,
+				A31FDD3BCDE88DD0C9D88974 /* ApiProvider.swift in Sources */,
 				A31FDCA43D15108D7A3B803D /* User.swift in Sources */,
 				A31FD6B362FDBD2BAE8DCFF1 /* ServerConfigImp.swift in Sources */,
 				A31FD365F9E5C81A88DF9A58 /* ServerConfigImpTest.swift in Sources */,

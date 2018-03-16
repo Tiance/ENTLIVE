@@ -18,7 +18,7 @@ extension EnvironmentType {
     }
 }
 
-extension ENTApiProvider {
+extension ApiProvider {
     func request<D: Decodable>(target: T) -> Observable<D> {
         return self.requestWithResponse(target)
                 .map({ (response) -> D in
