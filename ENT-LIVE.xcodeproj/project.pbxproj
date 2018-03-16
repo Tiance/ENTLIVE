@@ -63,7 +63,6 @@
 		A31FD849BB0092C837AA4A11 /* WKWebViewLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD93E089FEB08C516EE97 /* WKWebViewLenses.swift */; };
 		A31FD85099E3AA8820F9ACB6 /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDC82068513EDC9F7298D /* RxCLLocationManagerDelegateProxy.swift */; };
 		A31FD8C0ADA6D067AF053EBE /* UITableViewControllerLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD40A3D53CABEDCBFBB26 /* UITableViewControllerLenses.swift */; };
-		A31FD8E341417F9F3CCB44B6 /* IMMessageDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDD1CEFBE64A3CD5DA829 /* IMMessageDefine.swift */; };
 		A31FD9766C78B4F999144226 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDF96B4C4ED31E3EA2D90 /* User.swift */; };
 		A31FD97B661C12B45CACAEC6 /* UIScrollViewLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD9D1D54E377B817FE3C8 /* UIScrollViewLenses.swift */; };
 		A31FD999DE356B42AAE87647 /* UILabelLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDAAFB984F996AF1FBE9E /* UILabelLenses.swift */; };
@@ -273,7 +272,6 @@
 		A31FDC5B4550FE4E4EA9C9C7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A31FDC82068513EDC9F7298D /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
 		A31FDCFD6079E08C21DF64D8 /* UITableViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewLenses.swift; sourceTree = "<group>"; };
-		A31FDD1CEFBE64A3CD5DA829 /* IMMessageDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMMessageDefine.swift; sourceTree = "<group>"; };
 		A31FDD88A4FCD88F7966769D /* ServerConfigImpTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConfigImpTest.swift; sourceTree = "<group>"; };
 		A31FDDA50F9E02880BBE1BAE /* UITabBarItemLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarItemLenses.swift; sourceTree = "<group>"; };
 		A31FDDA8536330A5769BFE67 /* UIEdgeInsetsLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsLenses.swift; sourceTree = "<group>"; };
@@ -683,7 +681,6 @@
 				EDF8850F2052945A004554B9 /* TX */,
 				EDF884F52052926D004554B9 /* IMServiceType.swift */,
 				A31FDBA6431128C0329257D0 /* IMMsgFactory.swift */,
-				A31FDD1CEFBE64A3CD5DA829 /* IMMessageDefine.swift */,
 				A31FD7124BA2CC3CB03EDCF3 /* IMMessage.proto */,
 				A31FD4DA93F1C1EBF176E3E3 /* IMMessage.pb.swift */,
 			);
@@ -724,6 +721,7 @@
 				EDF884E220525D76004554B9 /* Embed Frameworks */,
 				554C55A35B287D0110EEEC05 /* [CP] Embed Pods Frameworks */,
 				46A9493BBB4DDE6E2CE69BE3 /* [CP] Copy Pods Resources */,
+				ED0D1EDB205B63C200288B22 /* ProtoBuffer */,
 			);
 			buildRules = (
 			);
@@ -1174,6 +1172,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ENTLIVEUITests/Pods-ENTLIVEUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ED0D1EDB205B63C200288B22 /* ProtoBuffer */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = ProtoBuffer;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "protoc --swift_out=. App/Library/IM/IMMessage.proto";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1252,7 +1264,6 @@
 				A31FDDC1F43E177CE1480740 /* UIViewController+Preparation.swift in Sources */,
 				A31FDB0B80C12441C0F58B44 /* RouterDefine.swift in Sources */,
 				A31FDC394FDB6DB4B5AE8AE3 /* UIViewController+Environment.swift in Sources */,
-				A31FD8E341417F9F3CCB44B6 /* IMMessageDefine.swift in Sources */,
 				A31FDC2774140E21C420B7D3 /* TXIMMessageUtils.swift in Sources */,
 				A31FD06FF8FE704E5BE1E028 /* IMMessage.pb.swift in Sources */,
 			);

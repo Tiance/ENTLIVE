@@ -32,19 +32,20 @@ class TXIMService: NSObject, IMServiceType {
 
     }
 
-    func send(type: IMConversionType, container: IMMsgContainer, receiver: String) -> Observable<Int> {
+    func send(type: IMConversionType, message: IMMessage, receiver: String) -> Observable<(Int, String?)> {
         let conversion = manager.getConversation(TIMConversationType.init(rawValue: type.rawValue)!, receiver: receiver)
-        var msg: TIMMessage = TIMMessage()
-        switch container.type {
-        case .text:
-            msg = IMMsgFactory.textMsg(text: container.body)
-        case .custom:
-            assert(container.ext != nil, "自定义消息不能为空")
-            msg = IMMsgFactory.customMsg(message: container.ext!)
-        default: break
+        let el = TIMCustomElem()
+        el.data = try? message.serializedData()
+        let msg = TIMMessage()
+        msg.add(el)
+        return Observable.create { observer in
+            conversion?.send(msg, succ: {
+                observer.onNext((0, nil))
+            }, fail: { (code, errorMsg) in
+                observer.onNext((0, errorMsg))
+            })
+            return Disposables.create()
         }
-        conversion?.send(msg, succ: nil, fail: nil)
-        return Observable.just(1)
     }
 
     func logout() {
@@ -62,13 +63,8 @@ extension TXIMService: TIMMessageListener {
         for item in msgs {
             if let m = item as? TIMMessage {
                 for i in 0...m.elemCount() {
-                    let el = m.getElem(i)
-                    if el is TIMTextElem {
-
-                    } else if el is TIMImageElem {
-
-                    } else if el is TIMCustomElem {
-                        rlt.append(IMMessage(cmd: .none, cmdType: .none))
+                    if let el = m.getElem(i) as? TIMCustomElem {
+                        rlt.append(try! IMMessage(serializedData: el.data))
                     }
                 }
             }

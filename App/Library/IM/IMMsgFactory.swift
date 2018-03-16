@@ -45,16 +45,4 @@ struct IMMsgFactory {
         }
     }
 
-    static func customMsg<T>(type: IMSDK = IMSDK.tencent,
-                             message: IMMessage) -> T {
-        switch type {
-        case .tencent:
-            let msg = TIMMessage()
-            let el = TIMCustomElem()
-            el.data = try! AppEnvironment.current.encoder.encode(message)
-            msg.add(el)
-            return msg as! T
-        }
-    }
-
 }

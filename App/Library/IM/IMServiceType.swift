@@ -47,6 +47,6 @@ struct IMMsgContainer {
 
 protocol IMServiceType {
     func login(id: IMUserIdentifier)
-    func send(type: IMConversionType, container: IMMsgContainer, receiver: String) -> Observable<Int>
+    func send(type: IMConversionType, message: IMMessage, receiver: String) -> Observable<(Int, String?)>
     func logout()
 }
