@@ -38,6 +38,7 @@ class LoginViewController: RxViewController {
         AppEnvironment.current.router.send(message: .gift(name: "法拉利"))
         let intent = Intent(data: ["a": "hello world"])
         pop(resultCode: 0, intent: intent)
+
         viewModel.inputs.submit()
     }
 

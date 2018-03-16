@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b044c182-51b5-41ad-b0e1-1c06649825da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/Model/User.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Model/User.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/ClientApi/ClientMock.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/ClientApi/ClientMock.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/ServerConfigImp.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/ServerConfigImpTest.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/ClientApi/ServerConfigImpTest.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Controllers/LoginViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/LoginViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Extensions/ServerConfigImp.swift" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Library/IM/IMMessage.pb.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/IM/IMMessage.pb.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Template/User.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Model/User.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Model/User.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ENT-LIVE.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ENT-LIVE.xcodeproj/project.pbxproj" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/ENT-LIVE-crtjuaeuylwmsoggummddeltgvhr/" />
@@ -19,11 +23,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_DBD2FD06-1F1A-445A-94EF-E515ECEC7C77" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TXIMService.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Library/IM/TX/TXIMService.swift">
+      <file leaf-file-name="LoginViewController.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Controllers/LoginViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+            <state relative-caret-position="345">
+              <caret line="23" column="91" selection-start-line="23" selection-start-column="91" selection-end-line="23" selection-end-column="91" />
               <folding>
                 <element signature="e#93#110#0" expanded="true" />
               </folding>
@@ -31,11 +35,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TXLivePush.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Pods/TXLiteAVSDK_Professional/TXLiteAVSDK_Professional/SDK/TXLiteAVSDK_Professional.framework/Headers/TXLivePush.h">
+      <file leaf-file-name="AccessTokenCheckerPlugin.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Api/AccessTokenCheckerPlugin.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+            <state relative-caret-position="495">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Api.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Api/Api.h">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="LoginViewModelType.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/ViewModels/LoginViewModelType.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -44,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/App/Library/ClientApi/Client.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="e#99#116#0" expanded="true" />
               </folding>
@@ -56,28 +74,16 @@
         <entry file="file://$PROJECT_DIR$/App/Library/Lens/UserLenes.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.swift" pinned="false" current-in-tab="true">
+      <file leaf-file-name="User.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Model/User.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientMock.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Library/ClientApi/ClientMock.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-              <folding>
-                <element signature="e#99#116#0" expanded="true" />
-              </folding>
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -91,31 +97,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Environment.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Library/Environment.swift">
+      <file leaf-file-name="ServerConfigImp.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/Library/ClientApi/ServerConfigImp.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+            <state relative-caret-position="570">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+              <folding>
+                <element signature="e#86#103#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppEnvironment.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Library/AppEnvironment.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="65" column="55" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TXIMMessageUtils.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Library/IM/TX/TXIMMessageUtils.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-            </state>
-          </provider>
+      <file leaf-file-name="ServerConfigImpTest.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Library/ClientApi/ServerConfigImpTest.swift">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -131,7 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Api/OAuth/JWTTokenAccess.swift" />
         <option value="$PROJECT_DIR$/Api/OAuth/BearerAccessToken.swift" />
         <option value="$PROJECT_DIR$/Api/AccessTokenCheckerPlugin.swift" />
         <option value="$PROJECT_DIR$/App/Library/Ext/CommonAccessToken.swift" />
@@ -170,7 +165,6 @@
         <option value="$PROJECT_DIR$/App/Library/RouterDefine.swift" />
         <option value="$PROJECT_DIR$/App/Library/IM/IMMsgFactory.swift" />
         <option value="$PROJECT_DIR$/App/Library/IM/IMMessageDefine.swift" />
-        <option value="$PROJECT_DIR$/App/Controllers/LoginViewController.swift" />
         <option value="$PROJECT_DIR$/Podfile" />
         <option value="$PROJECT_DIR$/App/Library/IM/TX/TXIMMessageUtils.swift" />
         <option value="$PROJECT_DIR$/App/ViewController.swift" />
@@ -182,6 +176,8 @@
         <option value="$PROJECT_DIR$/App/Library/ClientApi/Client.swift" />
         <option value="$PROJECT_DIR$/App/Library/ClientApi/ClientMock.swift" />
         <option value="$PROJECT_DIR$/App/Library/AppEnvironment.swift" />
+        <option value="$PROJECT_DIR$/App/Controllers/LoginViewController.swift" />
+        <option value="$PROJECT_DIR$/App/Library/ClientApi/ServerConfigImp.swift" />
       </list>
     </option>
   </component>
@@ -225,6 +221,12 @@
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
               <item name="App" type="fcab9f18:XcodeViewNode" />
+              <item name="Controllers" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
+              <item name="App" type="fcab9f18:XcodeViewNode" />
               <item name="Library" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
@@ -232,13 +234,22 @@
               <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
               <item name="App" type="fcab9f18:XcodeViewNode" />
               <item name="Library" type="fcab9f18:XcodeViewNode" />
-              <item name="Lens" type="fcab9f18:XcodeViewNode" />
+              <item name="ClientApi" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
               <item name="App" type="fcab9f18:XcodeViewNode" />
-              <item name="Model" type="fcab9f18:XcodeViewNode" />
+              <item name="Library" type="fcab9f18:XcodeViewNode" />
+              <item name="IM" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
+              <item name="App" type="fcab9f18:XcodeViewNode" />
+              <item name="Library" type="fcab9f18:XcodeViewNode" />
+              <item name="IM" type="fcab9f18:XcodeViewNode" />
+              <item name="TX" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
@@ -319,7 +330,7 @@
       <workItem from="1521113091609" duration="733000" />
       <workItem from="1521163745301" duration="135000" />
       <workItem from="1521164130698" duration="1567000" />
-      <workItem from="1521166934263" duration="2731000" />
+      <workItem from="1521166934263" duration="3534000" />
     </task>
     <task id="LOCAL-00001" summary="appcode test commit">
       <created>1521079723935</created>
@@ -405,11 +416,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521169899617</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="分离model">
+      <created>1521176294228</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1521176294228</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61409000" />
+    <option name="totallyTimeSpent" value="62212000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -454,7 +472,8 @@
     <MESSAGE value="添加protobuf" />
     <MESSAGE value="添加Build script 脚本 自动编译ProtoBuf文件" />
     <MESSAGE value="独立Client Api Framework 不再有App相关的依赖" />
-    <option name="LAST_COMMIT_MESSAGE" value="独立Client Api Framework 不再有App相关的依赖" />
+    <MESSAGE value="分离model" />
+    <option name="LAST_COMMIT_MESSAGE" value="分离model" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -463,27 +482,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/LiveStreamType.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/Template/User.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/GeolocationService.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Library/Router/RouterType.h" />
     <entry file="file://$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UIControlLenses.swift">
       <provider selected="true" editor-type-id="text-editor">
@@ -502,20 +500,6 @@
     <entry file="file://$PROJECT_DIR$/App/Controllers/MySpaceViewController.swift" />
     <entry file="file://$PROJECT_DIR$/Library/Router/RequestResultType.swift" />
     <entry file="file://$PROJECT_DIR$/App/Library/Extensions/UIViewController+Preparation.swift" />
-    <entry file="file://$PROJECT_DIR$/Api/ServerConfigImp.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/ViewModels/LoginViewModelType.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Library/Extensions/OauthAccessToken.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -638,16 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Controllers/LoginViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#93#110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/ViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -744,17 +718,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Api/ApiProvider.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Library/ClientApi/Client.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="e#99#116#0" expanded="true" />
           </folding>
@@ -764,14 +731,61 @@
     <entry file="file://$PROJECT_DIR$/App/Library/Lens/UserLenes.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Model/User.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/ViewModels/LoginViewModelType.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Controllers/LoginViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="91" selection-start-line="23" selection-start-column="91" selection-end-line="23" selection-end-column="91" />
+          <folding>
+            <element signature="e#93#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/AccessTokenCheckerPlugin.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/Api.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/ApiProvider.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/ClientApi/ServerConfigImpTest.swift">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/ClientApi/ServerConfigImp.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#86#103#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

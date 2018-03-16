@@ -8,12 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A31FD001CEEB8E0C96AB3E9C /* CacheType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDA312DE44FF8A07AA2E0 /* CacheType.swift */; };
-		A31FD02E81EA25B0BE89BE44 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD83CF647CA2FA37DC31C /* User.swift */; };
-		A31FD06B6899CADF8031C0F5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD83CF647CA2FA37DC31C /* User.swift */; };
 		A31FD06FF8FE704E5BE1E028 /* IMMessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD4DA93F1C1EBF176E3E3 /* IMMessage.pb.swift */; };
 		A31FD0796B33018AE5FF3379 /* ServerConfigType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDAD3BBE8C9CE31DA3759 /* ServerConfigType.swift */; };
 		A31FD093D7CD4358688BC390 /* UITextViewLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD40705ACE9AEB06C7A6C /* UITextViewLenses.swift */; };
-		A31FD0B8858A1F57F0049673 /* ServerConfigImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD1DDEADE34B2D37FFDBC /* ServerConfigImp.swift */; };
 		A31FD0D096A86F3207E7E521 /* LoginViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDC12292250907F6A29DD /* LoginViewModelType.swift */; };
 		A31FD0DE84CAB7212F07092D /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDF2C32C68A947E0DEEE0 /* UIButton.swift */; };
 		A31FD135569B72680FDF85DF /* UIStackViewLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD374189C271A6F884FFB /* UIStackViewLenses.swift */; };
@@ -29,7 +26,6 @@
 		A31FD2B69C7802AD914F28F9 /* CommonAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD2C6EE6E53641CCE1B73 /* CommonAccessToken.swift */; };
 		A31FD2CDF3D1AD46DB85FE45 /* UIControlLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD32E128A6A53CDF597FE /* UIControlLenses.swift */; };
 		A31FD31AA982B13BA902A481 /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD88DF06C4E5F244F4268 /* RxImagePickerDelegateProxy.swift */; };
-		A31FD365F9E5C81A88DF9A58 /* ServerConfigImpTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDD88A4FCD88F7966769D /* ServerConfigImpTest.swift */; };
 		A31FD3A8FF271E2F00516AE2 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDA7A5D19B17DE6DF7D79 /* UIImagePickerController+Rx.swift */; };
 		A31FD3D89C9C3314E3990575 /* OauthAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD2429A5A3D4E8A683B3E /* OauthAccessToken.swift */; };
 		A31FD3E038520EC75C17276E /* UITabBarLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD78F3AEDD89D6C93F3E4 /* UITabBarLenses.swift */; };
@@ -50,7 +46,6 @@
 		A31FD66E363C3C2EA40FAFEE /* UIWebViewLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD591DC1D3F33A08E53EA /* UIWebViewLenses.swift */; };
 		A31FD68B242FBA5425BA2338 /* NSTextContainerLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD1F615639710A911716C /* NSTextContainerLenses.swift */; };
 		A31FD6A363319B0085F4E104 /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD22A8B58AF78A329B6B1 /* UIEdgeInsets.swift */; };
-		A31FD6B362FDBD2BAE8DCFF1 /* ServerConfigImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDED83604103C4EF0FB2C /* ServerConfigImp.swift */; };
 		A31FD6BD52B72D8C235D4497 /* UIActivityIndicatorViewLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD470F1DBC61D647EFCCB /* UIActivityIndicatorViewLenses.swift */; };
 		A31FD6CA40EA3D9CDEB0E038 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD385E3266C50D2B66F0A /* UIImage.swift */; };
 		A31FD70F1DF2B1D030C58A01 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD06CCB40155F7792BF7E /* AppEnvironment.swift */; };
@@ -59,11 +54,9 @@
 		A31FD7DAB3FA4DB9DFFA8195 /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDC82068513EDC9F7298D /* RxCLLocationManagerDelegateProxy.swift */; };
 		A31FD7E19B84A9510BE0CDD1 /* UIProgressViewLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD49EEB215C7FCD26CA20 /* UIProgressViewLenses.swift */; };
 		A31FD8090BFA978F516B9E56 /* LiveStreamType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD44F22498D0DD5771383 /* LiveStreamType.swift */; };
-		A31FD821A9226327D0E7EAA5 /* ServerConfigImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDED83604103C4EF0FB2C /* ServerConfigImp.swift */; };
 		A31FD849BB0092C837AA4A11 /* WKWebViewLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD93E089FEB08C516EE97 /* WKWebViewLenses.swift */; };
 		A31FD85099E3AA8820F9ACB6 /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDC82068513EDC9F7298D /* RxCLLocationManagerDelegateProxy.swift */; };
 		A31FD8C0ADA6D067AF053EBE /* UITableViewControllerLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD40A3D53CABEDCBFBB26 /* UITableViewControllerLenses.swift */; };
-		A31FD9766C78B4F999144226 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDF96B4C4ED31E3EA2D90 /* User.swift */; };
 		A31FD97B661C12B45CACAEC6 /* UIScrollViewLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD9D1D54E377B817FE3C8 /* UIScrollViewLenses.swift */; };
 		A31FD999DE356B42AAE87647 /* UILabelLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDAAFB984F996AF1FBE9E /* UILabelLenses.swift */; };
 		A31FD99D2C45C871CF07A1E3 /* JWTTokenAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD966571D73C0A9E1E8C7 /* JWTTokenAccess.swift */; };
@@ -74,10 +67,8 @@
 		A31FDA82005FF567A72B448E /* UIBarButtonItemLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDE739FF6C56833934DF3 /* UIBarButtonItemLenses.swift */; };
 		A31FDAA4EDBA9F23EC9A052C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD8D4237CBF1B0F8AFAA2 /* BaseViewController.swift */; };
 		A31FDAF049B14EF865A50917 /* UITabBarItemLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDDA50F9E02880BBE1BAE /* UITabBarItemLenses.swift */; };
-		A31FDB07521D49D2B1181469 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDF96B4C4ED31E3EA2D90 /* User.swift */; };
 		A31FDB0B80C12441C0F58B44 /* RouterDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD2ED261218B7EDD8AB9A /* RouterDefine.swift */; };
 		A31FDB57E2BF02BE68D8AE07 /* Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD314D074B683DFDA1473 /* Intent.swift */; };
-		A31FDB7DFB91A347D6EE2AB1 /* ServerConfigImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD1DDEADE34B2D37FFDBC /* ServerConfigImp.swift */; };
 		A31FDB8339F969C473BFE220 /* ServerConfigType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDAD3BBE8C9CE31DA3759 /* ServerConfigType.swift */; };
 		A31FDBE77CF57091EFEFDC00 /* UIViewControllerLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD040B446515364030FA2 /* UIViewControllerLenses.swift */; };
 		A31FDBEEE9E2A561A5DDD6C7 /* UITextFieldLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDE91B63193ED84E5812D /* UITextFieldLenses.swift */; };
@@ -110,6 +101,11 @@
 		A31FDFA2D74B636EBFE148FD /* OauthAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD2429A5A3D4E8A683B3E /* OauthAccessToken.swift */; };
 		A31FDFDF9B5FB7FD6A4886ED /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD85387CD7E99D6DA21F6 /* ReachabilityService.swift */; };
 		A71E74885A5D62D3214AA566 /* Pods_Api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF0D218FB2E2130CCC67735 /* Pods_Api.framework */; };
+		ED0D1EDD205B9FD800288B22 /* ServerConfigImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD0824D785B9B6351D448 /* ServerConfigImp.swift */; };
+		ED0D1EDF205B9FDC00288B22 /* ServerConfigImpTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD6D04C426E74B0BC0B57 /* ServerConfigImpTest.swift */; };
+		ED0D1EE0205B9FDF00288B22 /* ServerConfigImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD0824D785B9B6351D448 /* ServerConfigImp.swift */; };
+		ED0D1EE1205BA02E00288B22 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD83CF647CA2FA37DC31C /* User.swift */; };
+		ED0D1EE2205BA02F00288B22 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD83CF647CA2FA37DC31C /* User.swift */; };
 		ED81EDD720525D1400A63733 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81EDD620525D1400A63733 /* AppDelegate.swift */; };
 		ED81EDD920525D1400A63733 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81EDD820525D1400A63733 /* ViewController.swift */; };
 		ED81EDDC20525D1400A63733 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED81EDDA20525D1400A63733 /* Main.storyboard */; };
@@ -200,6 +196,7 @@
 		A31FD0292DE88A79ED90F74F /* BearerAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearerAccessToken.swift; sourceTree = "<group>"; };
 		A31FD040B446515364030FA2 /* UIViewControllerLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerLenses.swift; sourceTree = "<group>"; };
 		A31FD06CCB40155F7792BF7E /* AppEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		A31FD0824D785B9B6351D448 /* ServerConfigImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConfigImp.swift; sourceTree = "<group>"; };
 		A31FD0F53BD1C55480CC12BD /* UIImageViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewLenses.swift; sourceTree = "<group>"; };
 		A31FD0F9E59EFDDEF7808A88 /* NSMutableParagraphStyleLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMutableParagraphStyleLenses.swift; sourceTree = "<group>"; };
 		A31FD133E4B81B1DBB89E3C7 /* OauthAccessTokenType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OauthAccessTokenType.swift; sourceTree = "<group>"; };
@@ -207,7 +204,6 @@
 		A31FD1A0F410708F759F377B /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		A31FD1ACDDA0BECB0AA583E5 /* CGPointLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointLenses.swift; sourceTree = "<group>"; };
 		A31FD1D6CB5CE0FC6A1BC461 /* ClientMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientMock.swift; sourceTree = "<group>"; };
-		A31FD1DDEADE34B2D37FFDBC /* ServerConfigImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConfigImp.swift; sourceTree = "<group>"; };
 		A31FD1F615639710A911716C /* NSTextContainerLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTextContainerLenses.swift; sourceTree = "<group>"; };
 		A31FD2058D5E220DD15C32E9 /* UINavigationItemLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationItemLenses.swift; sourceTree = "<group>"; };
 		A31FD21F222A4E61FA1CCC37 /* UIButtonLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonLenses.swift; sourceTree = "<group>"; };
@@ -237,6 +233,7 @@
 		A31FD591DC1D3F33A08E53EA /* UIWebViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWebViewLenses.swift; sourceTree = "<group>"; };
 		A31FD5AE12EED11EF42A2268 /* TXLiveStreamService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TXLiveStreamService.swift; sourceTree = "<group>"; };
 		A31FD64FFAB246077A416416 /* CommonAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonAccessToken.swift; sourceTree = "<group>"; };
+		A31FD6D04C426E74B0BC0B57 /* ServerConfigImpTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConfigImpTest.swift; sourceTree = "<group>"; };
 		A31FD6F7EE167202BD851DAB /* UINavigationBarLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationBarLenses.swift; sourceTree = "<group>"; };
 		A31FD7124BA2CC3CB03EDCF3 /* IMMessage.proto */ = {isa = PBXFileReference; lastKnownFileType = file.proto; path = IMMessage.proto; sourceTree = "<group>"; };
 		A31FD78F3AEDD89D6C93F3E4 /* UITabBarLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarLenses.swift; sourceTree = "<group>"; };
@@ -269,17 +266,14 @@
 		A31FDC5B4550FE4E4EA9C9C7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A31FDC82068513EDC9F7298D /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
 		A31FDCFD6079E08C21DF64D8 /* UITableViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewLenses.swift; sourceTree = "<group>"; };
-		A31FDD88A4FCD88F7966769D /* ServerConfigImpTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConfigImpTest.swift; sourceTree = "<group>"; };
 		A31FDDA50F9E02880BBE1BAE /* UITabBarItemLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarItemLenses.swift; sourceTree = "<group>"; };
 		A31FDDA8536330A5769BFE67 /* UIEdgeInsetsLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsLenses.swift; sourceTree = "<group>"; };
 		A31FDE739FF6C56833934DF3 /* UIBarButtonItemLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemLenses.swift; sourceTree = "<group>"; };
 		A31FDE91B63193ED84E5812D /* UITextFieldLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldLenses.swift; sourceTree = "<group>"; };
-		A31FDED83604103C4EF0FB2C /* ServerConfigImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConfigImp.swift; sourceTree = "<group>"; };
 		A31FDF0201F9BEC9D8DD7593 /* UITraitCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITraitCollection.swift; sourceTree = "<group>"; };
 		A31FDF2C32C68A947E0DEEE0 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		A31FDF40C9A7714F9D0A745F /* UITextInputTraitsLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextInputTraitsLenses.swift; sourceTree = "<group>"; };
 		A31FDF53E5EDEF784C7F0E03 /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
-		A31FDF96B4C4ED31E3EA2D90 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A31FDFD616F4832146ECCE2E /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		ED14F4DB6B3488F813293188 /* Pods-ApiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApiTests/Pods-ApiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED81EDD320525D1400A63733 /* ENTLIVE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ENTLIVE.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -386,7 +380,6 @@
 		A31FD100DC75BADB52E9B9E9 /* Template */ = {
 			isa = PBXGroup;
 			children = (
-				A31FDF96B4C4ED31E3EA2D90 /* User.swift */,
 			);
 			path = Template;
 			sourceTree = "<group>";
@@ -435,6 +428,8 @@
 			children = (
 				A31FDFD616F4832146ECCE2E /* Client.swift */,
 				A31FD1D6CB5CE0FC6A1BC461 /* ClientMock.swift */,
+				A31FD0824D785B9B6351D448 /* ServerConfigImp.swift */,
+				A31FD6D04C426E74B0BC0B57 /* ServerConfigImpTest.swift */,
 			);
 			path = ClientApi;
 			sourceTree = "<group>";
@@ -567,7 +562,6 @@
 			isa = PBXGroup;
 			children = (
 				A31FD87DDA281E0771586595 /* Moya.swift */,
-				A31FD1DDEADE34B2D37FFDBC /* ServerConfigImp.swift */,
 				A31FD64FFAB246077A416416 /* CommonAccessToken.swift */,
 				A31FDF53E5EDEF784C7F0E03 /* CLLocationManager+Rx.swift */,
 				A31FDC82068513EDC9F7298D /* RxCLLocationManagerDelegateProxy.swift */,
@@ -646,8 +640,6 @@
 				EDF884CA20525D76004554B9 /* Api.h */,
 				EDF884CB20525D76004554B9 /* Info.plist */,
 				A31FD8FD87BF942A0D29E19F /* ApiProvider.swift */,
-				A31FDED83604103C4EF0FB2C /* ServerConfigImp.swift */,
-				A31FDD88A4FCD88F7966769D /* ServerConfigImpTest.swift */,
 				A31FDAD3BBE8C9CE31DA3759 /* ServerConfigType.swift */,
 				A31FDFA0DB6D7185540A6867 /* OAuth */,
 				A31FD79F3E33F03529FBA017 /* AccessTokenCheckerPlugin.swift */,
@@ -1194,14 +1186,13 @@
 				ED81EDD920525D1400A63733 /* ViewController.swift in Sources */,
 				ED81EDD720525D1400A63733 /* AppDelegate.swift in Sources */,
 				A31FDA68687648073C092AA9 /* Moya.swift in Sources */,
-				A31FD0B8858A1F57F0049673 /* ServerConfigImp.swift in Sources */,
 				A31FD19E2D230C2A77781065 /* UserLenes.swift in Sources */,
-				A31FD9766C78B4F999144226 /* User.swift in Sources */,
 				A31FD8090BFA978F516B9E56 /* LiveStreamType.swift in Sources */,
 				A31FD1A69CB44145A5E7480A /* Environment.swift in Sources */,
 				A31FD70F1DF2B1D030C58A01 /* AppEnvironment.swift in Sources */,
 				A31FD54A4273654366DCC521 /* NSObject.swift in Sources */,
 				A31FDD11360FB1F3A27869BB /* CGRectLenses.swift in Sources */,
+				ED0D1EDD205B9FD800288B22 /* ServerConfigImp.swift in Sources */,
 				A31FD14E2F26F284A3556DE9 /* CGSizeLenses.swift in Sources */,
 				A31FDD40351FFC10885D2CE4 /* UIViewLenses.swift in Sources */,
 				A31FD4247C35310ACE8E0364 /* CALayerLenses.swift in Sources */,
@@ -1266,6 +1257,7 @@
 				A31FD06FF8FE704E5BE1E028 /* IMMessage.pb.swift in Sources */,
 				A31FDDCE04667479C4C093B3 /* Client.swift in Sources */,
 				A31FD611D463C4384559454C /* ClientMock.swift in Sources */,
+				ED0D1EE1205BA02E00288B22 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1274,15 +1266,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A31FDF211AE79DCE9C06B784 /* Moya.swift in Sources */,
-				A31FDB7DFB91A347D6EE2AB1 /* ServerConfigImp.swift in Sources */,
 				A31FD7374CA30534D6994675 /* UserLenes.swift in Sources */,
-				A31FDB07521D49D2B1181469 /* User.swift in Sources */,
 				A31FD5C61B8DCFE08CFEC45F /* LiveStreamType.swift in Sources */,
 				A31FD42B3348C2EC55C147EE /* Environment.swift in Sources */,
 				A31FD20515142CDAAB66F31A /* AppEnvironment.swift in Sources */,
+				ED0D1EDF205B9FDC00288B22 /* ServerConfigImpTest.swift in Sources */,
+				ED0D1EE2205BA02F00288B22 /* User.swift in Sources */,
 				EDF884F72052926D004554B9 /* IMServiceType.swift in Sources */,
 				A31FD0D096A86F3207E7E521 /* LoginViewModelType.swift in Sources */,
 				A31FDA6DEA4C22E3B13CFAE8 /* LoginViewController.swift in Sources */,
+				ED0D1EE0205B9FDF00288B22 /* ServerConfigImp.swift in Sources */,
 				A31FD19A7BF3BAC5CC340DB3 /* BaseViewController.swift in Sources */,
 				A31FDE5B034F2BAC4D15BA7A /* CLLocationManager+Rx.swift in Sources */,
 				A31FD85099E3AA8820F9ACB6 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
@@ -1305,14 +1298,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A31FDCEA40ADF922717274E4 /* ApiProvider.swift in Sources */,
-				A31FD821A9226327D0E7EAA5 /* ServerConfigImp.swift in Sources */,
 				A31FD0796B33018AE5FF3379 /* ServerConfigType.swift in Sources */,
 				A31FD47143B3E9E49546445C /* OauthAccessTokenType.swift in Sources */,
 				A31FD4D38C545F49C45FFDE7 /* BearerAccessToken.swift in Sources */,
 				A31FD2B69C7802AD914F28F9 /* CommonAccessToken.swift in Sources */,
 				A31FD99D2C45C871CF07A1E3 /* JWTTokenAccess.swift in Sources */,
 				A31FDD540617E61F33D73DE0 /* AccessTokenCheckerPlugin.swift in Sources */,
-				A31FD02E81EA25B0BE89BE44 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1321,10 +1312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A31FDD3BCDE88DD0C9D88974 /* ApiProvider.swift in Sources */,
-				A31FD6B362FDBD2BAE8DCFF1 /* ServerConfigImp.swift in Sources */,
-				A31FD365F9E5C81A88DF9A58 /* ServerConfigImpTest.swift in Sources */,
 				A31FDB8339F969C473BFE220 /* ServerConfigType.swift in Sources */,
-				A31FD06B6899CADF8031C0F5 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
