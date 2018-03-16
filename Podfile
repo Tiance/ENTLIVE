@@ -27,6 +27,7 @@ target 'ENTLIVE' do
   pod 'Kickstarter-Prelude'
   pod 'TXLiteAVSDK_Professional'
   pod 'XLPagerTabStrip'
+  pod 'SwiftProtobuf'
   target 'ENTLIVETests' do
     inherit! :search_paths
     # Pods for testing

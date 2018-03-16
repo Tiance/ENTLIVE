@@ -10,6 +10,7 @@ import UIKit
 import Prelude
 import RxSwift
 import Api
+import SwiftProtobuf
 
 class ViewController: RxViewController {
 
@@ -28,7 +29,13 @@ class ViewController: RxViewController {
         _ = view
                 |> UIView.lens.layer.cornerRadius .~ 2
 
-    }
+
+        var p = Person.with {
+        $0.id = 1
+        $0.email = "Willian.wang@hotmail.com"
+        }
+
+        }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

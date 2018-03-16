@@ -11,6 +11,7 @@
 		12F4E6EF06B30DE10E26D136 /* Pods_ApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC66F65E6B2F5030856BBA8 /* Pods_ApiTests.framework */; };
 		54686296C90E982876BE764C /* Pods_ENTLIVEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAA1A10048D44EDC3B9D8C9 /* Pods_ENTLIVEUITests.framework */; };
 		A31FD001CEEB8E0C96AB3E9C /* CacheType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDA312DE44FF8A07AA2E0 /* CacheType.swift */; };
+		A31FD06FF8FE704E5BE1E028 /* IMMessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD4DA93F1C1EBF176E3E3 /* IMMessage.pb.swift */; };
 		A31FD0796B33018AE5FF3379 /* ServerConfigType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDAD3BBE8C9CE31DA3759 /* ServerConfigType.swift */; };
 		A31FD093D7CD4358688BC390 /* UITextViewLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD40705ACE9AEB06C7A6C /* UITextViewLenses.swift */; };
 		A31FD0B8858A1F57F0049673 /* ServerConfigImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD1DDEADE34B2D37FFDBC /* ServerConfigImp.swift */; };
@@ -234,12 +235,14 @@
 		A31FD470F1DBC61D647EFCCB /* UIActivityIndicatorViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorViewLenses.swift; sourceTree = "<group>"; };
 		A31FD485FE40E3131C8BEAC6 /* CGSizeLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSizeLenses.swift; sourceTree = "<group>"; };
 		A31FD49EEB215C7FCD26CA20 /* UIProgressViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIProgressViewLenses.swift; sourceTree = "<group>"; };
+		A31FD4DA93F1C1EBF176E3E3 /* IMMessage.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMMessage.pb.swift; sourceTree = "<group>"; };
 		A31FD4EB05C6D67F54E29B0B /* UIViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewLenses.swift; sourceTree = "<group>"; };
 		A31FD582084DC9E33D04AC67 /* UIViewController+Preparation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Preparation.swift"; sourceTree = "<group>"; };
 		A31FD591DC1D3F33A08E53EA /* UIWebViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWebViewLenses.swift; sourceTree = "<group>"; };
 		A31FD5AE12EED11EF42A2268 /* TXLiveStreamService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TXLiveStreamService.swift; sourceTree = "<group>"; };
 		A31FD64FFAB246077A416416 /* CommonAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonAccessToken.swift; sourceTree = "<group>"; };
 		A31FD6F7EE167202BD851DAB /* UINavigationBarLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationBarLenses.swift; sourceTree = "<group>"; };
+		A31FD7124BA2CC3CB03EDCF3 /* IMMessage.proto */ = {isa = PBXFileReference; lastKnownFileType = file.proto; path = IMMessage.proto; sourceTree = "<group>"; };
 		A31FD78F3AEDD89D6C93F3E4 /* UITabBarLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarLenses.swift; sourceTree = "<group>"; };
 		A31FD79F3E33F03529FBA017 /* AccessTokenCheckerPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenCheckerPlugin.swift; sourceTree = "<group>"; };
 		A31FD7BB2FC9ED2295F53553 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -681,6 +684,8 @@
 				EDF884F52052926D004554B9 /* IMServiceType.swift */,
 				A31FDBA6431128C0329257D0 /* IMMsgFactory.swift */,
 				A31FDD1CEFBE64A3CD5DA829 /* IMMessageDefine.swift */,
+				A31FD7124BA2CC3CB03EDCF3 /* IMMessage.proto */,
+				A31FD4DA93F1C1EBF176E3E3 /* IMMessage.pb.swift */,
 			);
 			path = IM;
 			sourceTree = "<group>";
@@ -1061,6 +1066,7 @@
 				"${BUILT_PRODUCTS_DIR}/Kickstarter-Prelude/Prelude.framework",
 				"${BUILT_PRODUCTS_DIR}/Runes/Runes.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
@@ -1073,6 +1079,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Prelude.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Runes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
@@ -1247,6 +1254,7 @@
 				A31FDC394FDB6DB4B5AE8AE3 /* UIViewController+Environment.swift in Sources */,
 				A31FD8E341417F9F3CCB44B6 /* IMMessageDefine.swift in Sources */,
 				A31FDC2774140E21C420B7D3 /* TXIMMessageUtils.swift in Sources */,
+				A31FD06FF8FE704E5BE1E028 /* IMMessage.pb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

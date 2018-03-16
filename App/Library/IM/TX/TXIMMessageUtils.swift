@@ -6,7 +6,4 @@
 import Foundation
 
 extension TIMTextElem {
-    func cover() -> IMMessage {
-
-    }
 }

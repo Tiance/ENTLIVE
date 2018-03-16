@@ -20,6 +20,7 @@ PODS:
   - RxCocoa (4.1.2):
     - RxSwift (~> 4.0)
   - RxSwift (4.1.2)
+  - SwiftProtobuf (1.0.3)
   - TXLiteAVSDK_Professional (4.2.3423)
   - XLPagerTabStrip (8.0.0)
 
@@ -30,6 +31,7 @@ DEPENDENCIES:
   - Moya/RxSwift
   - RxCocoa
   - RxSwift
+  - SwiftProtobuf
   - TXLiteAVSDK_Professional
   - XLPagerTabStrip
 
@@ -42,9 +44,10 @@ SPEC CHECKSUMS:
   Runes: 72a67a5bbbe1b5fdae08b5a01b10c60d83fc69aa
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxSwift: e49536837d9901277638493ea537394d4b55f570
+  SwiftProtobuf: 5ccc0e4054e37c75800e5744acb2aa80bb72b39c
   TXLiteAVSDK_Professional: caa066fc13a5439ac6d9ef10025b18a5cdc55ab1
   XLPagerTabStrip: d1ab378af0923320ec0b5eab11d7b2f803d31261
 
-PODFILE CHECKSUM: 288a8ac5d21c20f2c94605bc09ab5c020b2d3812
+PODFILE CHECKSUM: ca532d8d5703f770e8f2fe2042848074fe6f045b
 
 COCOAPODS: 1.4.0
