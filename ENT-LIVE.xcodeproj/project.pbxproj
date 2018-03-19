@@ -68,6 +68,7 @@
 		A31FDAA4EDBA9F23EC9A052C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD8D4237CBF1B0F8AFAA2 /* BaseViewController.swift */; };
 		A31FDAF049B14EF865A50917 /* UITabBarItemLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDDA50F9E02880BBE1BAE /* UITabBarItemLenses.swift */; };
 		A31FDB0B80C12441C0F58B44 /* RouterDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD2ED261218B7EDD8AB9A /* RouterDefine.swift */; };
+		A31FDB3AEEB29F68090BE480 /* UserEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD4DC309AA94142B53119 /* UserEvents.swift */; };
 		A31FDB57E2BF02BE68D8AE07 /* Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD314D074B683DFDA1473 /* Intent.swift */; };
 		A31FDB8339F969C473BFE220 /* ServerConfigType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDAD3BBE8C9CE31DA3759 /* ServerConfigType.swift */; };
 		A31FDBE77CF57091EFEFDC00 /* UIViewControllerLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD040B446515364030FA2 /* UIViewControllerLenses.swift */; };
@@ -228,6 +229,7 @@
 		A31FD485FE40E3131C8BEAC6 /* CGSizeLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSizeLenses.swift; sourceTree = "<group>"; };
 		A31FD49EEB215C7FCD26CA20 /* UIProgressViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIProgressViewLenses.swift; sourceTree = "<group>"; };
 		A31FD4DA93F1C1EBF176E3E3 /* IMMessage.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMMessage.pb.swift; sourceTree = "<group>"; };
+		A31FD4DC309AA94142B53119 /* UserEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEvents.swift; sourceTree = "<group>"; };
 		A31FD4EB05C6D67F54E29B0B /* UIViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewLenses.swift; sourceTree = "<group>"; };
 		A31FD582084DC9E33D04AC67 /* UIViewController+Preparation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Preparation.swift"; sourceTree = "<group>"; };
 		A31FD591DC1D3F33A08E53EA /* UIWebViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWebViewLenses.swift; sourceTree = "<group>"; };
@@ -453,6 +455,7 @@
 				A31FD2ED261218B7EDD8AB9A /* RouterDefine.swift */,
 				A31FD9EEB99AA2D7BDCE3CD0 /* UIViewController+Environment.swift */,
 				A31FD4629B82757FF985CD51 /* ClientApi */,
+				A31FD4DC309AA94142B53119 /* UserEvents.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -1258,6 +1261,7 @@
 				A31FDDCE04667479C4C093B3 /* Client.swift in Sources */,
 				A31FD611D463C4384559454C /* ClientMock.swift in Sources */,
 				ED0D1EE1205BA02E00288B22 /* User.swift in Sources */,
+				A31FDB3AEEB29F68090BE480 /* UserEvents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

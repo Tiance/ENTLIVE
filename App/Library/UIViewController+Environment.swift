@@ -16,11 +16,6 @@ fileprivate struct RouterNode {
 class RouterManager<T: MessageRouterType> {
 
     private var stack: [UIViewController: RouterNode] = [:]
-    private let notificationSubject: PublishSubject = PublishSubject<T>()
-
-    var notification: Observable<T> {
-        return notificationSubject.asObservable()
-    }
 
     fileprivate func add(_ from: UIViewController, to: UIViewController) {
         let node = RouterNode.init(pre: from, requestCode: 0)
@@ -34,10 +29,6 @@ class RouterManager<T: MessageRouterType> {
     fileprivate func dismiss(vc: UIViewController) {
         stack.removeValue(forKey: vc)
         assert(stack[vc] == nil)
-    }
-
-    func send(message: T) {
-        notificationSubject.onNext(message)
     }
 
 }

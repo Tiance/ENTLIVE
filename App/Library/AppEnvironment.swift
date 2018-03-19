@@ -9,35 +9,30 @@ import Moya
 import Api
 
 
-/// 环境用户发生更新
-///
-/// - USER_KICKED: 被踢
-/// - TOKEN_EXPIRED: Token过期
-/// - USER_INFO_UPDATED: 用户信息发生变化
-/// - ENV_CHANGED: 环境切换
-enum EnvironmentChangedReason {
-    case USER_KICKED
-    case TOKEN_EXPIRED
-    case USER_INFO_UPDATED
-    case ENV_CHANGED
-}
-
 struct AppEnvironment {
-    private static var stack: [Environment] = [Environment()]
-    private static let userUpdateSubject = PublishSubject<EnvironmentChangedReason>()
-    private static var type = EnvironmentType.simulate
-
-
+    private static let userEventsSubject = PublishSubject<UserEvents>()
     private static let defaults_user_key = "com.ent.live.user"
     private static let defaults_token_key = "com.ent.live.token"
     private static let defaults_tokenType_key = "com.ent.live.tokenType"
+    private static let authStatusSubject = PublishSubject<Void>()
+
+
+    private static var stack: [Environment] = [Environment()]
+    private static var type = EnvironmentType.simulate
 
     static var current: Environment {
         return stack.last!
     }
 
+    static var userEvents: Observable<UserEvents> {
+        return Observable.merge(userEventsSubject.asObservable(), authStatusSubject.asObservable().map {
+            UserEvents.TOKEN_EXPIRED
+        })
+    }
+
     static func updateUser(user: User) {
         replace(env: Environment(user: user))
+        userEventsSubject.onNext(.USER_INFO_UPDATED)
     }
 
     static func auth(accessToken: OauthAccessTokenType) {
@@ -58,7 +53,8 @@ struct AppEnvironment {
                     httpHeaderFields: target.headers)
             return endpoint
         }
-        let api = ApiProvider<Client>(endpointClosure: endpointClosure, stubClosure: type.stubClosure(), plugins: [NetworkLoggerPlugin(), AccessTokenCheckerPlugin(accessTokenType: accessToken)], baseURL: type.serverConfig.apiBaseURL)
+        let tokenChecker = AccessTokenCheckerPlugin(accessTokenType: accessToken, observer: authStatusSubject.asObserver())
+        let api = ApiProvider<Client>(endpointClosure: endpointClosure, stubClosure: type.stubClosure(), plugins: [NetworkLoggerPlugin(), tokenChecker], baseURL: type.serverConfig.apiBaseURL)
         replace(env: Environment(api: api))
     }
 

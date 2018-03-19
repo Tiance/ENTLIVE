@@ -9,15 +9,12 @@ import RxSwift
 import Result
 
 public class AccessTokenCheckerPlugin: PluginType {
-    let subject = PublishSubject<Void>()
+    let observer: AnyObserver<Void>
     let tokenType: OauthAccessTokenType
 
-    public var tokenException: Observable<Void> {
-        return subject.asObservable()
-    }
-
-    public init(accessTokenType: OauthAccessTokenType) {
+    public init(accessTokenType: OauthAccessTokenType, observer: AnyObserver<Void>) {
         tokenType = accessTokenType
+        self.observer = observer
     }
 
     public func prepare(_ request: URLRequest, target: TargetType) -> URLRequest {
@@ -30,7 +27,7 @@ public class AccessTokenCheckerPlugin: PluginType {
 
     public func didReceive(_ result: Result<Response, MoyaError>, target: TargetType) {
         if result.value?.statusCode == 203 {
-            subject.onNext(())
+            observer.onNext(())
         }
     }
 }
