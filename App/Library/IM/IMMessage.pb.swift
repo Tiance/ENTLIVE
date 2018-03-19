@@ -15,8 +15,7 @@ import SwiftProtobuf
 // Please ensure that your are building against the same version of the API
 // that was used to generate this file.
 fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-    struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {
-    }
+  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
   typealias Version = _2
 }
 
@@ -82,8 +81,7 @@ struct IMMessage {
 
   }
 
-    init() {
-    }
+  init() {}
 }
 
 // MARK: - Code below here is support for the SwiftProtobuf runtime.
@@ -116,15 +114,9 @@ extension IMMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
   }
 
   func _protobuf_generated_isEqualTo(other: IMMessage) -> Bool {
-      if self.cmdType != other.cmdType {
-          return false
-      }
-      if self.cmd != other.cmd {
-          return false
-      }
-      if unknownFields != other.unknownFields {
-          return false
-      }
+    if self.cmdType != other.cmdType {return false}
+    if self.cmd != other.cmd {return false}
+    if unknownFields != other.unknownFields {return false}
     return true
   }
 }

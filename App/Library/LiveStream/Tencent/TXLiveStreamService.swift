@@ -4,25 +4,9 @@
 //
 
 import Foundation
+import UIKit
 import RxSwift
 
 
-class TencentLiveStream: LiveStreamType {
-    func login() -> Observable<Int> {
-        return Observable.just(1)
-    }
-    
-    func logout() -> Observable<Int> {
-        return Observable.just(1)
-    }
-    
-    func createRoom() -> Observable<Int> {
-        return Observable.just(2)
-    }
-    
-    func joinRoom() -> Observable<Int> {
-        return Observable.just(3)
-    }
-    
-
+class TXLiveStreamService {
 }

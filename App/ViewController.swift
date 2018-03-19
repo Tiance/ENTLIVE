@@ -11,6 +11,7 @@ import Prelude
 import RxSwift
 import Api
 import SwiftProtobuf
+import LiveStream
 
 class ViewController: RxViewController {
 
@@ -21,7 +22,6 @@ class ViewController: RxViewController {
         // Do any additional setup after loading the view, typically from a nib.
         _ = view
                 |> UIView.lens.layer.cornerRadius .~ 2
-
 
     }
 
