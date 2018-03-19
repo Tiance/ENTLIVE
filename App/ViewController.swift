@@ -11,8 +11,6 @@ import Prelude
 import RxSwift
 import Api
 import SwiftProtobuf
-import LiveStream
-
 class ViewController: RxViewController {
 
     var requestCode: Int = 0

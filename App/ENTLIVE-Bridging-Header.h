@@ -6,8 +6,6 @@
 
 /*TxCloud*/
 #import <TXLivePush.h>
-#import <TXLivePushConfig.h>
-#import <TXLivePushListener.h>
 #import <TXLivePlayer.h>
 #import <TXLivePlayConfig.h>
 #import <TXLivePlayListener.h>

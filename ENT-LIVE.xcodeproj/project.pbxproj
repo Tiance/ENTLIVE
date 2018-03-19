@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F95EE526E0EA2B1AD4ABFC8 /* Pods_ApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23AA6FAC0DC0E8E8C55BFB8 /* Pods_ApiTests.framework */; };
 		2535C7F36150A805285B090F /* Pods_ENTLIVE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83FB6B9A59991A96B6CC8D5 /* Pods_ENTLIVE.framework */; };
+		665C55D2D93717B2A9B75C86 /* Pods_ENTLIVEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501A148FED28365FC02E2D20 /* Pods_ENTLIVEUITests.framework */; };
 		A31FD001CEEB8E0C96AB3E9C /* CacheType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDA312DE44FF8A07AA2E0 /* CacheType.swift */; };
 		A31FD06FF8FE704E5BE1E028 /* IMMessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD4DA93F1C1EBF176E3E3 /* IMMessage.pb.swift */; };
 		A31FD0796B33018AE5FF3379 /* ServerConfigType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDAD3BBE8C9CE31DA3759 /* ServerConfigType.swift */; };
@@ -22,6 +24,7 @@
 		A31FD1A69CB44145A5E7480A /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD389C46C1C8CE7B03AC3 /* Environment.swift */; };
 		A31FD20515142CDAAB66F31A /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD06CCB40155F7792BF7E /* AppEnvironment.swift */; };
 		A31FD23EDB1E74025237DB9D /* UIBarItemLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD91B4CA534AD36DAB5A6 /* UIBarItemLenses.swift */; };
+		A31FD27C9B749B4D9D0186B1 /* LiveStreamRoomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDDC04F9C82FE87841BA5 /* LiveStreamRoomType.swift */; };
 		A31FD29B5B062976903A5321 /* NSMutableParagraphStyleLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD0F9E59EFDDEF7808A88 /* NSMutableParagraphStyleLenses.swift */; };
 		A31FD2B397C34BE72ED921D8 /* UITableViewCellLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDC3280BAAB51B20741D4 /* UITableViewCellLenses.swift */; };
 		A31FD2B69C7802AD914F28F9 /* CommonAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD2C6EE6E53641CCE1B73 /* CommonAccessToken.swift */; };
@@ -51,6 +54,7 @@
 		A31FD6BD52B72D8C235D4497 /* UIActivityIndicatorViewLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD470F1DBC61D647EFCCB /* UIActivityIndicatorViewLenses.swift */; };
 		A31FD6CA40EA3D9CDEB0E038 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD385E3266C50D2B66F0A /* UIImage.swift */; };
 		A31FD70F1DF2B1D030C58A01 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD06CCB40155F7792BF7E /* AppEnvironment.swift */; };
+		A31FD72538F2B90C016909D7 /* LiveStreamBeautyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD277ECB4B93069B6CA5F /* LiveStreamBeautyType.swift */; };
 		A31FD7374CA30534D6994675 /* UserLenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD338D542FDB4E0977BB3 /* UserLenes.swift */; };
 		A31FD7DAB3FA4DB9DFFA8195 /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDC82068513EDC9F7298D /* RxCLLocationManagerDelegateProxy.swift */; };
 		A31FD7E19B84A9510BE0CDD1 /* UIProgressViewLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD49EEB215C7FCD26CA20 /* UIProgressViewLenses.swift */; };
@@ -102,6 +106,7 @@
 		A31FDFA2D74B636EBFE148FD /* OauthAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD2429A5A3D4E8A683B3E /* OauthAccessToken.swift */; };
 		A31FDFDF9B5FB7FD6A4886ED /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD85387CD7E99D6DA21F6 /* ReachabilityService.swift */; };
 		A71E74885A5D62D3214AA566 /* Pods_Api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF0D218FB2E2130CCC67735 /* Pods_Api.framework */; };
+		CCA8A5B0FB854DC1974C890D /* Pods_ENTLIVETests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2C3B0C8B04C1D4E5F8B5CB /* Pods_ENTLIVETests.framework */; };
 		ED0D1EDD205B9FD800288B22 /* ServerConfigImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD0824D785B9B6351D448 /* ServerConfigImp.swift */; };
 		ED0D1EDF205B9FDC00288B22 /* ServerConfigImpTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD6D04C426E74B0BC0B57 /* ServerConfigImpTest.swift */; };
 		ED0D1EE0205B9FDF00288B22 /* ServerConfigImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD0824D785B9B6351D448 /* ServerConfigImp.swift */; };
@@ -111,6 +116,10 @@
 		ED81EDD920525D1400A63733 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81EDD820525D1400A63733 /* ViewController.swift */; };
 		ED81EDDE20525D1400A63733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED81EDDD20525D1400A63733 /* Assets.xcassets */; };
 		ED81EDE120525D1400A63733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED81EDDF20525D1400A63733 /* LaunchScreen.storyboard */; };
+		EDC19BAE205FBF610072FF41 /* LiveStreamUserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDCD1D8AFABFC516664B4 /* LiveStreamUserType.swift */; };
+		EDC19BB0205FBF670072FF41 /* LiveStreamBgmType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD0E0D92B00982177D1C1 /* LiveStreamBgmType.swift */; };
+		EDC19BB1205FBF670072FF41 /* LiveStreamControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD72179D069D5CCEE3123 /* LiveStreamControllerType.swift */; };
+		EDC19BB2205FBF6C0072FF41 /* TXLiveStreamService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD2AB7E72BBD679DDFCE0 /* TXLiveStreamService.swift */; };
 		EDF884D120525D76004554B9 /* Api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF884C820525D76004554B9 /* Api.framework */; };
 		EDF884DA20525D76004554B9 /* Api.h in Headers */ = {isa = PBXBuildFile; fileRef = EDF884CA20525D76004554B9 /* Api.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDF884DD20525D76004554B9 /* Api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF884C820525D76004554B9 /* Api.framework */; };
@@ -186,6 +195,7 @@
 
 /* Begin PBXFileReference section */
 		0CAF4F7F4A423A96BBB38893 /* Pods-ENTLIVETests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ENTLIVETests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ENTLIVETests/Pods-ENTLIVETests.release.xcconfig"; sourceTree = "<group>"; };
+		1A2C3B0C8B04C1D4E5F8B5CB /* Pods_ENTLIVETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ENTLIVETests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F17F19F2EDE4AC804E91C31 /* Pods_ENT_LIVE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ENT_LIVE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FFACCC5F5DB61622D20E486 /* Pods-LiveStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStream.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveStream/Pods-LiveStream.debug.xcconfig"; sourceTree = "<group>"; };
 		223FAFA4B02820CD00237B99 /* Pods-ApiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApiTests/Pods-ApiTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,6 +203,7 @@
 		352464258A3003EDAB669F84 /* Pods-TXLiveSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXLiveSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-TXLiveSDK/Pods-TXLiveSDK.release.xcconfig"; sourceTree = "<group>"; };
 		4A0CC7306527433B55D5711B /* Pods-ENTLIVE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ENTLIVE.release.xcconfig"; path = "Pods/Target Support Files/Pods-ENTLIVE/Pods-ENTLIVE.release.xcconfig"; sourceTree = "<group>"; };
 		4D2F0B4E18EFB96A1C94DFDD /* Pods-ENTLIVEUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ENTLIVEUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ENTLIVEUITests/Pods-ENTLIVEUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		501A148FED28365FC02E2D20 /* Pods_ENTLIVEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ENTLIVEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF0D218FB2E2130CCC67735 /* Pods_Api.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Api.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DAE42F37B80739155BE7742 /* Pods-TXLiveSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXLiveSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TXLiveSDK/Pods-TXLiveSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		9A39DA99D185E19BE2FFCEED /* Pods-Api.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Api.release.xcconfig"; path = "Pods/Target Support Files/Pods-Api/Pods-Api.release.xcconfig"; sourceTree = "<group>"; };
@@ -200,6 +211,7 @@
 		A31FD040B446515364030FA2 /* UIViewControllerLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerLenses.swift; sourceTree = "<group>"; };
 		A31FD06CCB40155F7792BF7E /* AppEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		A31FD0824D785B9B6351D448 /* ServerConfigImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConfigImp.swift; sourceTree = "<group>"; };
+		A31FD0E0D92B00982177D1C1 /* LiveStreamBgmType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveStreamBgmType.swift; sourceTree = "<group>"; };
 		A31FD0F53BD1C55480CC12BD /* UIImageViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewLenses.swift; sourceTree = "<group>"; };
 		A31FD0F9E59EFDDEF7808A88 /* NSMutableParagraphStyleLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMutableParagraphStyleLenses.swift; sourceTree = "<group>"; };
 		A31FD133E4B81B1DBB89E3C7 /* OauthAccessTokenType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OauthAccessTokenType.swift; sourceTree = "<group>"; };
@@ -214,8 +226,8 @@
 		A31FD22A8B58AF78A329B6B1 /* UIEdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; };
 		A31FD2429A5A3D4E8A683B3E /* OauthAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OauthAccessToken.swift; sourceTree = "<group>"; };
 		A31FD24C9798BFBF4C753617 /* RouterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
+		A31FD277ECB4B93069B6CA5F /* LiveStreamBeautyType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveStreamBeautyType.swift; sourceTree = "<group>"; };
 		A31FD2AB7E72BBD679DDFCE0 /* TXLiveStreamService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TXLiveStreamService.swift; sourceTree = "<group>"; };
-		A31FD2BF9FCAA7FBF4991E90 /* BaseLiveStreamImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLiveStreamImp.swift; sourceTree = "<group>"; };
 		A31FD2C6EE6E53641CCE1B73 /* CommonAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonAccessToken.swift; sourceTree = "<group>"; };
 		A31FD2D1696BE05C27747134 /* UINavigationControllerLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerLenses.swift; sourceTree = "<group>"; };
 		A31FD2ED261218B7EDD8AB9A /* RouterDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterDefine.swift; sourceTree = "<group>"; };
@@ -241,6 +253,7 @@
 		A31FD6D04C426E74B0BC0B57 /* ServerConfigImpTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConfigImpTest.swift; sourceTree = "<group>"; };
 		A31FD6F7EE167202BD851DAB /* UINavigationBarLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationBarLenses.swift; sourceTree = "<group>"; };
 		A31FD7124BA2CC3CB03EDCF3 /* IMMessage.proto */ = {isa = PBXFileReference; lastKnownFileType = file.proto; path = IMMessage.proto; sourceTree = "<group>"; };
+		A31FD72179D069D5CCEE3123 /* LiveStreamControllerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveStreamControllerType.swift; sourceTree = "<group>"; };
 		A31FD78F3AEDD89D6C93F3E4 /* UITabBarLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarLenses.swift; sourceTree = "<group>"; };
 		A31FD79F3E33F03529FBA017 /* AccessTokenCheckerPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenCheckerPlugin.swift; sourceTree = "<group>"; };
 		A31FD7BB2FC9ED2295F53553 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -271,10 +284,11 @@
 		A31FDC3280BAAB51B20741D4 /* UITableViewCellLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellLenses.swift; sourceTree = "<group>"; };
 		A31FDC5B4550FE4E4EA9C9C7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A31FDC82068513EDC9F7298D /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
-		A31FDCD1D8AFABFC516664B4 /* LiveStreamType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveStreamType.swift; sourceTree = "<group>"; };
+		A31FDCD1D8AFABFC516664B4 /* LiveStreamUserType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveStreamUserType.swift; sourceTree = "<group>"; };
 		A31FDCFD6079E08C21DF64D8 /* UITableViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewLenses.swift; sourceTree = "<group>"; };
 		A31FDDA50F9E02880BBE1BAE /* UITabBarItemLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarItemLenses.swift; sourceTree = "<group>"; };
 		A31FDDA8536330A5769BFE67 /* UIEdgeInsetsLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsLenses.swift; sourceTree = "<group>"; };
+		A31FDDC04F9C82FE87841BA5 /* LiveStreamRoomType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveStreamRoomType.swift; sourceTree = "<group>"; };
 		A31FDE739FF6C56833934DF3 /* UIBarButtonItemLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemLenses.swift; sourceTree = "<group>"; };
 		A31FDE91B63193ED84E5812D /* UITextFieldLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldLenses.swift; sourceTree = "<group>"; };
 		A31FDF0201F9BEC9D8DD7593 /* UITraitCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITraitCollection.swift; sourceTree = "<group>"; };
@@ -282,6 +296,7 @@
 		A31FDF40C9A7714F9D0A745F /* UITextInputTraitsLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextInputTraitsLenses.swift; sourceTree = "<group>"; };
 		A31FDF53E5EDEF784C7F0E03 /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
 		A31FDFD616F4832146ECCE2E /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		B23AA6FAC0DC0E8E8C55BFB8 /* Pods_ApiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83FB6B9A59991A96B6CC8D5 /* Pods_ENTLIVE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ENTLIVE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF65E30F611A747F87C3632F /* Pods-LiveStream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStream.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveStream/Pods-LiveStream.release.xcconfig"; sourceTree = "<group>"; };
 		E5ADC7C20C1EAFCC326C9107 /* Pods_LiveStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveStream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -342,6 +357,7 @@
 				EDF8850E205293E3004554B9 /* TLSSDK.framework in Frameworks */,
 				EDF8850C205293E3004554B9 /* QALSDK.framework in Frameworks */,
 				EDF8850A205293E3004554B9 /* ImSDK.framework in Frameworks */,
+				CCA8A5B0FB854DC1974C890D /* Pods_ENTLIVETests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +365,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				665C55D2D93717B2A9B75C86 /* Pods_ENTLIVEUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDF884D120525D76004554B9 /* Api.framework in Frameworks */,
+				1F95EE526E0EA2B1AD4ABFC8 /* Pods_ApiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +403,9 @@
 				1F17F19F2EDE4AC804E91C31 /* Pods_ENT_LIVE.framework */,
 				E5ADC7C20C1EAFCC326C9107 /* Pods_LiveStream.framework */,
 				C83FB6B9A59991A96B6CC8D5 /* Pods_ENTLIVE.framework */,
+				B23AA6FAC0DC0E8E8C55BFB8 /* Pods_ApiTests.framework */,
+				1A2C3B0C8B04C1D4E5F8B5CB /* Pods_ENTLIVETests.framework */,
+				501A148FED28365FC02E2D20 /* Pods_ENTLIVEUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -399,9 +420,12 @@
 		A31FD176ECD364A09151786B /* LiveStream */ = {
 			isa = PBXGroup;
 			children = (
-				A31FDCD1D8AFABFC516664B4 /* LiveStreamType.swift */,
-				A31FD2BF9FCAA7FBF4991E90 /* BaseLiveStreamImp.swift */,
+				A31FDCD1D8AFABFC516664B4 /* LiveStreamUserType.swift */,
 				A31FDCAFB232058FB5F66F27 /* Tencent */,
+				A31FD0E0D92B00982177D1C1 /* LiveStreamBgmType.swift */,
+				A31FD72179D069D5CCEE3123 /* LiveStreamControllerType.swift */,
+				A31FD277ECB4B93069B6CA5F /* LiveStreamBeautyType.swift */,
+				A31FDDC04F9C82FE87841BA5 /* LiveStreamRoomType.swift */,
 			);
 			path = LiveStream;
 			sourceTree = "<group>";
@@ -1205,6 +1229,7 @@
 				ED81EDD920525D1400A63733 /* ViewController.swift in Sources */,
 				ED81EDD720525D1400A63733 /* AppDelegate.swift in Sources */,
 				A31FDA68687648073C092AA9 /* Moya.swift in Sources */,
+				EDC19BAE205FBF610072FF41 /* LiveStreamUserType.swift in Sources */,
 				A31FD19E2D230C2A77781065 /* UserLenes.swift in Sources */,
 				A31FD1A69CB44145A5E7480A /* Environment.swift in Sources */,
 				A31FD70F1DF2B1D030C58A01 /* AppEnvironment.swift in Sources */,
@@ -1215,6 +1240,7 @@
 				A31FDD40351FFC10885D2CE4 /* UIViewLenses.swift in Sources */,
 				A31FD4247C35310ACE8E0364 /* CALayerLenses.swift in Sources */,
 				A31FD9EB356DFF9C94155B6B /* CGPointLenses.swift in Sources */,
+				EDC19BB1205FBF670072FF41 /* LiveStreamControllerType.swift in Sources */,
 				A31FD999DE356B42AAE87647 /* UILabelLenses.swift in Sources */,
 				A31FD5B9B365E60A580620AB /* UIButtonLenses.swift in Sources */,
 				A31FD3E038520EC75C17276E /* UITabBarLenses.swift in Sources */,
@@ -1244,6 +1270,7 @@
 				A31FD8C0ADA6D067AF053EBE /* UITableViewControllerLenses.swift in Sources */,
 				A31FD55137F290E520E08559 /* UINavigationControllerLenses.swift in Sources */,
 				A31FD29B5B062976903A5321 /* NSMutableParagraphStyleLenses.swift in Sources */,
+				EDC19BB0205FBF670072FF41 /* LiveStreamBgmType.swift in Sources */,
 				A31FD6BD52B72D8C235D4497 /* UIActivityIndicatorViewLenses.swift in Sources */,
 				A31FD6CA40EA3D9CDEB0E038 /* UIImage.swift in Sources */,
 				A31FD0DE84CAB7212F07092D /* UIButton.swift in Sources */,
@@ -1275,8 +1302,11 @@
 				A31FDDCE04667479C4C093B3 /* Client.swift in Sources */,
 				A31FD611D463C4384559454C /* ClientMock.swift in Sources */,
 				ED0D1EE1205BA02E00288B22 /* User.swift in Sources */,
+				EDC19BB2205FBF6C0072FF41 /* TXLiveStreamService.swift in Sources */,
 				A31FDB3AEEB29F68090BE480 /* UserEvents.swift in Sources */,
 				A31FD68F7B4C3A2FEF2934B8 /* UIDataStatus.swift in Sources */,
+				A31FD72538F2B90C016909D7 /* LiveStreamBeautyType.swift in Sources */,
+				A31FD27C9B749B4D9D0186B1 /* LiveStreamRoomType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

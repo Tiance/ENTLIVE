@@ -17,6 +17,8 @@ struct Environment {
     /// 实时聊天
     let imService: IMServiceType
 
+    let liveStream: LiveStreamBeautyType & LiveStreamBeautyType & LiveStreamControllerType & LiveStreamBgmType
+
     /// 网络反馈
     let reachability: ReachabilityService
 
@@ -39,15 +41,18 @@ struct Environment {
             user: User = User.template,
             api: ApiProvider<Client> = ApiProvider.provider,
             imService: IMServiceType = TXIMService(),
+            liveStream: LiveStreamBeautyType & LiveStreamBeautyType & LiveStreamControllerType & LiveStreamBgmType = TXLiveStreamService(),
             reachability: ReachabilityService = try! DefaultReachabilityService(),
             cache: MemoryCache = MemoryCache(),
             router: RouterManager<MessageRouter> = RouterManager<MessageRouter>(),
             encoder: JSONEncoder = JSONEncoder(),
             decoder: JSONDecoder = JSONDecoder()
     ) {
+
         self.currentUser = user
         self.api = api
         self.imService = imService
+        self.liveStream = liveStream
         self.reachability = reachability
         self.cache = cache
         self.router = router

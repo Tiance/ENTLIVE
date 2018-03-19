@@ -61,6 +61,7 @@ struct AppEnvironment {
     private static func replace(user: User = current.currentUser,
                                 api: ApiProvider<Client> = current.api,
                                 imService: IMServiceType = current.imService,
+                                liveStream: LiveStreamBeautyType & LiveStreamBeautyType & LiveStreamControllerType & LiveStreamBgmType = current.liveStream,
                                 reachability: ReachabilityService = current.reachability,
                                 cache: MemoryCache = current.cache,
                                 router: RouterManager<MessageRouter> = current.router,
@@ -69,6 +70,7 @@ struct AppEnvironment {
         replace(env: Environment(user: user,
                 api: api,
                 imService: imService,
+                liveStream: liveStream,
                 reachability: reachability,
                 cache: cache,
                 router: router,
@@ -80,6 +82,7 @@ struct AppEnvironment {
             user: current.currentUser,
             api: current.api,
             imService: current.imService,
+            liveStream: current.liveStream,
             reachability: current.reachability,
             cache: current.cache,
             router: current.router,
@@ -103,4 +106,5 @@ struct AppEnvironment {
         }
         return Environment(user: user)
     }
+
 }

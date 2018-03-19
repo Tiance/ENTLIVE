@@ -10,7 +10,7 @@ struct LiveRoomOption {
     let id: Int
 }
 
-public protocol LiveStreamType {
+public protocol LiveStreamUserType {
     var cameraPosition: Observable<Int> { get }
 
     func login() -> Observable<Int>

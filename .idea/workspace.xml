@@ -2,21 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b044c182-51b5-41ad-b0e1-1c06649825da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/App/Library/LiveStream/BaseLiveStreamImp.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Library/UIDataStatus.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiveStream/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiveStream/LiveStream.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiveStream/module.modulemap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/yamazhiki.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/yamazhiki.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Library/LiveStream/LiveStreamBeautyType.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Library/LiveStream/LiveStreamBgmType.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Library/LiveStream/LiveStreamControllerType.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Library/LiveStream/LiveStreamRoomType.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/App/App/Base.lproj/Main.storyboard" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/ENTLIVE-Bridging-Header.h" beforeDir="false" afterPath="$PROJECT_DIR$/App/ENTLIVE-Bridging-Header.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/IM/IMMessage.pb.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/IM/IMMessage.pb.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/LiveStream/LiveStreamType.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/LiveStream/LiveStreamType.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/AppEnvironment.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/AppEnvironment.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Environment.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/Environment.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/LiveStream/BaseLiveStreamImp.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/LiveStream/LiveStreamType.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/LiveStream/LiveStreamUserType.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Library/LiveStream/Tencent/TXLiveStreamService.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/LiveStream/Tencent/TXLiveStreamService.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/ViewController.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ENT-LIVE.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ENT-LIVE.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile.lock" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/ENT-LIVE-crtjuaeuylwmsoggummddeltgvhr/" />
@@ -30,11 +28,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_DBD2FD06-1F1A-445A-94EF-E515ECEC7C77" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LiveStreamType.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/LiveStreamType.swift">
+      <file leaf-file-name="LiveStreamUserType.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/LiveStreamUserType.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="20" selection-end-column="38" />
+            <state relative-caret-position="336">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -42,38 +40,65 @@
       <file leaf-file-name="TXLiveStreamService.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/Tencent/TXLiveStreamService.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+            <state relative-caret-position="465">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="e#93#110#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseLiveStreamImp.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/BaseLiveStreamImp.swift">
+      <file leaf-file-name="LiveStreamRoomType.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/LiveStreamRoomType.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            <state relative-caret-position="160">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Podfile" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Podfile">
+      <file leaf-file-name="TXLivePushListener.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pods/TXLiteAVSDK_Professional/TXLiteAVSDK_Professional/SDK/TXLiteAVSDK_Professional.framework/Headers/TXLivePushListener.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+            <state relative-caret-position="32">
+              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LiveStream.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LiveStream/LiveStream.h">
+      <file leaf-file-name="Environment.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Library/Environment.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="774">
+              <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LiveStreamBeautyType.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/LiveStreamBeautyType.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LiveStreamControllerType.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/LiveStreamControllerType.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LiveStreamBgmType.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/LiveStreamBgmType.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#121#144#0" expanded="true" />
-              </folding>
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -81,8 +106,8 @@
       <file leaf-file-name="AppEnvironment.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Library/AppEnvironment.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+            <state relative-caret-position="817">
+              <caret line="84" column="43" selection-start-line="84" selection-start-column="43" selection-end-line="84" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -100,10 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/App/Controllers/BaseViewController.swift" />
-        <option value="$PROJECT_DIR$/App/Library/HistoryViewState.swift" />
-        <option value="$PROJECT_DIR$/App/Library/HistoryAbleType.swift" />
-        <option value="$PROJECT_DIR$/App/Controllers/MySpaceViewController.swift" />
         <option value="$PROJECT_DIR$/App/Library/CacheType.swift" />
         <option value="$PROJECT_DIR$/App/Library/Intent.swift" />
         <option value="$PROJECT_DIR$/App/Library/Router/RouterType.swift" />
@@ -132,25 +153,29 @@
         <option value="$PROJECT_DIR$/App/Library/IM/TX/TXIMService.swift" />
         <option value="$PROJECT_DIR$/App/Library/IM/IMServiceType.swift" />
         <option value="$PROJECT_DIR$/Api/ApiProvider.swift" />
-        <option value="$PROJECT_DIR$/App/Library/Environment.swift" />
         <option value="$PROJECT_DIR$/App/Library/ClientApi/Client.swift" />
         <option value="$PROJECT_DIR$/App/Library/ClientApi/ClientMock.swift" />
         <option value="$PROJECT_DIR$/App/Library/ClientApi/ServerConfigImp.swift" />
         <option value="$PROJECT_DIR$/Api/AccessTokenCheckerPlugin.swift" />
         <option value="$PROJECT_DIR$/App/Library/UserEvents.swift" />
-        <option value="$PROJECT_DIR$/App/Library/AppEnvironment.swift" />
         <option value="$PROJECT_DIR$/App/Library/UIViewController+Environment.swift" />
         <option value="$PROJECT_DIR$/App/Controllers/LoginViewController.swift" />
         <option value="$PROJECT_DIR$/App/ViewController.swift" />
         <option value="$PROJECT_DIR$/App/Library/UIDataStatus.swift" />
-        <option value="$PROJECT_DIR$/App/ENTLIVE-Bridging-Header.h" />
-        <option value="$PROJECT_DIR$/App/Library/LiveStream/Tencent/TXLiveStreamService.swift" />
-        <option value="$PROJECT_DIR$/App/Library/LiveStream/LiveStreamType.swift" />
-        <option value="$PROJECT_DIR$/App/Library/LiveStream/BaseLiveStreamImp.swift" />
         <option value="$PROJECT_DIR$/LiveStream/LiveStream.h" />
         <option value="$PROJECT_DIR$/LiveStream/BaseLiveStreamImp.swift" />
         <option value="$PROJECT_DIR$/LiveStream/Tencent/TXLiveStreamService.swift" />
         <option value="$PROJECT_DIR$/Podfile" />
+        <option value="$PROJECT_DIR$/App/ENTLIVE-Bridging-Header.h" />
+        <option value="$PROJECT_DIR$/App/Library/LiveStream/BaseLiveStreamImp.swift" />
+        <option value="$PROJECT_DIR$/App/Library/LiveStream/LiveStreamBgmType.swift" />
+        <option value="$PROJECT_DIR$/App/Library/LiveStream/LiveStreamBeautyType.swift" />
+        <option value="$PROJECT_DIR$/App/Library/LiveStream/LiveStreamControllerType.swift" />
+        <option value="$PROJECT_DIR$/App/Library/Environment.swift" />
+        <option value="$PROJECT_DIR$/App/Library/AppEnvironment.swift" />
+        <option value="$PROJECT_DIR$/App/Library/LiveStream/LiveStreamType.swift" />
+        <option value="$PROJECT_DIR$/App/Library/LiveStream/Tencent/TXLiveStreamService.swift" />
+        <option value="$PROJECT_DIR$/App/Library/LiveStream/LiveStreamRoomType.swift" />
       </list>
     </option>
   </component>
@@ -202,17 +227,7 @@
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
               <item name="App" type="fcab9f18:XcodeViewNode" />
-              <item name="Model" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
-              <item name="App" type="fcab9f18:XcodeViewNode" />
-              <item name="ViewModels" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
+              <item name="Library" type="fcab9f18:XcodeViewNode" />
               <item name="LiveStream" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
@@ -226,7 +241,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="LiveStream" />
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="ENTLIVE" />
     <property name="SearchEverywhereHistoryKey" value="push&#9;null&#9;null&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;pull&#9;ACTION&#9;Github.Create.Pull.Request&#10;share&#9;ACTION&#9;Github.Share&#10;sha&#9;ACTION&#9;Github.Share" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -284,7 +299,7 @@
       <workItem from="1521166934263" duration="3738000" />
       <workItem from="1521183246719" duration="140000" />
       <workItem from="1521183405117" duration="342000" />
-      <workItem from="1521423940437" duration="12394000" />
+      <workItem from="1521423940437" duration="14752000" />
     </task>
     <task id="LOCAL-00001" summary="appcode test commit">
       <created>1521079723935</created>
@@ -395,7 +410,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75292000" />
+    <option name="totallyTimeSpent" value="77650000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -404,7 +419,7 @@
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15234375" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.23542275" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.23542275" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3238719" />
@@ -452,41 +467,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Library/Router/RouterType.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/UIViewController+Preparation.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/9C40b/4.0.3/armv7/iphoneos11.2/Foundation/Foundation.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="5477" column="14" selection-start-line="5477" selection-start-column="14" selection-end-line="5477" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/IM/IMMsgFactory.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/RouterDefine.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Library/HistoryAbleType.swift" />
     <entry file="file://$PROJECT_DIR$/App/Library/HistoryViewState.swift" />
     <entry file="file://$PROJECT_DIR$/App/Library/T.swift" />
@@ -562,13 +542,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Api/ENTApiProvider.swift" />
-    <entry file="file://$PROJECT_DIR$/App/Library/Environment.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Library/ClientApi/ClientMock.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -678,24 +651,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/ENTLIVE-Bridging-Header.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/9C40b/4.0.3/armv7/iphoneos11.2/ObjectiveC.NSObject/ObjectiveC.NSObject.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="443">
           <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/LiveStreamType.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="20" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -723,13 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/AppEnvironment.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LiveStream/LiveStream.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -740,31 +692,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Podfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Pods/TXLiteAVSDK_Professional/TXLiteAVSDK_Professional/SDK/TXLiteAVSDK_Professional.framework/Headers/TXLivePush.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-613">
+        <state relative-caret-position="496">
           <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/ENTLIVE-Bridging-Header.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/BaseLiveStreamImp.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        <state relative-caret-position="496">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/LiveStreamBgmType.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/LiveStreamBeautyType.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/LiveStreamControllerType.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/Environment.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/AppEnvironment.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="84" column="43" selection-start-line="84" selection-start-column="43" selection-end-line="84" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/LiveStreamUserType.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pods/TXLiteAVSDK_Professional/TXLiteAVSDK_Professional/SDK/TXLiteAVSDK_Professional.framework/Headers/TXLivePushListener.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/Tencent/TXLiveStreamService.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        <state relative-caret-position="465">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#93#110#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Podfile">
+    <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/LiveStreamRoomType.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        <state relative-caret-position="160">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
