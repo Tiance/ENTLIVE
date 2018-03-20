@@ -11,7 +11,6 @@ struct LiveRoomOption {
 }
 
 public protocol LiveStreamUserType {
-    var cameraPosition: Observable<Int> { get }
 
     func login() -> Observable<Int>
     func logout() -> Observable<Int>

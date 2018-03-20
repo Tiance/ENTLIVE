@@ -6,6 +6,8 @@
 import Foundation
 import Api
 
+typealias LiveStreamType = LiveStreamBeautyType & LiveStreamBeautyType & LiveStreamControllerType & LiveStreamBgmType
+
 struct Environment {
 
     /// 当前用户
@@ -17,7 +19,7 @@ struct Environment {
     /// 实时聊天
     let imService: IMServiceType
 
-    let liveStream: LiveStreamBeautyType & LiveStreamBeautyType & LiveStreamControllerType & LiveStreamBgmType
+    let liveStream: LiveStreamType
 
     /// 网络反馈
     let reachability: ReachabilityService
@@ -41,7 +43,7 @@ struct Environment {
             user: User = User.template,
             api: ApiProvider<Client> = ApiProvider.provider,
             imService: IMServiceType = TXIMService(),
-            liveStream: LiveStreamBeautyType & LiveStreamBeautyType & LiveStreamControllerType & LiveStreamBgmType = TXLiveStreamService(),
+            liveStream: LiveStreamType = TXLiveStreamService(),
             reachability: ReachabilityService = try! DefaultReachabilityService(),
             cache: MemoryCache = MemoryCache(),
             router: RouterManager<MessageRouter> = RouterManager<MessageRouter>(),

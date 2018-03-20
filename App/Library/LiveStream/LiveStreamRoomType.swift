@@ -4,7 +4,9 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol LiveStreamRoomType {
-
+    func enter(roomId: UInt32) -> Observable<Int>
+    func leave() -> Observable<Int>
 }

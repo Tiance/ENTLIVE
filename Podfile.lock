@@ -32,8 +32,12 @@ DEPENDENCIES:
   - RxCocoa
   - RxSwift
   - SwiftProtobuf
-  - TXLiteAVSDK_Professional
+  - TXLiteAVSDK_Professional (from `http://pod-1252463788.cosgz.myqcloud.com/liteavsdkspec/TXLiteAVSDK_Professional.podspec`)
   - XLPagerTabStrip
+
+EXTERNAL SOURCES:
+  TXLiteAVSDK_Professional:
+    :podspec: http://pod-1252463788.cosgz.myqcloud.com/liteavsdkspec/TXLiteAVSDK_Professional.podspec
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
@@ -48,6 +52,6 @@ SPEC CHECKSUMS:
   TXLiteAVSDK_Professional: caa066fc13a5439ac6d9ef10025b18a5cdc55ab1
   XLPagerTabStrip: d1ab378af0923320ec0b5eab11d7b2f803d31261
 
-PODFILE CHECKSUM: 320a09dd31a1369511e3332423f29a568926950c
+PODFILE CHECKSUM: d801c436f019e0f9984133e3078d69ad28b578dd
 
 COCOAPODS: 1.4.0
