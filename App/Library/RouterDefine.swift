@@ -20,7 +20,6 @@ enum AppControllerRouter: String, ControllerRouterType {
 
     var instantiate: UIViewController {
         let typeStr = self.rawValue.capitalized
-        let bound = Bundle.main.path(forResource: typeStr, ofType: "storyboard")
         let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String;
         if let vc = UIStoryboard(name: typeStr, bundle: nil).instantiateInitialViewController() {
             return vc
