@@ -72,6 +72,7 @@
 		A31FDAA4EDBA9F23EC9A052C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD8D4237CBF1B0F8AFAA2 /* BaseViewController.swift */; };
 		A31FDAF049B14EF865A50917 /* UITabBarItemLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDDA50F9E02880BBE1BAE /* UITabBarItemLenses.swift */; };
 		A31FDB0B80C12441C0F58B44 /* RouterDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD2ED261218B7EDD8AB9A /* RouterDefine.swift */; };
+		A31FDB0F3646E88E4BE75A19 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31FD483AFB5FD86AAF96531 /* Test.storyboard */; };
 		A31FDB3AEEB29F68090BE480 /* UserEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD4DC309AA94142B53119 /* UserEvents.swift */; };
 		A31FDB57E2BF02BE68D8AE07 /* Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD314D074B683DFDA1473 /* Intent.swift */; };
 		A31FDB8339F969C473BFE220 /* ServerConfigType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDAD3BBE8C9CE31DA3759 /* ServerConfigType.swift */; };
@@ -116,7 +117,6 @@
 		ED81EDD920525D1400A63733 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81EDD820525D1400A63733 /* ViewController.swift */; };
 		ED81EDDE20525D1400A63733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED81EDDD20525D1400A63733 /* Assets.xcassets */; };
 		ED81EDE120525D1400A63733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED81EDDF20525D1400A63733 /* LaunchScreen.storyboard */; };
-		EDAB299520620A6600BDA3AB /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDAB299420620A6600BDA3AB /* Test.storyboard */; };
 		EDAB299720620A7B00BDA3AB /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB299620620A7B00BDA3AB /* TestViewController.swift */; };
 		EDC19BAE205FBF610072FF41 /* LiveStreamUserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDCD1D8AFABFC516664B4 /* LiveStreamUserType.swift */; };
 		EDC19BB0205FBF670072FF41 /* LiveStreamBgmType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD0E0D92B00982177D1C1 /* LiveStreamBgmType.swift */; };
@@ -244,6 +244,7 @@
 		A31FD40A3D53CABEDCBFBB26 /* UITableViewControllerLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewControllerLenses.swift; sourceTree = "<group>"; };
 		A31FD467BDD00256FF500E69 /* UITraitEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITraitEnvironment.swift; sourceTree = "<group>"; };
 		A31FD470F1DBC61D647EFCCB /* UIActivityIndicatorViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorViewLenses.swift; sourceTree = "<group>"; };
+		A31FD483AFB5FD86AAF96531 /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
 		A31FD485FE40E3131C8BEAC6 /* CGSizeLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSizeLenses.swift; sourceTree = "<group>"; };
 		A31FD49EEB215C7FCD26CA20 /* UIProgressViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIProgressViewLenses.swift; sourceTree = "<group>"; };
 		A31FD4DA93F1C1EBF176E3E3 /* IMMessage.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMMessage.pb.swift; sourceTree = "<group>"; };
@@ -311,7 +312,6 @@
 		ED81EDE220525D1400A63733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED81EDE720525D1400A63733 /* ENTLIVETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ENTLIVETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED81EDF220525D1400A63733 /* ENTLIVEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ENTLIVEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDAB299420620A6600BDA3AB /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
 		EDAB299620620A7B00BDA3AB /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		EDF884C820525D76004554B9 /* Api.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Api.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF884CA20525D76004554B9 /* Api.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Api.h; sourceTree = "<group>"; };
@@ -471,7 +471,6 @@
 		A31FD5559214E9D0C73EB742 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				EDAB299320620A5400BDA3AB /* Views */,
 				EDF884F42052924F004554B9 /* IM */,
 				A31FDFABFB0ACC6230BD1810 /* Extensions */,
 				A31FDCD498E7176F7A948E85 /* Lens */,
@@ -541,6 +540,14 @@
 				A31FD470F1DBC61D647EFCCB /* UIActivityIndicatorViewLenses.swift */,
 			);
 			path = lenses;
+			sourceTree = "<group>";
+		};
+		A31FD8F8C710FFCB060A2900 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A31FD483AFB5FD86AAF96531 /* Test.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A31FDCAFB232058FB5F66F27 /* Tencent */ = {
@@ -663,16 +670,9 @@
 				A31FD1D7DC29B55CBE6FFF0C /* ViewModels */,
 				A31FDEB25DC3DD9B166C58D7 /* Controllers */,
 				A31FD657FEFBB014D558624A /* Model */,
+				A31FD8F8C710FFCB060A2900 /* Views */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		EDAB299320620A5400BDA3AB /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				EDAB299420620A6600BDA3AB /* Test.storyboard */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		EDF884C920525D76004554B9 /* Api */ = {
@@ -913,8 +913,8 @@
 			files = (
 				ED81EDE120525D1400A63733 /* LaunchScreen.storyboard in Resources */,
 				ED81EDDE20525D1400A63733 /* Assets.xcassets in Resources */,
-				EDAB299520620A6600BDA3AB /* Test.storyboard in Resources */,
 				A31FD37DE351F15B2C32B1C4 /* Main.storyboard in Resources */,
+				A31FDB0F3646E88E4BE75A19 /* Test.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

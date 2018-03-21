@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b044c182-51b5-41ad-b0e1-1c06649825da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/App/Controllers/TestViewController.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Library/Views/Test.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Views/Test.storyboard" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/ENTLIVE-Bridging-Header.h" beforeDir="false" afterPath="$PROJECT_DIR$/App/ENTLIVE-Bridging-Header.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/App/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/RouterDefine.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/RouterDefine.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/ViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Views/Test.storyboard" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ENT-LIVE.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ENT-LIVE.xcodeproj/project.pbxproj" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/ENT-LIVE-crtjuaeuylwmsoggummddeltgvhr/" />
@@ -19,7 +15,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_1270eeb9259936c32304d5dfbdcbb6e2af8b2994" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="LiveStreamUserType.swift" pinned="false" current-in-tab="false">
@@ -85,11 +81,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Podfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Podfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Podfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+            <state relative-caret-position="560">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UIDataStatus.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/Library/UIDataStatus.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -197,7 +202,25 @@
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
               <item name="App" type="fcab9f18:XcodeViewNode" />
-              <item name="Controllers" type="fcab9f18:XcodeViewNode" />
+              <item name="Library" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
+              <item name="App" type="fcab9f18:XcodeViewNode" />
+              <item name="Model" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
+              <item name="App" type="fcab9f18:XcodeViewNode" />
+              <item name="ViewModels" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
+              <item name="App" type="fcab9f18:XcodeViewNode" />
+              <item name="Views" type="fcab9f18:XcodeViewNode" />
             </path>
           </expand>
           <select />
@@ -265,7 +288,7 @@
       <workItem from="1521183246719" duration="140000" />
       <workItem from="1521183405117" duration="342000" />
       <workItem from="1521423940437" duration="17348000" />
-      <workItem from="1521601829618" duration="516000" />
+      <workItem from="1521601829618" duration="3172000" />
     </task>
     <task id="LOCAL-00001" summary="appcode test commit">
       <created>1521079723935</created>
@@ -379,18 +402,25 @@
       <option name="project" value="LOCAL" />
       <updated>1521455254631</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="修复AppRouter不能找到Storyboard">
+      <created>1521604215964</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1521604215964</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80762000" />
+    <option name="totallyTimeSpent" value="83418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15202835" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15078124" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.23542275" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
@@ -432,7 +462,8 @@
     <MESSAGE value="ServerConfigType 的实现应是App的一部分(移动到App) 根据业务配地址" />
     <MESSAGE value="删除原有的RouterManager通知功能(使用原生Notification)&#10;AppEnvironment 实现client token检测功能" />
     <MESSAGE value="Environment添加LiveStream功能 60%" />
-    <option name="LAST_COMMIT_MESSAGE" value="Environment添加LiveStream功能 60%" />
+    <MESSAGE value="修复AppRouter不能找到Storyboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复AppRouter不能找到Storyboard" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -637,13 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/UIDataStatus.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Library/UIViewController+Environment.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -744,8 +768,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Podfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        <state relative-caret-position="560">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/UIDataStatus.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
