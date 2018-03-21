@@ -43,7 +43,7 @@ class ViewController: RxViewController {
 
     @IBAction func toLogin() {
         let intent = Intent(data: ["b": "ISA"])
-        push(routerType: AppControllerRouter.login, requestCode: 0, intent: intent)
+        push(routerType: AppControllerRouter.test, requestCode: 0, intent: intent)
     }
 
     private func userDetail(id: Int) -> Observable<User> {

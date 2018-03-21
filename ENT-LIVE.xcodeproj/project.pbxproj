@@ -116,6 +116,8 @@
 		ED81EDD920525D1400A63733 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81EDD820525D1400A63733 /* ViewController.swift */; };
 		ED81EDDE20525D1400A63733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED81EDDD20525D1400A63733 /* Assets.xcassets */; };
 		ED81EDE120525D1400A63733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED81EDDF20525D1400A63733 /* LaunchScreen.storyboard */; };
+		EDAB299520620A6600BDA3AB /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDAB299420620A6600BDA3AB /* Test.storyboard */; };
+		EDAB299720620A7B00BDA3AB /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB299620620A7B00BDA3AB /* TestViewController.swift */; };
 		EDC19BAE205FBF610072FF41 /* LiveStreamUserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDCD1D8AFABFC516664B4 /* LiveStreamUserType.swift */; };
 		EDC19BB0205FBF670072FF41 /* LiveStreamBgmType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD0E0D92B00982177D1C1 /* LiveStreamBgmType.swift */; };
 		EDC19BB1205FBF670072FF41 /* LiveStreamControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD72179D069D5CCEE3123 /* LiveStreamControllerType.swift */; };
@@ -309,6 +311,8 @@
 		ED81EDE220525D1400A63733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED81EDE720525D1400A63733 /* ENTLIVETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ENTLIVETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED81EDF220525D1400A63733 /* ENTLIVEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ENTLIVEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDAB299420620A6600BDA3AB /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		EDAB299620620A7B00BDA3AB /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		EDF884C820525D76004554B9 /* Api.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Api.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF884CA20525D76004554B9 /* Api.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Api.h; sourceTree = "<group>"; };
 		EDF884CB20525D76004554B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -410,13 +414,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A31FD100DC75BADB52E9B9E9 /* Template */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Template;
-			sourceTree = "<group>";
-		};
 		A31FD176ECD364A09151786B /* LiveStream */ = {
 			isa = PBXGroup;
 			children = (
@@ -474,10 +471,10 @@
 		A31FD5559214E9D0C73EB742 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				EDAB299320620A5400BDA3AB /* Views */,
 				EDF884F42052924F004554B9 /* IM */,
 				A31FDFABFB0ACC6230BD1810 /* Extensions */,
 				A31FDCD498E7176F7A948E85 /* Lens */,
-				A31FD100DC75BADB52E9B9E9 /* Template */,
 				A31FD176ECD364A09151786B /* LiveStream */,
 				A31FD389C46C1C8CE7B03AC3 /* Environment.swift */,
 				A31FD06CCB40155F7792BF7E /* AppEnvironment.swift */,
@@ -546,13 +543,6 @@
 			path = lenses;
 			sourceTree = "<group>";
 		};
-		A31FDA307C1A262417CD7A06 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		A31FDCAFB232058FB5F66F27 /* Tencent */ = {
 			isa = PBXGroup;
 			children = (
@@ -582,6 +572,7 @@
 			children = (
 				A31FD7BB2FC9ED2295F53553 /* LoginViewController.swift */,
 				A31FD8D4237CBF1B0F8AFAA2 /* BaseViewController.swift */,
+				EDAB299620620A7B00BDA3AB /* TestViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -670,11 +661,18 @@
 				A31FD5559214E9D0C73EB742 /* Library */,
 				EDF884F020529225004554B9 /* ENTLIVE-Bridging-Header.h */,
 				A31FD1D7DC29B55CBE6FFF0C /* ViewModels */,
-				A31FDA307C1A262417CD7A06 /* Views */,
 				A31FDEB25DC3DD9B166C58D7 /* Controllers */,
 				A31FD657FEFBB014D558624A /* Model */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		EDAB299320620A5400BDA3AB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EDAB299420620A6600BDA3AB /* Test.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		EDF884C920525D76004554B9 /* Api */ = {
@@ -915,6 +913,7 @@
 			files = (
 				ED81EDE120525D1400A63733 /* LaunchScreen.storyboard in Resources */,
 				ED81EDDE20525D1400A63733 /* Assets.xcassets in Resources */,
+				EDAB299520620A6600BDA3AB /* Test.storyboard in Resources */,
 				A31FD37DE351F15B2C32B1C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1282,6 +1281,7 @@
 				A31FD148147C5C812AF3B296 /* IMMsgFactory.swift in Sources */,
 				A31FDC90CD9153860DC9AC8A /* GeolocationService.swift in Sources */,
 				A31FDCDA81FCFAB0FEA7A919 /* Reachability.swift in Sources */,
+				EDAB299720620A7B00BDA3AB /* TestViewController.swift in Sources */,
 				A31FDFDF9B5FB7FD6A4886ED /* ReachabilityService.swift in Sources */,
 				A31FDF28AC8538BA1337303E /* LoginViewModelType.swift in Sources */,
 				A31FDDD5DE252B1473AF6555 /* LoginViewController.swift in Sources */,
@@ -1528,7 +1528,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7H22EA3T35;
+				DEVELOPMENT_TEAM = 448Y9WRF55;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vendor/IM",
@@ -1537,7 +1537,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -Xfrontend -warn-long-function-bodies=200 -Xfrontend -warn-long-expression-type-checking=200";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yamazhiki.ENT-LIVE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ent.golive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "App/ENTLIVE-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1553,7 +1553,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7H22EA3T35;
+				DEVELOPMENT_TEAM = 448Y9WRF55;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vendor/IM",
@@ -1561,7 +1561,7 @@
 				INFOPLIST_FILE = App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yamazhiki.ENT-LIVE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ent.golive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "App/ENTLIVE-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;

@@ -11,6 +11,7 @@ enum AppControllerRouter: String, ControllerRouterType {
     case one
     case two
     case login
+    case test
 
 
     var controller: UIViewController {
@@ -21,8 +22,7 @@ enum AppControllerRouter: String, ControllerRouterType {
         let typeStr = self.rawValue.capitalized
         let bound = Bundle.main.path(forResource: typeStr, ofType: "storyboard")
         let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String;
-        if let _ = bound,
-           let vc = UIStoryboard(name: typeStr, bundle: nil).instantiateInitialViewController() {
+        if let vc = UIStoryboard(name: typeStr, bundle: nil).instantiateInitialViewController() {
             return vc
         }
 
