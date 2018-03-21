@@ -22,10 +22,10 @@ target 'ENTLIVE' do
   # Pods for ENT-LIVE
   pod 'RxSwift'
   pod 'RxCocoa'
-  pod 'IGListKit'
   pod 'Kickstarter-Prelude'
   pod 'XLPagerTabStrip'
   pod 'SwiftProtobuf'
+  pod 'RxDataSources'
   pod 'TXLiteAVSDK_Professional', :podspec => 'http://pod-1252463788.cosgz.myqcloud.com/liteavsdkspec/TXLiteAVSDK_Professional.podspec'
   target 'ENTLIVETests' do
     inherit! :search_paths

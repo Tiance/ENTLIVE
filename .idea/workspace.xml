@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b044c182-51b5-41ad-b0e1-1c06649825da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/App/Controllers/HomeV1ViewController.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Controllers/HomeV2ViewController.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Views/Storyboard/HomeV1.storyboard" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Views/Storyboard/HomeV2.storyboard" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/App/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/App/App/Base.lproj/Main.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controllers/TestViewController.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/RouterDefine.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/RouterDefine.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/ViewController.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Views/Test.storyboard" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ENT-LIVE.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ENT-LIVE.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile.lock" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/ENT-LIVE-crtjuaeuylwmsoggummddeltgvhr/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -88,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Podfile" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Podfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Podfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="336">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -115,7 +108,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeV2ViewController.swift" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HomeV2ViewController.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Controllers/HomeV2ViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="196">
@@ -181,13 +174,13 @@
         <option value="$PROJECT_DIR$/App/Library/LiveStream/LiveStreamType.swift" />
         <option value="$PROJECT_DIR$/App/Library/LiveStream/LiveStreamUserType.swift" />
         <option value="$PROJECT_DIR$/App/ENTLIVE-Bridging-Header.h" />
-        <option value="$PROJECT_DIR$/Podfile" />
         <option value="$PROJECT_DIR$/App/Library/Environment.swift" />
         <option value="$PROJECT_DIR$/App/Library/AppEnvironment.swift" />
         <option value="$PROJECT_DIR$/App/Library/LiveStream/LiveStreamRoomType.swift" />
         <option value="$PROJECT_DIR$/App/Library/LiveStream/Tencent/TXLiveStreamService.swift" />
         <option value="$PROJECT_DIR$/App/Controllers/HomeV1ViewController.swift" />
         <option value="$PROJECT_DIR$/App/Controllers/HomeV2ViewController.swift" />
+        <option value="$PROJECT_DIR$/Podfile" />
       </list>
     </option>
   </component>
@@ -301,7 +294,7 @@
       <workItem from="1521183246719" duration="140000" />
       <workItem from="1521183405117" duration="342000" />
       <workItem from="1521423940437" duration="17348000" />
-      <workItem from="1521601829618" duration="4169000" />
+      <workItem from="1521601829618" duration="4300000" />
     </task>
     <task id="LOCAL-00001" summary="appcode test commit">
       <created>1521079723935</created>
@@ -429,11 +422,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521613629083</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="开始做咯">
+      <created>1521624544956</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1521624544956</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84415000" />
+    <option name="totallyTimeSpent" value="84546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -483,7 +483,8 @@
     <MESSAGE value="删除原有的RouterManager通知功能(使用原生Notification)&#10;AppEnvironment 实现client token检测功能" />
     <MESSAGE value="Environment添加LiveStream功能 60%" />
     <MESSAGE value="修复AppRouter不能找到Storyboard" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复AppRouter不能找到Storyboard" />
+    <MESSAGE value="开始做咯" />
+    <option name="LAST_COMMIT_MESSAGE" value="开始做咯" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -620,6 +621,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+          <folding>
+            <element signature="e#86#103#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -769,13 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Podfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Library/UIDataStatus.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -794,6 +791,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Podfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
