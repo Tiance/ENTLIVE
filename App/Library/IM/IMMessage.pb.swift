@@ -28,8 +28,8 @@ struct LiveSubMessage {
 
   var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {
-  }
+    init() {
+    }
 }
 
 struct SystemSubMessage {
@@ -41,8 +41,8 @@ struct SystemSubMessage {
 
   var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {
-  }
+    init() {
+    }
 }
 
 struct UserSubMessage {
@@ -54,8 +54,8 @@ struct UserSubMessage {
 
   var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {
-  }
+    init() {
+    }
 }
 
 struct IMMessage {
@@ -64,77 +64,74 @@ struct IMMessage {
   // methods supported on all messages.
 
   var cmdType: IMMessage.CMDTYPE {
-    get {
-      return _storage._cmdType
-    }
-    set {
-      _uniqueStorage()._cmdType = newValue
-    }
+      get {
+          return _storage._cmdType
+      }
+      set {
+          _uniqueStorage()._cmdType = newValue
+      }
   }
 
   /// Unique ID number for this person.
   var cmd: IMMessage.CMD {
-    get {
-      return _storage._cmd
-    }
-    set {
-      _uniqueStorage()._cmd = newValue
-    }
+      get {
+          return _storage._cmd
+      }
+      set {
+          _uniqueStorage()._cmd = newValue
+      }
   }
 
   var userMsg: UserSubMessage {
-    get {
-      return _storage._userMsg ?? UserSubMessage()
-    }
-    set {
-      _uniqueStorage()._userMsg = newValue
-    }
+      get {
+          return _storage._userMsg ?? UserSubMessage()
+      }
+      set {
+          _uniqueStorage()._userMsg = newValue
+      }
   }
   /// Returns true if `userMsg` has been explicitly set.
-  var hasUserMsg: Bool {
-    return _storage._userMsg != nil
-  }
-
+    var hasUserMsg: Bool {
+        return _storage._userMsg != nil
+    }
   /// Clears the value of `userMsg`. Subsequent reads from it will return its default value.
-  mutating func clearUserMsg() {
-    _storage._userMsg = nil
-  }
+    mutating func clearUserMsg() {
+        _storage._userMsg = nil
+    }
 
   var systemMsg: SystemSubMessage {
-    get {
-      return _storage._systemMsg ?? SystemSubMessage()
-    }
-    set {
-      _uniqueStorage()._systemMsg = newValue
-    }
+      get {
+          return _storage._systemMsg ?? SystemSubMessage()
+      }
+      set {
+          _uniqueStorage()._systemMsg = newValue
+      }
   }
   /// Returns true if `systemMsg` has been explicitly set.
-  var hasSystemMsg: Bool {
-    return _storage._systemMsg != nil
-  }
-
+    var hasSystemMsg: Bool {
+        return _storage._systemMsg != nil
+    }
   /// Clears the value of `systemMsg`. Subsequent reads from it will return its default value.
-  mutating func clearSystemMsg() {
-    _storage._systemMsg = nil
-  }
+    mutating func clearSystemMsg() {
+        _storage._systemMsg = nil
+    }
 
   var liveMsg: LiveSubMessage {
-    get {
-      return _storage._liveMsg ?? LiveSubMessage()
-    }
-    set {
-      _uniqueStorage()._liveMsg = newValue
-    }
+      get {
+          return _storage._liveMsg ?? LiveSubMessage()
+      }
+      set {
+          _uniqueStorage()._liveMsg = newValue
+      }
   }
   /// Returns true if `liveMsg` has been explicitly set.
-  var hasLiveMsg: Bool {
-    return _storage._liveMsg != nil
-  }
-
+    var hasLiveMsg: Bool {
+        return _storage._liveMsg != nil
+    }
   /// Clears the value of `liveMsg`. Subsequent reads from it will return its default value.
-  mutating func clearLiveMsg() {
-    _storage._liveMsg = nil
-  }
+    mutating func clearLiveMsg() {
+        _storage._liveMsg = nil
+    }
 
   var unknownFields = SwiftProtobuf.UnknownStorage()
 
@@ -256,12 +253,12 @@ extension LiveSubMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplement
   }
 
   func _protobuf_generated_isEqualTo(other: LiveSubMessage) -> Bool {
-    if self.id != other.id {
-      return false
-    }
-    if unknownFields != other.unknownFields {
-      return false
-    }
+      if self.id != other.id {
+          return false
+      }
+      if unknownFields != other.unknownFields {
+          return false
+      }
     return true
   }
 }
@@ -289,12 +286,12 @@ extension SystemSubMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
   }
 
   func _protobuf_generated_isEqualTo(other: SystemSubMessage) -> Bool {
-    if self.id != other.id {
-      return false
-    }
-    if unknownFields != other.unknownFields {
-      return false
-    }
+      if self.id != other.id {
+          return false
+      }
+      if unknownFields != other.unknownFields {
+          return false
+      }
     return true
   }
 }
@@ -322,12 +319,12 @@ extension UserSubMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplement
   }
 
   func _protobuf_generated_isEqualTo(other: UserSubMessage) -> Bool {
-    if self.id != other.id {
-      return false
-    }
-    if unknownFields != other.unknownFields {
-      return false
-    }
+      if self.id != other.id {
+          return false
+      }
+      if unknownFields != other.unknownFields {
+          return false
+      }
     return true
   }
 }
@@ -351,8 +348,8 @@ extension IMMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
 
     static let defaultInstance = _StorageClass()
 
-    private init() {
-    }
+      private init() {
+      }
 
     init(copying source: _StorageClass) {
       _cmdType = source._cmdType
@@ -391,18 +388,18 @@ extension IMMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
       if _storage._cmdType != .none {
         try visitor.visitSingularEnumField(value: _storage._cmdType, fieldNumber: 1)
       }
-    if _storage._cmd != .user {
-      try visitor.visitSingularEnumField(value: _storage._cmd, fieldNumber: 2)
-    }
-    if let v = _storage._userMsg {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 3)
-    }
-    if let v = _storage._systemMsg {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 4)
-    }
-    if let v = _storage._liveMsg {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 5)
-    }
+      if _storage._cmd != .user {
+          try visitor.visitSingularEnumField(value: _storage._cmd, fieldNumber: 2)
+      }
+      if let v = _storage._userMsg {
+          try visitor.visitSingularMessageField(value: v, fieldNumber: 3)
+      }
+      if let v = _storage._systemMsg {
+          try visitor.visitSingularMessageField(value: v, fieldNumber: 4)
+      }
+      if let v = _storage._liveMsg {
+          try visitor.visitSingularMessageField(value: v, fieldNumber: 5)
+      }
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -412,26 +409,26 @@ extension IMMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
       let storagesAreEqual: Bool = withExtendedLifetime((_storage, other._storage)) { (_args: (_StorageClass, _StorageClass)) in
         let _storage = _args.0
         let other_storage = _args.1
-        if _storage._cmdType != other_storage._cmdType {
-          return false
-        }
-        if _storage._cmd != other_storage._cmd {
-          return false
-        }
-        if _storage._userMsg != other_storage._userMsg {
-          return false
-        }
-        if _storage._systemMsg != other_storage._systemMsg {
-          return false
-        }
-        if _storage._liveMsg != other_storage._liveMsg {
-          return false
-        }
+          if _storage._cmdType != other_storage._cmdType {
+              return false
+          }
+          if _storage._cmd != other_storage._cmd {
+              return false
+          }
+          if _storage._userMsg != other_storage._userMsg {
+              return false
+          }
+          if _storage._systemMsg != other_storage._systemMsg {
+              return false
+          }
+          if _storage._liveMsg != other_storage._liveMsg {
+              return false
+          }
         return true
       }
-      if !storagesAreEqual {
-        return false
-      }
+        if !storagesAreEqual {
+            return false
+        }
     }
     if unknownFields != other.unknownFields {return false}
     return true

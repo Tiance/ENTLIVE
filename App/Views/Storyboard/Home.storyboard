@@ -90,10 +90,6 @@
                                         </constraints>
                                     </collectionViewCell>
                                 </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="Ikw-23-iAi" id="YKU-1S-YE8"/>
-                                    <outlet property="delegate" destination="Ikw-23-iAi" id="t9N-Ss-KVm"/>
-                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -103,6 +99,7 @@
                             <constraint firstItem="pIZ-K5-6Tc" firstAttribute="leading" secondItem="SjA-Hk-X3e" secondAttribute="leading" id="NCQ-gi-ciU"/>
                             <constraint firstItem="pIZ-K5-6Tc" firstAttribute="top" secondItem="SjA-Hk-X3e" secondAttribute="top" id="kHo-9s-gsj"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="W3K-FZ-qcB"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="pIZ-K5-6Tc" id="QzN-c0-nBn"/>

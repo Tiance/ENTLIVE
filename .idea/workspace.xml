@@ -1,28 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b044c182-51b5-41ad-b0e1-1c06649825da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/App/Controllers/HomeContainerViewController.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Library/GridViewLayoutType.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Library/IM/TX/TXIMServiceMock.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Library/Notification.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Library/UIView+Ext.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Model/Live.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Views/FlowLayout.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Views/Storyboard/Home.storyboard" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/GeolocationService.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Reachability.swift" afterDir="false" />
+    <list default="true" id="b044c182-51b5-41ad-b0e1-1c06649825da" name="Default" comment="重构部分文件 IM消息添加协议 User, System, Live定义">
+      <change afterPath="$PROJECT_DIR$/App/Library/Lens/ELWaterFlowLayoutLenes.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/yamazhiki.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/yamazhiki.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/App/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/App/App/Base.lproj/Main.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controllers/HomeV1ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/LiveListViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/GeolocationService.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Controllers/HomeContainerViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/HomeContainerViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Controllers/LiveListViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/LiveListViewController.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Library/IM/IMMessage.pb.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/IM/IMMessage.pb.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/IM/IMMessage.proto" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/IM/IMMessage.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/Reachability.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/ReachabilityService.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ReachabilityService.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/RouterDefine.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/RouterDefine.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Views/Storyboard/HomeV1.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Lens/UserLenes.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/Lens/Model/UserLenes.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Notification.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/Notification.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/UIView+Ext.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/UIView+Ext.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Views/Storyboard/Home.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/App/Views/Storyboard/Home.storyboard" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ENT-LIVE.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ENT-LIVE.xcodeproj/project.pbxproj" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/ENT-LIVE-crtjuaeuylwmsoggummddeltgvhr/" />
@@ -36,11 +25,20 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_1270eeb9259936c32304d5dfbdcbb6e2af8b2994" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="HomeContainerViewController.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Controllers/HomeContainerViewController.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="15" column="84" lean-forward="true" selection-start-line="15" selection-start-column="84" selection-end-line="15" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="UIView+Ext.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Library/UIView+Ext.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="350">
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding>
                 <element signature="e#99#116#0" expanded="true" />
               </folding>
@@ -48,74 +46,80 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="LiveListViewController.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/Controllers/LiveListViewController.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+              <folding>
+                <element signature="e#99#116#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ELWaterFlowLayoutLenes.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Library/Lens/ELWaterFlowLayoutLenes.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserLenes.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Library/Lens/Model/UserLenes.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UI+SectionedViewType.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pods/RxDataSources/Sources/RxDataSources/UI+SectionedViewType.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="103" column="16" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="AppEnvironment.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Library/AppEnvironment.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="95" column="46" selection-start-line="95" selection-start-column="46" selection-end-line="95" selection-end-column="46" />
+            <state relative-caret-position="-383">
+              <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+              <folding>
+                <element signature="e#86#103#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TXIMServiceMock.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Library/IM/TX/TXIMServiceMock.swift">
+      <file leaf-file-name="LoginViewController.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Controllers/LoginViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            <state relative-caret-position="378">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TXIMService.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Library/IM/TX/TXIMService.swift">
+      <file leaf-file-name="UserEvents.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Library/UserEvents.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IMMessage.proto" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Library/IM/IMMessage.proto">
+      <file leaf-file-name="Notification.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Library/Notification.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeContainerViewController.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Controllers/HomeContainerViewController.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IMMsgFactory.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Library/IM/IMMsgFactory.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IMServiceType.swift" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/Library/IM/IMServiceType.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IMMessage.pb.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Library/IM/IMMessage.pb.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-168">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="196">
+              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -133,7 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/App/Library/MessageRouter.swift" />
         <option value="$PROJECT_DIR$/App/Library/AppControllerRouter.swift" />
         <option value="$PROJECT_DIR$/App/Library/UIViewController+Extension.swift" />
         <option value="$PROJECT_DIR$/Library/Router/RouterManager.swift" />
@@ -174,16 +177,17 @@
         <option value="$PROJECT_DIR$/App/Library/CollectionViewLayoutType.swift" />
         <option value="$PROJECT_DIR$/App/Views/FlowLayout.swift" />
         <option value="$PROJECT_DIR$/App/Library/GridViewLayoutType.swift" />
-        <option value="$PROJECT_DIR$/App/Library/UIView+Ext.swift" />
-        <option value="$PROJECT_DIR$/App/Controllers/LiveListViewController.swift" />
         <option value="$PROJECT_DIR$/App/Library/RouterDefine.swift" />
-        <option value="$PROJECT_DIR$/App/Library/Notification.swift" />
         <option value="$PROJECT_DIR$/App/Library/IM/TX/TXIMServiceMock.swift" />
         <option value="$PROJECT_DIR$/App/Library/IM/UserSubMessage.proto" />
         <option value="$PROJECT_DIR$/App/Library/IM/SystemSubMessage.proto" />
         <option value="$PROJECT_DIR$/App/Library/IM/LiveSubMessage.proto" />
         <option value="$PROJECT_DIR$/App/Library/IM/IMMessage.proto" />
         <option value="$PROJECT_DIR$/App/Controllers/HomeContainerViewController.swift" />
+        <option value="$PROJECT_DIR$/App/Library/UIView+Ext.swift" />
+        <option value="$PROJECT_DIR$/App/Library/Lens/ELWaterFlowLayoutLenes.swift" />
+        <option value="$PROJECT_DIR$/App/Library/Notification.swift" />
+        <option value="$PROJECT_DIR$/App/Controllers/LiveListViewController.swift" />
       </list>
     </option>
   </component>
@@ -235,7 +239,7 @@
               <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
               <item name="App" type="fcab9f18:XcodeViewNode" />
               <item name="Library" type="fcab9f18:XcodeViewNode" />
-              <item name="IM" type="fcab9f18:XcodeViewNode" />
+              <item name="Lens" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
@@ -317,7 +321,7 @@
       <workItem from="1521423940437" duration="17348000" />
       <workItem from="1521601829618" duration="5733000" />
       <workItem from="1521626659705" duration="1275000" />
-      <workItem from="1521681905416" duration="2585000" />
+      <workItem from="1521681905416" duration="5199000" />
     </task>
     <task id="LOCAL-00001" summary="appcode test commit">
       <created>1521079723935</created>
@@ -459,11 +463,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521624742610</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="重构部分文件 IM消息添加协议 User, System, Live定义">
+      <created>1521684885257</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1521684885257</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89839000" />
+    <option name="totallyTimeSpent" value="92453000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -472,9 +483,9 @@
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15078124" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.23542275" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49765626" visible="true" weight="0.23542275" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" visible="true" weight="0.32944608" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5023438" side_tool="true" visible="true" weight="0.23542275" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32361516" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -515,7 +526,8 @@
     <MESSAGE value="修复AppRouter不能找到Storyboard" />
     <MESSAGE value="开始做咯" />
     <MESSAGE value="使用RxDataSource作为数据源" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用RxDataSource作为数据源" />
+    <MESSAGE value="重构部分文件 IM消息添加协议 User, System, Live定义" />
+    <option name="LAST_COMMIT_MESSAGE" value="重构部分文件 IM消息添加协议 User, System, Live定义" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -524,27 +536,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/App/Library/ClientApi/Client.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/Lens/UserLenes.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/ApiProvider.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Library/ClientApi/ServerConfigImp.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -570,20 +561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/UserEvents.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Controllers/LoginViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
@@ -691,16 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Controllers/LiveListViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="34" column="71" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
-          <folding>
-            <element signature="e#99#116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -722,13 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/Notification.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Library/UIDataStatus.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -743,23 +703,6 @@
           <folding>
             <element signature="e#93#110#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/UIView+Ext.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#99#116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/AppEnvironment.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="95" column="46" selection-start-line="95" selection-start-column="46" selection-end-line="95" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -812,13 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Controllers/HomeContainerViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Library/IM/IMMsgFactory.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
@@ -828,8 +764,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Library/IM/IMServiceType.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="364">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Controllers/LoginViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/UserEvents.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/UIView+Ext.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="e#99#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/AppEnvironment.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-383">
+          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+          <folding>
+            <element signature="e#86#103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pods/RxDataSources/Sources/RxDataSources/UI+SectionedViewType.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="103" column="16" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Controllers/HomeContainerViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="84" lean-forward="true" selection-start-line="15" selection-start-column="84" selection-end-line="15" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/Notification.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/Lens/Model/UserLenes.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/Lens/ELWaterFlowLayoutLenes.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Controllers/LiveListViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+          <folding>
+            <element signature="e#99#116#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

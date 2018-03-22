@@ -12,5 +12,7 @@ class HomeContainerViewController: RxViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBarItem.title = "首页"
+
+        NotificationCenter.default.post(name: Notification.Name.update, object: nil)
     }
 }

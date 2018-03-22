@@ -4,8 +4,23 @@
 //
 
 import Foundation
-import RxDataSources
 import Prelude
+import RxSwift
+import RxCocoa
+import RxDataSources
+
+fileprivate struct NameSectionData {
+    var items: [String]
+}
+
+extension NameSectionData: SectionModelType {
+    typealias Item = String
+
+    init(original: NameSectionData, items: [String]) {
+        self.items = items
+        self = original
+    }
+}
 
 fileprivate enum LiveViewerStyle: GridViewLayoutType {
     case line
@@ -31,42 +46,43 @@ class LiveListViewController: RxViewController {
     fileprivate var data = ["Yamazhiki", "ISA", "Barthoomew", "Tiance", "Junyu"]
 
     override func viewDidLoad() {
+
+        collectionView.rx.itemSelected.asObservable()
+                .subscribe(onNext: { [weak self] indexPath in
+                    if indexPath.row == 0 {
+                        self?.layoutType = LiveViewerStyle.line
+                    } else {
+                        self?.layoutType = LiveViewerStyle.two
+                    }
+                    self?.collectionViewLayout().lineCount = self?.layoutType.numberOfItemInRow ?? 0
+                }).disposed(by: disposeBag)
+
+
         collectionViewLayout().edge = .zero
         collectionViewLayout().lineCount = layoutType.numberOfItemInRow
         collectionViewLayout().delegate = self
         collectionViewLayout().vItemSpace = 10
         collectionViewLayout().hItemSpace = 10
+
+        let section = NameSectionData(items: data)
+
+        let dataSource = RxCollectionViewSectionedReloadDataSource<NameSectionData>(
+                configureCell: { (ds, v, indexPath, item) -> UICollectionViewCell in
+                    let cell = v.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+                    _ = cell.retrieveView(type: UILabel.self, tag: 10)
+                            |> UILabel.lens.text .~ item
+        return cell
+    })
+
+        Observable.just([section])
+        .bind(to:collectionView.rx.items(dataSource:dataSource))
+        .disposed(by:disposeBag)
+
         super.viewDidLoad()
-    }
+        }
 
     fileprivate func collectionViewLayout() -> ELWaterFlowLayout {
         return collectionView.collectionViewLayout as! ELWaterFlowLayout
-    }
-}
-
-extension LiveListViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return data.count
-    }
-
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
-        _ = cell.retrieveView(type: UILabel.self, tag: 10)
-                |> UILabel.lens.text .~ data[indexPath.row]
-        return cell
-    }
-
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.row == 0 {
-            layoutType = LiveViewerStyle.line
-        } else {
-            layoutType = LiveViewerStyle.two
-        }
-        collectionViewLayout().lineCount = layoutType.numberOfItemInRow
     }
 }
 

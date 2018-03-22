@@ -15,3 +15,13 @@ extension UICollectionViewCell {
         return rlt
     }
 }
+
+extension UITableViewCell {
+    func retrieveView<T>(type: T.Type, tag: Int) -> T {
+        guard let rlt = self.contentView.viewWithTag(tag) as? T
+                else {
+            fatalError("不能找到指定的View")
+        }
+        return rlt
+    }
+}
