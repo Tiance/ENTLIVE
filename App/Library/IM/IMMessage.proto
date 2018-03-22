@@ -1,15 +1,49 @@
 syntax = "proto3";
 
+
+message LiveSubMessage {
+    int32 id = 1;
+}
+
+
+message SystemSubMessage {
+    int32 id = 1;
+}
+
+
+message UserSubMessage {
+    int32 id = 1;
+}
+
+
 message IMMessage {
 
     enum CMD {
-        GIFT = 0;
+        user = 0; //用户类型
+        system = 1; //系统消息类型
+        live = 2; //直播消息
+        chat = 3; //聊天信息
     }
 
     enum CMDTYPE {
-        GIFT_SEND = 0;
+        none = 0;
+        user_recharge = 100;
+
+        system_noti = 200;
+
+        live_archor_begin = 301;
+        live_archor_pause = 302;
+        live_archor_resume = 303;
+        live_archor_close = 304;
+        live_support = 305;
     }
 
-    int32 cmdType = 1;
-    int32 cmd = 2; // Unique ID number for this person.
+    CMDTYPE cmdType = 1;
+    CMD cmd = 2; // Unique ID number for this person.
+
+    UserSubMessage userMsg = 3;
+    SystemSubMessage systemMsg = 4;
+    LiveSubMessage liveMsg = 5;
+
+
 }

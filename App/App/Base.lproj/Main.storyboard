@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--HomeV1-->
+        <!--Home-->
         <scene sceneID="hd8-vh-HDJ">
             <objects>
-                <viewControllerPlaceholder storyboardName="HomeV1" id="oGh-A3-VXK" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Home" id="oGh-A3-VXK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="RNt-SS-epP"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chv-W1-iH9" userLabel="First Responder" sceneMemberID="firstResponder"/>

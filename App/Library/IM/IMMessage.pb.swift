@@ -19,37 +19,161 @@ fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAP
   typealias Version = _2
 }
 
+struct LiveSubMessage {
+  // SwiftProtobuf.Message conformance is added in an extension below. See the
+  // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+  // methods supported on all messages.
+
+  var id: Int32 = 0
+
+  var unknownFields = SwiftProtobuf.UnknownStorage()
+
+  init() {
+  }
+}
+
+struct SystemSubMessage {
+  // SwiftProtobuf.Message conformance is added in an extension below. See the
+  // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+  // methods supported on all messages.
+
+  var id: Int32 = 0
+
+  var unknownFields = SwiftProtobuf.UnknownStorage()
+
+  init() {
+  }
+}
+
+struct UserSubMessage {
+  // SwiftProtobuf.Message conformance is added in an extension below. See the
+  // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+  // methods supported on all messages.
+
+  var id: Int32 = 0
+
+  var unknownFields = SwiftProtobuf.UnknownStorage()
+
+  init() {
+  }
+}
+
 struct IMMessage {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var cmdType: Int32 = 0
+  var cmdType: IMMessage.CMDTYPE {
+    get {
+      return _storage._cmdType
+    }
+    set {
+      _uniqueStorage()._cmdType = newValue
+    }
+  }
 
   /// Unique ID number for this person.
-  var cmd: Int32 = 0
+  var cmd: IMMessage.CMD {
+    get {
+      return _storage._cmd
+    }
+    set {
+      _uniqueStorage()._cmd = newValue
+    }
+  }
+
+  var userMsg: UserSubMessage {
+    get {
+      return _storage._userMsg ?? UserSubMessage()
+    }
+    set {
+      _uniqueStorage()._userMsg = newValue
+    }
+  }
+  /// Returns true if `userMsg` has been explicitly set.
+  var hasUserMsg: Bool {
+    return _storage._userMsg != nil
+  }
+
+  /// Clears the value of `userMsg`. Subsequent reads from it will return its default value.
+  mutating func clearUserMsg() {
+    _storage._userMsg = nil
+  }
+
+  var systemMsg: SystemSubMessage {
+    get {
+      return _storage._systemMsg ?? SystemSubMessage()
+    }
+    set {
+      _uniqueStorage()._systemMsg = newValue
+    }
+  }
+  /// Returns true if `systemMsg` has been explicitly set.
+  var hasSystemMsg: Bool {
+    return _storage._systemMsg != nil
+  }
+
+  /// Clears the value of `systemMsg`. Subsequent reads from it will return its default value.
+  mutating func clearSystemMsg() {
+    _storage._systemMsg = nil
+  }
+
+  var liveMsg: LiveSubMessage {
+    get {
+      return _storage._liveMsg ?? LiveSubMessage()
+    }
+    set {
+      _uniqueStorage()._liveMsg = newValue
+    }
+  }
+  /// Returns true if `liveMsg` has been explicitly set.
+  var hasLiveMsg: Bool {
+    return _storage._liveMsg != nil
+  }
+
+  /// Clears the value of `liveMsg`. Subsequent reads from it will return its default value.
+  mutating func clearLiveMsg() {
+    _storage._liveMsg = nil
+  }
 
   var unknownFields = SwiftProtobuf.UnknownStorage()
 
   enum CMD: SwiftProtobuf.Enum {
     typealias RawValue = Int
-    case gift // = 0
+
+    ///用户类型
+    case user // = 0
+
+    ///系统消息类型
+    case system // = 1
+
+    ///直播消息
+    case live // = 2
+
+    ///聊天信息
+    case chat // = 3
     case UNRECOGNIZED(Int)
 
     init() {
-      self = .gift
+      self = .user
     }
 
     init?(rawValue: Int) {
       switch rawValue {
-      case 0: self = .gift
+      case 0: self = .user
+      case 1: self = .system
+      case 2: self = .live
+      case 3: self = .chat
       default: self = .UNRECOGNIZED(rawValue)
       }
     }
 
     var rawValue: Int {
       switch self {
-      case .gift: return 0
+      case .user: return 0
+      case .system: return 1
+      case .live: return 2
+      case .chat: return 3
       case .UNRECOGNIZED(let i): return i
       }
     }
@@ -58,23 +182,44 @@ struct IMMessage {
 
   enum CMDTYPE: SwiftProtobuf.Enum {
     typealias RawValue = Int
-    case giftSend // = 0
+    case none // = 0
+    case userRecharge // = 100
+    case systemNoti // = 200
+    case liveArchorBegin // = 301
+    case liveArchorPause // = 302
+    case liveArchorResume // = 303
+    case liveArchorClose // = 304
+    case liveSupport // = 305
     case UNRECOGNIZED(Int)
 
     init() {
-      self = .giftSend
+      self = .none
     }
 
     init?(rawValue: Int) {
       switch rawValue {
-      case 0: self = .giftSend
+      case 0: self = .none
+      case 100: self = .userRecharge
+      case 200: self = .systemNoti
+      case 301: self = .liveArchorBegin
+      case 302: self = .liveArchorPause
+      case 303: self = .liveArchorResume
+      case 304: self = .liveArchorClose
+      case 305: self = .liveSupport
       default: self = .UNRECOGNIZED(rawValue)
       }
     }
 
     var rawValue: Int {
       switch self {
-      case .giftSend: return 0
+      case .none: return 0
+      case .userRecharge: return 100
+      case .systemNoti: return 200
+      case .liveArchorBegin: return 301
+      case .liveArchorPause: return 302
+      case .liveArchorResume: return 303
+      case .liveArchorClose: return 304
+      case .liveSupport: return 305
       case .UNRECOGNIZED(let i): return i
       }
     }
@@ -82,40 +227,212 @@ struct IMMessage {
   }
 
   init() {}
+
+  fileprivate var _storage = _StorageClass.defaultInstance
 }
 
 // MARK: - Code below here is support for the SwiftProtobuf runtime.
 
-extension IMMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "IMMessage"
+extension LiveSubMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  static let protoMessageName: String = "LiveSubMessage"
   static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
-    1: .same(proto: "cmdType"),
-    2: .same(proto: "cmd"),
+    1: .same(proto: "id"),
   ]
 
   mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       switch fieldNumber {
-      case 1: try decoder.decodeSingularInt32Field(value: &self.cmdType)
-      case 2: try decoder.decodeSingularInt32Field(value: &self.cmd)
+      case 1: try decoder.decodeSingularInt32Field(value: &self.id)
       default: break
       }
     }
   }
 
   func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    if self.cmdType != 0 {
-      try visitor.visitSingularInt32Field(value: self.cmdType, fieldNumber: 1)
+    if self.id != 0 {
+      try visitor.visitSingularInt32Field(value: self.id, fieldNumber: 1)
     }
-    if self.cmd != 0 {
-      try visitor.visitSingularInt32Field(value: self.cmd, fieldNumber: 2)
+    try unknownFields.traverse(visitor: &visitor)
+  }
+
+  func _protobuf_generated_isEqualTo(other: LiveSubMessage) -> Bool {
+    if self.id != other.id {
+      return false
+    }
+    if unknownFields != other.unknownFields {
+      return false
+    }
+    return true
+  }
+}
+
+extension SystemSubMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  static let protoMessageName: String = "SystemSubMessage"
+  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    1: .same(proto: "id"),
+  ]
+
+  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    while let fieldNumber = try decoder.nextFieldNumber() {
+      switch fieldNumber {
+      case 1: try decoder.decodeSingularInt32Field(value: &self.id)
+      default: break
+      }
+    }
+  }
+
+  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    if self.id != 0 {
+      try visitor.visitSingularInt32Field(value: self.id, fieldNumber: 1)
+    }
+    try unknownFields.traverse(visitor: &visitor)
+  }
+
+  func _protobuf_generated_isEqualTo(other: SystemSubMessage) -> Bool {
+    if self.id != other.id {
+      return false
+    }
+    if unknownFields != other.unknownFields {
+      return false
+    }
+    return true
+  }
+}
+
+extension UserSubMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  static let protoMessageName: String = "UserSubMessage"
+  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    1: .same(proto: "id"),
+  ]
+
+  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    while let fieldNumber = try decoder.nextFieldNumber() {
+      switch fieldNumber {
+      case 1: try decoder.decodeSingularInt32Field(value: &self.id)
+      default: break
+      }
+    }
+  }
+
+  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    if self.id != 0 {
+      try visitor.visitSingularInt32Field(value: self.id, fieldNumber: 1)
+    }
+    try unknownFields.traverse(visitor: &visitor)
+  }
+
+  func _protobuf_generated_isEqualTo(other: UserSubMessage) -> Bool {
+    if self.id != other.id {
+      return false
+    }
+    if unknownFields != other.unknownFields {
+      return false
+    }
+    return true
+  }
+}
+
+extension IMMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  static let protoMessageName: String = "IMMessage"
+  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    1: .same(proto: "cmdType"),
+    2: .same(proto: "cmd"),
+    3: .same(proto: "userMsg"),
+    4: .same(proto: "systemMsg"),
+    5: .same(proto: "liveMsg"),
+  ]
+
+  fileprivate class _StorageClass {
+    var _cmdType: IMMessage.CMDTYPE = .none
+    var _cmd: IMMessage.CMD = .user
+    var _userMsg: UserSubMessage? = nil
+    var _systemMsg: SystemSubMessage? = nil
+    var _liveMsg: LiveSubMessage? = nil
+
+    static let defaultInstance = _StorageClass()
+
+    private init() {
+    }
+
+    init(copying source: _StorageClass) {
+      _cmdType = source._cmdType
+      _cmd = source._cmd
+      _userMsg = source._userMsg
+      _systemMsg = source._systemMsg
+      _liveMsg = source._liveMsg
+    }
+  }
+
+  fileprivate mutating func _uniqueStorage() -> _StorageClass {
+    if !isKnownUniquelyReferenced(&_storage) {
+      _storage = _StorageClass(copying: _storage)
+    }
+    return _storage
+  }
+
+  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    _ = _uniqueStorage()
+    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
+      while let fieldNumber = try decoder.nextFieldNumber() {
+        switch fieldNumber {
+        case 1: try decoder.decodeSingularEnumField(value: &_storage._cmdType)
+        case 2: try decoder.decodeSingularEnumField(value: &_storage._cmd)
+        case 3: try decoder.decodeSingularMessageField(value: &_storage._userMsg)
+        case 4: try decoder.decodeSingularMessageField(value: &_storage._systemMsg)
+        case 5: try decoder.decodeSingularMessageField(value: &_storage._liveMsg)
+        default: break
+        }
+      }
+    }
+  }
+
+  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
+      if _storage._cmdType != .none {
+        try visitor.visitSingularEnumField(value: _storage._cmdType, fieldNumber: 1)
+      }
+    if _storage._cmd != .user {
+      try visitor.visitSingularEnumField(value: _storage._cmd, fieldNumber: 2)
+    }
+    if let v = _storage._userMsg {
+      try visitor.visitSingularMessageField(value: v, fieldNumber: 3)
+    }
+    if let v = _storage._systemMsg {
+      try visitor.visitSingularMessageField(value: v, fieldNumber: 4)
+    }
+    if let v = _storage._liveMsg {
+      try visitor.visitSingularMessageField(value: v, fieldNumber: 5)
+    }
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
   func _protobuf_generated_isEqualTo(other: IMMessage) -> Bool {
-    if self.cmdType != other.cmdType {return false}
-    if self.cmd != other.cmd {return false}
+    if _storage !== other._storage {
+      let storagesAreEqual: Bool = withExtendedLifetime((_storage, other._storage)) { (_args: (_StorageClass, _StorageClass)) in
+        let _storage = _args.0
+        let other_storage = _args.1
+        if _storage._cmdType != other_storage._cmdType {
+          return false
+        }
+        if _storage._cmd != other_storage._cmd {
+          return false
+        }
+        if _storage._userMsg != other_storage._userMsg {
+          return false
+        }
+        if _storage._systemMsg != other_storage._systemMsg {
+          return false
+        }
+        if _storage._liveMsg != other_storage._liveMsg {
+          return false
+        }
+        return true
+      }
+      if !storagesAreEqual {
+        return false
+      }
+    }
     if unknownFields != other.unknownFields {return false}
     return true
   }
@@ -123,12 +440,22 @@ extension IMMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
 
 extension IMMessage.CMD: SwiftProtobuf._ProtoNameProviding {
   static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
-    0: .same(proto: "GIFT"),
+    0: .same(proto: "user"),
+    1: .same(proto: "system"),
+    2: .same(proto: "live"),
+    3: .same(proto: "chat"),
   ]
 }
 
 extension IMMessage.CMDTYPE: SwiftProtobuf._ProtoNameProviding {
   static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
-    0: .same(proto: "GIFT_SEND"),
+    0: .same(proto: "none"),
+    100: .same(proto: "user_recharge"),
+    200: .same(proto: "system_noti"),
+    301: .same(proto: "live_archor_begin"),
+    302: .same(proto: "live_archor_pause"),
+    303: .same(proto: "live_archor_resume"),
+    304: .same(proto: "live_archor_close"),
+    305: .same(proto: "live_support"),
   ]
 }

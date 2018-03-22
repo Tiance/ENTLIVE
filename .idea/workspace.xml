@@ -2,10 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b044c182-51b5-41ad-b0e1-1c06649825da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/App/Controllers/HomeContainerViewController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Library/GridViewLayoutType.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Library/IM/TX/TXIMServiceMock.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Library/Notification.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Library/UIView+Ext.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Model/Live.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Views/FlowLayout.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Views/Storyboard/Home.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/GeolocationService.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/Reachability.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/yamazhiki.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/yamazhiki.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/App/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/App/App/Base.lproj/Main.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Controllers/HomeV1ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/LiveListViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/GeolocationService.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/IM/IMMessage.pb.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/IM/IMMessage.pb.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/IM/IMMessage.proto" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/IM/IMMessage.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Reachability.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/ReachabilityService.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ReachabilityService.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/RouterDefine.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/RouterDefine.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Views/Storyboard/HomeV1.storyboard" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ENT-LIVE.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ENT-LIVE.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile.lock" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/ENT-LIVE-crtjuaeuylwmsoggummddeltgvhr/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,53 +36,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_1270eeb9259936c32304d5dfbdcbb6e2af8b2994" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LiveStreamUserType.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/LiveStreamUserType.swift">
+      <file leaf-file-name="UIView+Ext.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Library/UIView+Ext.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="e#93#110#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TXLiveStreamService.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/Tencent/TXLiveStreamService.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1093">
-              <caret line="99" column="37" selection-start-line="99" selection-start-column="37" selection-end-line="99" selection-end-column="37" />
-              <folding>
-                <element signature="e#93#110#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Environment.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Library/Environment.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppEnvironment.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Library/AppEnvironment.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LiveStreamRoomType.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/LiveStreamRoomType.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="238">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#99#116#0" expanded="true" />
               </folding>
@@ -72,47 +48,74 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ENTLIVE-Bridging-Header.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/ENTLIVE-Bridging-Header.h">
+      <file leaf-file-name="AppEnvironment.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Library/AppEnvironment.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="591">
+              <caret line="95" column="46" selection-start-line="95" selection-start-column="46" selection-end-line="95" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Podfile" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Podfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UIDataStatus.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Library/UIDataStatus.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeV1ViewController.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Controllers/HomeV1ViewController.swift">
+      <file leaf-file-name="TXIMServiceMock.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Library/IM/TX/TXIMServiceMock.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="98">
-              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeV2ViewController.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Controllers/HomeV2ViewController.swift">
+      <file leaf-file-name="TXIMService.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Library/IM/TX/TXIMService.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="266">
+              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IMMessage.proto" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Library/IM/IMMessage.proto">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeContainerViewController.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Controllers/HomeContainerViewController.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IMMsgFactory.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Library/IM/IMMsgFactory.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="588">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IMServiceType.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/Library/IM/IMServiceType.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IMMessage.pb.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Library/IM/IMMessage.pb.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-168">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -130,28 +133,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Library/Router/RequestResultType.swift" />
-        <option value="$PROJECT_DIR$/Library/Router/RouterProvider.swift" />
-        <option value="$PROJECT_DIR$/App/Library/Extensions/UIViewController+Preparation.swift" />
-        <option value="$PROJECT_DIR$/Library/UIViewController+Preparation.swift" />
-        <option value="$PROJECT_DIR$/Api/ServerConfigImp.swift" />
-        <option value="$PROJECT_DIR$/App/ViewModels/LoginViewModelType.swift" />
-        <option value="$PROJECT_DIR$/App/AppDelegate.swift" />
-        <option value="$PROJECT_DIR$/App/Library/Extensions/OauthAccessToken.swift" />
-        <option value="$PROJECT_DIR$/Library/Router/Intent.swift" />
-        <option value="$PROJECT_DIR$/Library/Router/RouterType.swift" />
-        <option value="$PROJECT_DIR$/Library/UIViewController+Extensions.swift" />
-        <option value="$PROJECT_DIR$/App/Library/AppRouter.swift" />
-        <option value="$PROJECT_DIR$/App/Library/UIViewController+Extensions.swift" />
         <option value="$PROJECT_DIR$/App/Library/MessageRouter.swift" />
         <option value="$PROJECT_DIR$/App/Library/AppControllerRouter.swift" />
         <option value="$PROJECT_DIR$/App/Library/UIViewController+Extension.swift" />
         <option value="$PROJECT_DIR$/Library/Router/RouterManager.swift" />
-        <option value="$PROJECT_DIR$/App/Library/RouterDefine.swift" />
         <option value="$PROJECT_DIR$/App/Library/IM/IMMsgFactory.swift" />
         <option value="$PROJECT_DIR$/App/Library/IM/IMMessageDefine.swift" />
         <option value="$PROJECT_DIR$/App/Library/IM/TX/TXIMMessageUtils.swift" />
-        <option value="$PROJECT_DIR$/App/Library/IM/IMMessage.proto" />
         <option value="$PROJECT_DIR$/App/Library/IM/TX/TXIMService.swift" />
         <option value="$PROJECT_DIR$/App/Library/IM/IMServiceType.swift" />
         <option value="$PROJECT_DIR$/Api/ApiProvider.swift" />
@@ -178,9 +166,24 @@
         <option value="$PROJECT_DIR$/App/Library/AppEnvironment.swift" />
         <option value="$PROJECT_DIR$/App/Library/LiveStream/LiveStreamRoomType.swift" />
         <option value="$PROJECT_DIR$/App/Library/LiveStream/Tencent/TXLiveStreamService.swift" />
-        <option value="$PROJECT_DIR$/App/Controllers/HomeV1ViewController.swift" />
         <option value="$PROJECT_DIR$/App/Controllers/HomeV2ViewController.swift" />
         <option value="$PROJECT_DIR$/Podfile" />
+        <option value="$PROJECT_DIR$/App/Controllers/HomeV1ViewController.swift" />
+        <option value="$PROJECT_DIR$/App/Controllers/LiveListStyle0ViewController.swift" />
+        <option value="$PROJECT_DIR$/App/Model/Live.swift" />
+        <option value="$PROJECT_DIR$/App/Library/CollectionViewLayoutType.swift" />
+        <option value="$PROJECT_DIR$/App/Views/FlowLayout.swift" />
+        <option value="$PROJECT_DIR$/App/Library/GridViewLayoutType.swift" />
+        <option value="$PROJECT_DIR$/App/Library/UIView+Ext.swift" />
+        <option value="$PROJECT_DIR$/App/Controllers/LiveListViewController.swift" />
+        <option value="$PROJECT_DIR$/App/Library/RouterDefine.swift" />
+        <option value="$PROJECT_DIR$/App/Library/Notification.swift" />
+        <option value="$PROJECT_DIR$/App/Library/IM/TX/TXIMServiceMock.swift" />
+        <option value="$PROJECT_DIR$/App/Library/IM/UserSubMessage.proto" />
+        <option value="$PROJECT_DIR$/App/Library/IM/SystemSubMessage.proto" />
+        <option value="$PROJECT_DIR$/App/Library/IM/LiveSubMessage.proto" />
+        <option value="$PROJECT_DIR$/App/Library/IM/IMMessage.proto" />
+        <option value="$PROJECT_DIR$/App/Controllers/HomeContainerViewController.swift" />
       </list>
     </option>
   </component>
@@ -202,7 +205,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
@@ -226,17 +228,36 @@
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
               <item name="App" type="fcab9f18:XcodeViewNode" />
-              <item name="Views" type="fcab9f18:XcodeViewNode" />
+              <item name="Library" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
+              <item name="App" type="fcab9f18:XcodeViewNode" />
+              <item name="Library" type="fcab9f18:XcodeViewNode" />
+              <item name="IM" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
+              <item name="App" type="fcab9f18:XcodeViewNode" />
+              <item name="Model" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
+              <item name="Library" type="fcab9f18:XcodeViewNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="ENTLIVE" />
-    <property name="SearchEverywhereHistoryKey" value="push&#9;null&#9;null&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;pull&#9;ACTION&#9;Github.Create.Pull.Request&#10;share&#9;ACTION&#9;Github.Share&#10;sha&#9;ACTION&#9;Github.Share" />
+    <property name="SearchEverywhereHistoryKey" value="View&#9;null&#9;null&#10;push&#9;null&#9;null&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;pull&#9;ACTION&#9;Github.Create.Pull.Request&#10;share&#9;ACTION&#9;Github.Share&#10;sha&#9;ACTION&#9;Github.Share" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
@@ -294,7 +315,9 @@
       <workItem from="1521183246719" duration="140000" />
       <workItem from="1521183405117" duration="342000" />
       <workItem from="1521423940437" duration="17348000" />
-      <workItem from="1521601829618" duration="4300000" />
+      <workItem from="1521601829618" duration="5733000" />
+      <workItem from="1521626659705" duration="1275000" />
+      <workItem from="1521681905416" duration="2585000" />
     </task>
     <task id="LOCAL-00001" summary="appcode test commit">
       <created>1521079723935</created>
@@ -429,11 +452,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521624544956</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="使用RxDataSource作为数据源">
+      <created>1521624742610</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1521624742610</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84546000" />
+    <option name="totallyTimeSpent" value="89839000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -444,13 +474,13 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.23542275" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3238719" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" visible="true" weight="0.32944608" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32361516" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32925072" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -484,122 +514,20 @@
     <MESSAGE value="Environment添加LiveStream功能 60%" />
     <MESSAGE value="修复AppRouter不能找到Storyboard" />
     <MESSAGE value="开始做咯" />
-    <option name="LAST_COMMIT_MESSAGE" value="开始做咯" />
+    <MESSAGE value="使用RxDataSource作为数据源" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用RxDataSource作为数据源" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/App/Library/AppEnvironment.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="41" column="46" lean-forward="true" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/LiveStreamRoomType.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#99#116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/ENTLIVE-Bridging-Header.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Podfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/Tencent/TXLiveStreamService.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="76" column="38" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="38" />
-          <folding>
-            <element signature="e#93#110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vendor/IM/ImSDK.framework/Headers/TIMCallback.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="100" column="32" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vendor/IM/ImSDK.framework/Headers/TIMMessage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="929">
-          <caret line="720" column="8" lean-forward="true" selection-start-line="720" selection-start-column="8" selection-end-line="720" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/IM/IMMessageDefine.swift" />
-    <entry file="file://$PROJECT_DIR$/App/Library/IM/IMMessage.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/IM/IMMessage.pb.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pods/RxSwift/RxSwift/Observables/Create.swift" />
-    <entry file="file://$PROJECT_DIR$/App/Library/IM/IMServiceType.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/IM/TX/TXIMMessageUtils.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/IM/TX/TXIMService.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/ENTApiProvider.swift" />
-    <entry file="file://$PROJECT_DIR$/App/Library/ClientApi/ClientMock.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Library/ClientApi/Client.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#99#116#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -621,9 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
-          <folding>
-            <element signature="e#86#103#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -645,9 +570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding>
-            <element signature="e#93#110#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -662,19 +584,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#93#110#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/ViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="54" column="54" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/App/ViewController.swift" />
     <entry file="file://$PROJECT_DIR$/App/Library/UIViewController+Environment.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -688,9 +601,6 @@
           <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vendor/IM/TXRTMPSDK.framework/Headers/TXLivePush.h">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/LiveStream/LiveStream.h" />
     <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/BaseLiveStreamImp.swift" />
@@ -729,61 +639,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#93#110#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Pods/RxSwift/RxSwift/Subjects/BehaviorSubject.swift" />
     <entry file="file://$PROJECT_DIR$/Pods/TXLiteAVSDK_Professional/TXLiteAVSDK_Professional/SDK/TXLiteAVSDK_Professional.framework/Headers/TXLivePush.h" />
-    <entry file="file://$PROJECT_DIR$/App/Library/Environment.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/AppEnvironment.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pods/TXLiteAVSDK_Professional/TXLiteAVSDK_Professional/SDK/TXLiteAVSDK_Professional.framework/Headers/TXCAVRoom.h" />
     <entry file="file://$PROJECT_DIR$/Pods/TXLiteAVSDK_Professional/TXLiteAVSDK_Professional/SDK/TXLiteAVSDK_Professional.framework/Headers/TXCAVRoomDef.h" />
     <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/LiveStreamRoomType.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#99#116#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/Tencent/TXLiveStreamService.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1093">
+        <state relative-caret-position="1358">
           <caret line="99" column="37" selection-start-line="99" selection-start-column="37" selection-end-line="99" selection-end-column="37" />
           <folding>
             <element signature="e#93#110#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/UIDataStatus.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Controllers/HomeV1ViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -796,8 +672,164 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Podfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="322">
+          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Model/Live.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Views/FlowLayout.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2072">
+          <caret line="148" column="72" selection-start-line="148" selection-start-column="72" selection-end-line="148" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Controllers/LiveListViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="34" column="71" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
+          <folding>
+            <element signature="e#99#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/GridViewLayoutType.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/Environment.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/Notification.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/UIDataStatus.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/RouterDefine.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+          <folding>
+            <element signature="e#93#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/UIView+Ext.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#99#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/AppEnvironment.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="95" column="46" selection-start-line="95" selection-start-column="46" selection-end-line="95" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/IM/TX/TXIMServiceMock.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/IM/TX/TXIMService.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/IM/IMMessage.pb.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/IM/LiveSubMessage.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/IM/SystemSubMessage.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/IM/UserSubMessage.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/IM/IMMessage.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Controllers/HomeContainerViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/IM/IMMsgFactory.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/IM/IMServiceType.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>

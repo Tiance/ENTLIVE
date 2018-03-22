@@ -1,6 +1,8 @@
 //
 // Created by yamazhiki on 15/03/2018.
 // Copyright (c) 2018 斌王. All rights reserved.
+// 此文件为App ViewController 定义的地方
+// 约定如下 枚举首字母大写找到有Storyboard文件, 若找不到Storyboard文件则加上"ViewController"找到指定的ViewController
 //
 
 import Foundation
