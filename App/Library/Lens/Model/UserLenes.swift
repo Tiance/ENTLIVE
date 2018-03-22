@@ -4,7 +4,6 @@
 //
 
 import Foundation
-import Api
 import Prelude
 
 extension User {

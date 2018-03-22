@@ -73,3 +73,17 @@ extension TXIMService: TIMMessageListener {
         messageSubject.onNext(rlt)
     }
 }
+
+extension TXIMService: IMMessageMockService {
+    func testMessage(type: IMMessage.CMDTYPE, cmd: IMMessage.CMD) {
+        let msg = IMMessage.with {
+            $0.cmdType = type
+            $0.cmd = cmd
+        }
+        messageSubject.onNext([msg])
+    }
+
+    func testMessage() {
+        messageSubject.onNext([IMMessage.init()])
+    }
+}

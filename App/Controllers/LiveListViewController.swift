@@ -58,11 +58,12 @@ class LiveListViewController: RxViewController {
                 }).disposed(by: disposeBag)
 
 
-        collectionViewLayout().edge = .zero
-        collectionViewLayout().lineCount = layoutType.numberOfItemInRow
-        collectionViewLayout().delegate = self
-        collectionViewLayout().vItemSpace = 10
-        collectionViewLayout().hItemSpace = 10
+        _ = collectionViewLayout()
+                |> ELWaterFlowLayout.lens.edge .~ .zero
+        |> ELWaterFlowLayout.lens.lineCount .~ layoutType.numberOfItemInRow
+        |> ELWaterFlowLayout.lens.delegate .~ self
+        |> ELWaterFlowLayout.lens.vItemSpace .~ 10
+        |> ELWaterFlowLayout.lens.hItemSpace .~ 10
 
         let section = NameSectionData(items: data)
 

@@ -1,6 +1,7 @@
 //
 // Created by 斌王 on 05/03/2018.
 // Copyright (c) 2018 斌王. All rights reserved.
+// 全局容器管理器, 管理所有环境, 并暴露相应环境变更的信息
 //
 
 import Foundation

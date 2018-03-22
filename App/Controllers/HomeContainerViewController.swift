@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import RxSwift
+import Api
 
 class HomeContainerViewController: RxViewController {
     override func viewDidLoad() {
@@ -14,5 +16,22 @@ class HomeContainerViewController: RxViewController {
         tabBarItem.title = "首页"
 
         NotificationCenter.default.post(name: Notification.Name.update, object: nil)
+
+
+        _ = AppEnvironment.userEvents.subscribe(onNext: { _ in
+            print("------")
+        })
+
+        AppEnvironment.auth(accessToken: CommonAccessToken(token: ""))
+        _ = load()
+                .subscribe(onNext: { rlt in
+                    print(rlt)
+                })
+
+
+    }
+
+    private func load() -> Observable<[User]> {
+        return AppEnvironment.current.api.request(target: .users)
     }
 }

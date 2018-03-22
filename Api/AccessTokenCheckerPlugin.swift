@@ -9,8 +9,8 @@ import RxSwift
 import Result
 
 public class AccessTokenCheckerPlugin: PluginType {
-    let observer: AnyObserver<Void>
-    let tokenType: OauthAccessTokenType
+    private let observer: AnyObserver<Void>
+    private let tokenType: OauthAccessTokenType
 
     public init(accessTokenType: OauthAccessTokenType, observer: AnyObserver<Void>) {
         tokenType = accessTokenType
@@ -26,7 +26,7 @@ public class AccessTokenCheckerPlugin: PluginType {
     }
 
     public func didReceive(_ result: Result<Response, MoyaError>, target: TargetType) {
-        if result.value?.statusCode == 203 {
+        if result.value?.statusCode != 203 {
             observer.onNext(())
         }
     }

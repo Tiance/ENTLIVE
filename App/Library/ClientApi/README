@@ -1,0 +1,6 @@
+Yamazhiki Created 2018-3-10
+
+对应App的网络请求定义(基于Moya, 不同的是可以手动输入URL)
+Client                  定义了网络请求endpoint
+ClientMock              定义了模拟数据
+ServerConfigImp         默认地址定义

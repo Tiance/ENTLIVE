@@ -26,6 +26,7 @@ target 'ENTLIVE' do
   pod 'XLPagerTabStrip'
   pod 'SwiftProtobuf'
   pod 'RxDataSources'
+  pod 'ESTabBarController'
   pod 'TXLiteAVSDK_Professional', :podspec => 'http://pod-1252463788.cosgz.myqcloud.com/liteavsdkspec/TXLiteAVSDK_Professional.podspec'
   target 'ENTLIVETests' do
     inherit! :search_paths

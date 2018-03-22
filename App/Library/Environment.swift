@@ -1,6 +1,7 @@
 //
 // Created by 斌王 on 05/03/2018.
 // Copyright (c) 2018 斌王. All rights reserved.
+// App唯一容器类定义
 //
 
 import Foundation

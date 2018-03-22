@@ -41,7 +41,6 @@ class RxViewController: BaseViewController {
         mainQueue.asyncAfter(deadline: when) {
 
             assert(Resources.total <= numberOfResourcesThatShouldRemain, "Resources weren't cleaned properly, \(Resources.total) remained, \(numberOfResourcesThatShouldRemain) expected")
-
         }
 #endif
     }

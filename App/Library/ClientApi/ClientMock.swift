@@ -11,16 +11,7 @@ extension Client: ApiTargetType {
     public var sampleData: Data {
         let encoder = JSONEncoder()
         encoder.outputFormatting = .prettyPrinted
-        switch self {
-        case .users:
-            let sample = User(id: 0, login: "Sample-data")
-            return try! encoder.encode(sample)
-        case .singleUser(let id):
-            let sample = User(id: id, login: "Sample-data")
-            return try! encoder.encode(sample)
-        case .detail(_):
-            return Data()
-        }
+        return stub(type: self)
     }
     public var task: Task {
         switch self {
@@ -30,4 +21,12 @@ extension Client: ApiTargetType {
             return .requestPlain
         }
     }
+}
+
+fileprivate func stub(type: Client) -> Data {
+    if let url = Bundle.main.url(forResource: "\(type)", withExtension: "json"),
+       let data = try? Data.init(contentsOf: url) {
+        return data
+    }
+    return Data()
 }

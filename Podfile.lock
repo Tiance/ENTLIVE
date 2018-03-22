@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.7.0)
   - Differentiator (3.0.2)
+  - ESTabBarController (0.2)
   - Kickstarter-Prelude (0.0.2):
     - Runes (~> 4.1.0)
   - Moya (11.0.1):
@@ -25,6 +26,7 @@ PODS:
   - XLPagerTabStrip (8.0.0)
 
 DEPENDENCIES:
+  - ESTabBarController
   - Kickstarter-Prelude
   - Moya
   - Moya/RxSwift
@@ -42,6 +44,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  ESTabBarController: e82ac0b135bec16fb646ac1da4ac8953fcd927da
   Kickstarter-Prelude: b4b2f7de1af0b1d209a947168f5c64604806bdcf
   Moya: 3d594ada51a21cc02b18739ab578a1984f900c8a
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
@@ -53,6 +56,6 @@ SPEC CHECKSUMS:
   TXLiteAVSDK_Professional: caa066fc13a5439ac6d9ef10025b18a5cdc55ab1
   XLPagerTabStrip: d1ab378af0923320ec0b5eab11d7b2f803d31261
 
-PODFILE CHECKSUM: 143efc1eae73c15fef4d2e8e1beca39ededa81de
+PODFILE CHECKSUM: 0c03bfe58e7f6c137e66bf8806f197004a170d04
 
 COCOAPODS: 1.4.0
