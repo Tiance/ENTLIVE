@@ -46,7 +46,6 @@ class LiveListViewController: RxViewController {
     fileprivate var data = ["Yamazhiki", "ISA", "Barthoomew", "Tiance", "Junyu"]
 
     override func viewDidLoad() {
-
         collectionView.rx.itemSelected.asObservable()
                 .subscribe(onNext: { [weak self] indexPath in
                     if indexPath.row == 0 {
@@ -57,15 +56,8 @@ class LiveListViewController: RxViewController {
                     self?.collectionViewLayout().lineCount = self?.layoutType.numberOfItemInRow ?? 0
                 }).disposed(by: disposeBag)
 
-
-        _ = collectionViewLayout()
-                |> ELWaterFlowLayout.lens.edge .~ .zero
-        |> ELWaterFlowLayout.lens.lineCount .~ layoutType.numberOfItemInRow
-        |> ELWaterFlowLayout.lens.delegate .~ self
-        |> ELWaterFlowLayout.lens.vItemSpace .~ 10
-        |> ELWaterFlowLayout.lens.hItemSpace .~ 10
-
         let section = NameSectionData(items: data)
+
 
         let dataSource = RxCollectionViewSectionedReloadDataSource<NameSectionData>(
                 configureCell: { (ds, v, indexPath, item) -> UICollectionViewCell in
@@ -80,7 +72,15 @@ class LiveListViewController: RxViewController {
         .disposed(by:disposeBag)
 
         super.viewDidLoad()
-        }
+
+
+        _ = collectionViewLayout()
+        |> ELWaterFlowLayout.lens.edge .~ .zero
+        |> ELWaterFlowLayout.lens.lineCount .~ layoutType.numberOfItemInRow
+        |> ELWaterFlowLayout.lens.delegate .~ self
+        |> ELWaterFlowLayout.lens.vItemSpace .~ 10
+        |> ELWaterFlowLayout.lens.hItemSpace .~ 10
+    }
 
     fileprivate func collectionViewLayout() -> ELWaterFlowLayout {
         return collectionView.collectionViewLayout as! ELWaterFlowLayout

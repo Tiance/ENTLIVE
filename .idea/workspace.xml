@@ -2,25 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b044c182-51b5-41ad-b0e1-1c06649825da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/App/Library/ClientApi/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Library/ClientApi/stub/users.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/ViewModels/ApplicationViewModelType.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/规范.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/AccessTokenCheckerPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Api/AccessTokenCheckerPlugin.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controllers/BaseViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/BaseViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controllers/HomeContainerViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/HomeContainerViewController.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Controllers/LiveListViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/LiveListViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/AppEnvironment.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/AppEnvironment.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/ClientApi/ClientMock.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/ClientApi/ClientMock.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/Environment.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/Environment.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/IM/IMMessage.pb.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/IM/IMMessage.pb.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/IM/TX/TXIMMessageUtils.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/IM/IMMessageMockService.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/IM/TX/TXIMService.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/IM/TX/TXIMService.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/Lens/ELWaterFlowLayoutLenes.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/Lens/ELWaterFlowLayoutLenes.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/Lens/Model/UserLenes.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/Lens/Model/UserLenes.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Extensions/RxCLLocationManagerDelegateProxy.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/RxCLLocationManagerDelegateProxy.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Extensions/RxImagePickerDelegateProxy.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/RxImagePickerDelegateProxy.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Extensions/UIImagePickerController+Rx.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/UIImagePickerController+Rx.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/LensHolder.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/LensHolder.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/UIButton.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/UIButton.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/UIEdgeInsets.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/UIEdgeInsets.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/UIImage.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/UIImage.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/UITraitCollection.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/UITraitCollection.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/CALayerLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/CALayerLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/CGPointLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/CGPointLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/CGRectLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/CGRectLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/CGSizeLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/CGSizeLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/NSMutableParagraphStyleLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/NSMutableParagraphStyleLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/NSObject.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/NSObject.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/NSTextContainerLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/NSTextContainerLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UIAccessibilityLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UIAccessibilityLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UIActivityIndicatorViewLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UIActivityIndicatorViewLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UIBarButtonItemLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UIBarButtonItemLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UIBarItemLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UIBarItemLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UIButtonLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UIButtonLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UIControlLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UIControlLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UIEdgeInsetsLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UIEdgeInsetsLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UIImageViewLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UIImageViewLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UILabelLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UILabelLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UINavigationBarLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UINavigationBarLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UINavigationControllerLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UINavigationControllerLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UINavigationItemLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UINavigationItemLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UIProgressViewLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UIProgressViewLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UIScrollViewLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UIScrollViewLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UIStackViewLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UIStackViewLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UITabBarItemLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UITabBarItemLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UITabBarLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UITabBarLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UITableViewCellLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UITableViewCellLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UITableViewControllerLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UITableViewControllerLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UITableViewLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UITableViewLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UITextFieldLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UITextFieldLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UITextInputTraitsLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UITextInputTraitsLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UITextViewLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UITextViewLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UITraitEnvironment.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UITraitEnvironment.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UIViewControllerLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UIViewControllerLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UIViewLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UIViewLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/UIWebViewLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/UIWebViewLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/Prelude-UIKit/lenses/WKWebViewLenses.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Prelude-UIKit/lenses/WKWebViewLenses.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/UIView+Ext.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/Extensions/UIView+Ext.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/UIViewController+Environment.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/Extensions/UIViewController+Environment.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Library/UIViewController+Preparation.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/Extensions/UIViewController+Preparation.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ENT-LIVE.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ENT-LIVE.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile.lock" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/ENT-LIVE-crtjuaeuylwmsoggummddeltgvhr/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,15 +64,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_2A8E387F-9B21-4EFB-8406-762106EBB1C4" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AppEnvironment.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Library/AppEnvironment.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Environment.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Library/Environment.swift">
           <provider selected="true" editor-type-id="text-editor">
@@ -51,11 +73,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RouterDefine.swift" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RouterDefine.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Library/RouterDefine.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="574">
+              <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationViewModelType.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/ViewModels/ApplicationViewModelType.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+              <folding>
+                <element signature="e#99#116#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Observable.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pods/RxSwift/RxSwift/Observable.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -69,38 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Library/ClientApi/README">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Library/ClientApi/stub/users.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Model/User.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LiveListViewController.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Controllers/LiveListViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="910">
-              <caret line="69" column="84" selection-start-line="69" selection-start-column="84" selection-end-line="69" selection-end-column="84" />
+            <state relative-caret-position="444">
+              <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
               <folding>
                 <element signature="e#99#116#0" expanded="true" />
               </folding>
@@ -108,23 +124,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeContainerViewController.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Controllers/HomeContainerViewController.swift">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
-              <folding>
-                <element signature="e#139#156#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="182">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AccessTokenCheckerPlugin.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Api/AccessTokenCheckerPlugin.swift">
+      <file leaf-file-name="规范.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/规范.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="630">
+              <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonAccessToken.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Library/Extensions/CommonAccessToken.swift">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="OauthAccessToken.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Library/Extensions/OauthAccessToken.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -142,7 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/App/Library/IM/TX/TXIMMessageUtils.swift" />
         <option value="$PROJECT_DIR$/App/Library/IM/IMServiceType.swift" />
         <option value="$PROJECT_DIR$/Api/ApiProvider.swift" />
         <option value="$PROJECT_DIR$/App/Library/ClientApi/Client.swift" />
@@ -179,7 +205,6 @@
         <option value="$PROJECT_DIR$/App/Library/IM/IMMessage.proto" />
         <option value="$PROJECT_DIR$/App/Library/UIView+Ext.swift" />
         <option value="$PROJECT_DIR$/App/Library/Notification.swift" />
-        <option value="$PROJECT_DIR$/App/Controllers/LiveListViewController.swift" />
         <option value="$PROJECT_DIR$/App/Library/Lens/Model/UserLenes.swift" />
         <option value="$PROJECT_DIR$/App/Library/Lens/ELWaterFlowLayoutLenes.swift" />
         <option value="$PROJECT_DIR$/App/Library/IM/IMMessageMockService.swift" />
@@ -193,6 +218,8 @@
         <option value="$PROJECT_DIR$/App/Library/ClientApi/README" />
         <option value="$PROJECT_DIR$/App/Library/AppEnvironment.swift" />
         <option value="$PROJECT_DIR$/App/Library/Environment.swift" />
+        <option value="$PROJECT_DIR$/App/Controllers/LiveListViewController.swift" />
+        <option value="$PROJECT_DIR$/App/规范.md" />
       </list>
     </option>
   </component>
@@ -225,24 +252,20 @@
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
-              <item name="Api" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
               <item name="App" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
-              <item name="App" type="fcab9f18:XcodeViewNode" />
-              <item name="Controllers" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
               <item name="App" type="fcab9f18:XcodeViewNode" />
               <item name="Library" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
+              <item name="App" type="fcab9f18:XcodeViewNode" />
+              <item name="Library" type="fcab9f18:XcodeViewNode" />
+              <item name="Lens" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
@@ -254,12 +277,13 @@
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
               <item name="App" type="fcab9f18:XcodeViewNode" />
-              <item name="Views" type="fcab9f18:XcodeViewNode" />
+              <item name="ViewModels" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="ENT-LIVE" type="1d218c8b:XcodeProjectNode" />
-              <item name="Library" type="fcab9f18:XcodeViewNode" />
+              <item name="App" type="fcab9f18:XcodeViewNode" />
+              <item name="Views" type="fcab9f18:XcodeViewNode" />
             </path>
           </expand>
           <select />
@@ -270,10 +294,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="ENTLIVE" />
-    <property name="SearchEverywhereHistoryKey" value="View&#9;null&#9;null&#10;push&#9;null&#9;null&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;pull&#9;ACTION&#9;Github.Create.Pull.Request&#10;share&#9;ACTION&#9;Github.Share&#10;sha&#9;ACTION&#9;Github.Share" />
+    <property name="SearchEverywhereHistoryKey" value="markdown&#9;ACTION&#9;Markdown.Toolbar.Left&#10;View&#9;null&#9;null&#10;push&#9;null&#9;null&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;pull&#9;ACTION&#9;Github.Create.Pull.Request&#10;share&#9;ACTION&#9;Github.Share&#10;sha&#9;ACTION&#9;Github.Share" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -331,7 +355,11 @@
       <workItem from="1521601829618" duration="5733000" />
       <workItem from="1521626659705" duration="1275000" />
       <workItem from="1521681905416" duration="10997000" />
-      <workItem from="1521701622801" duration="196000" />
+      <workItem from="1521701622801" duration="1276000" />
+      <workItem from="1521714343587" duration="553000" />
+      <workItem from="1521768876317" duration="67000" />
+      <workItem from="1521768984034" duration="213000" />
+      <workItem from="1521769220222" duration="2203000" />
     </task>
     <task id="LOCAL-00001" summary="appcode test commit">
       <created>1521079723935</created>
@@ -487,11 +515,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521689306901</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="忘记改啥了">
+      <created>1521711459508</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1521711459508</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98447000" />
+    <option name="totallyTimeSpent" value="102563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -502,20 +537,20 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50078124" side_tool="true" weight="0.32361516" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49921876" weight="0.32361516" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49921876" weight="0.32361516" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32925072" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49609375" weight="0.23542275" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32925072" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49609375" weight="0.23542275" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -545,7 +580,8 @@
     <MESSAGE value="使用RxDataSource作为数据源" />
     <MESSAGE value="重构部分文件 IM消息添加协议 User, System, Live定义" />
     <MESSAGE value="规范Notification, RxDataSource例子在LiveListViewController 里面" />
-    <option name="LAST_COMMIT_MESSAGE" value="规范Notification, RxDataSource例子在LiveListViewController 里面" />
+    <MESSAGE value="忘记改啥了" />
+    <option name="LAST_COMMIT_MESSAGE" value="忘记改啥了" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -554,28 +590,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/BaseLiveStreamImp.swift" />
-    <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/LiveStreamBgmType.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/LiveStreamBeautyType.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/LiveStream/LiveStreamControllerType.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pods/TXLiteAVSDK_Professional/TXLiteAVSDK_Professional/SDK/TXLiteAVSDK_Professional.framework/Headers/TXLivePushConfig.h" />
     <entry file="file://$PROJECT_DIR$/Pods/TXLiteAVSDK_Professional/TXLiteAVSDK_Professional/SDK/TXLiteAVSDK_Professional.framework/Headers/TXLivePushListener.h" />
     <entry file="file://$PROJECT_DIR$/App/ENTLIVE-Bridging-Header.h">
@@ -629,13 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2072">
           <caret line="148" column="72" selection-start-line="148" selection-start-column="72" selection-end-line="148" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -698,7 +705,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/UIView+Ext.swift">
+    <entry file="file://$PROJECT_DIR$/App/Library/Extensions/UIView+Ext.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
@@ -755,13 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/ViewModels/ApplicationViewModelType.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Podfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
@@ -773,9 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
           <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#139#156#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -783,16 +780,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Controllers/LiveListViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="910">
-          <caret line="69" column="84" selection-start-line="69" selection-start-column="84" selection-end-line="69" selection-end-column="84" />
-          <folding>
-            <element signature="e#99#116#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -807,13 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
           <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Library/ClientApi/ClientMock.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
@@ -840,8 +820,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Library/RouterDefine.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="574">
+          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pods/RxSwift/RxSwift/Observable.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/ViewModels/ApplicationViewModelType.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+          <folding>
+            <element signature="e#99#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Controllers/LiveListViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          <folding>
+            <element signature="e#99#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/ClientApi/ClientMock.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/Extensions/CommonAccessToken.swift">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Library/Extensions/OauthAccessToken.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/规范.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
         </state>
       </provider>
     </entry>
