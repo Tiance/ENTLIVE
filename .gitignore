@@ -3,6 +3,7 @@
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 .DS_Store
+/Vendor/*
 
 ## Build generated
 build/
@@ -69,7 +70,6 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 
-Vendor/
 
 # idea
 .idea/
