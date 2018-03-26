@@ -14,6 +14,7 @@ enum AppControllerRouter: String, ControllerRouterType {
     case two
     case login
     case test
+    case RoomChat
 
 
     var controller: UIViewController {
@@ -21,7 +22,7 @@ enum AppControllerRouter: String, ControllerRouterType {
     }
 
     var instantiate: UIViewController {
-        let typeStr = self.rawValue.capitalized
+        let typeStr = self.rawValue
         let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String;
         if let vc = UIStoryboard(name: typeStr, bundle: nil).instantiateInitialViewController() {
             return vc
