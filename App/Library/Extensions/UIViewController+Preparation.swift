@@ -13,7 +13,7 @@ private func swizzle(_ vc: UIViewController.Type) {
     [
         (#selector(vc.viewDidLoad), #selector(vc.ent_viewDidLoad)),
         (#selector(vc.viewWillAppear(_:)), #selector(vc.ent_viewWillAppear(_:))),
-        (#selector(vc.traitCollectionDidChange(_:)), #selector(vc.ent_traitCollectionDidChange(_:))),
+        (#selector(vc.traitCollectionDidChange(_:)), #selector(vc.ent_traitCollectionDidChange(_:)))
     ].forEach { original, swizzled in
 
         guard let originalMethod = class_getInstanceMethod(vc, original),
@@ -62,10 +62,12 @@ extension UIViewController {
         }
     }
 
-
     @objc open func bindViewModel() {
     }
 
+    @objc open func bindStyle() {
+
+    }
 
     @objc public func ent_traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         self.ent_traitCollectionDidChange(previousTraitCollection)
@@ -98,4 +100,3 @@ extension UIViewController {
         return self.description().components(separatedBy: ".").dropFirst().joined(separator: ".")
     }
 }
-

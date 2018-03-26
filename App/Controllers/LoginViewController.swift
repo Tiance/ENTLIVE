@@ -15,16 +15,12 @@ class LoginViewController: RxViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
 
-        print(intent!.data["b"] ?? "")
-
         let btn = UIButton(type: .infoDark)
                 |> UIButton.lens.frame .~ CGRect.init(x:100, y: 100, width:100, height:100)
-                |> UIButton.lens.targets .~ [(self, #selector(loginHandle), .touchUpInside)]
+        |> UIButton.lens.targets .~ [(self, #selector(loginHandle), .touchUpInside)]
 
-
-
+        view.addSubview(btn)
     }
-
 
     override func bindViewModel() {
         viewModel.outputs.loginResult.subscribe(onNext: { rlt in
@@ -32,6 +28,8 @@ class LoginViewController: RxViewController {
         }).disposed(by: disposeBag)
     }
 
+    override func bindStyle() {
+    }
 
     @IBAction func loginHandle() {
         let intent = Intent(data: ["a": "hello world"])
@@ -39,6 +37,5 @@ class LoginViewController: RxViewController {
 
         viewModel.inputs.submit()
     }
-
 
 }

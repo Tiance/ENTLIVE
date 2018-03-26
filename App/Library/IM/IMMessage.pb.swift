@@ -14,7 +14,7 @@ import SwiftProtobuf
 // incompatible with the version of SwiftProtobuf to which you are linking.
 // Please ensure that your are building against the same version of the API
 // that was used to generate this file.
-fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
+private struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
   struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
   typealias Version = _2
 }
@@ -233,7 +233,7 @@ struct IMMessage {
 extension LiveSubMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = "LiveSubMessage"
   static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
-    1: .same(proto: "id"),
+      1: .same(proto: "id")
   ]
 
   mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
@@ -266,7 +266,7 @@ extension LiveSubMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplement
 extension SystemSubMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = "SystemSubMessage"
   static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
-    1: .same(proto: "id"),
+      1: .same(proto: "id")
   ]
 
   mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
@@ -299,7 +299,7 @@ extension SystemSubMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
 extension UserSubMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = "UserSubMessage"
   static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
-    1: .same(proto: "id"),
+      1: .same(proto: "id")
   ]
 
   mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
@@ -336,15 +336,15 @@ extension IMMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
     2: .same(proto: "cmd"),
     3: .same(proto: "userMsg"),
     4: .same(proto: "systemMsg"),
-    5: .same(proto: "liveMsg"),
+      5: .same(proto: "liveMsg")
   ]
 
   fileprivate class _StorageClass {
     var _cmdType: IMMessage.CMDTYPE = .none
     var _cmd: IMMessage.CMD = .user
-    var _userMsg: UserSubMessage? = nil
-    var _systemMsg: SystemSubMessage? = nil
-    var _liveMsg: LiveSubMessage? = nil
+      var _userMsg: UserSubMessage?
+      var _systemMsg: SystemSubMessage?
+      var _liveMsg: LiveSubMessage?
 
     static let defaultInstance = _StorageClass()
 
@@ -440,7 +440,7 @@ extension IMMessage.CMD: SwiftProtobuf._ProtoNameProviding {
     0: .same(proto: "user"),
     1: .same(proto: "system"),
     2: .same(proto: "live"),
-    3: .same(proto: "chat"),
+      3: .same(proto: "chat")
   ]
 }
 
@@ -453,6 +453,6 @@ extension IMMessage.CMDTYPE: SwiftProtobuf._ProtoNameProviding {
     302: .same(proto: "live_archor_pause"),
     303: .same(proto: "live_archor_resume"),
     304: .same(proto: "live_archor_close"),
-    305: .same(proto: "live_support"),
+      305: .same(proto: "live_support")
   ]
 }
