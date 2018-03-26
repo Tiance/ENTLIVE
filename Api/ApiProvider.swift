@@ -15,7 +15,6 @@ public protocol ApiTargetType {
     var task: Task { get }
 }
 
-
 public struct DynamicTarget: TargetType {
     public let baseURL: URL
     let target: ApiTargetType
@@ -63,7 +62,6 @@ public class ApiProvider<T: ApiTargetType>: MoyaProvider<DynamicTarget> {
         let dynamic = DynamicTarget(baseURL: baseURL, target: target)
         return super.request(dynamic, callbackQueue: callbackQueue, progress: progress, completion: completion)
     }
-
 
     public func requestWithResponse(_ target: T) -> Observable<Response> {
         let dynamic = DynamicTarget(baseURL: baseURL, target: target)

@@ -9,7 +9,7 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
-fileprivate struct NameSectionData {
+private struct NameSectionData {
     var items: [String]
 }
 
@@ -22,7 +22,7 @@ extension NameSectionData: SectionModelType {
     }
 }
 
-fileprivate enum LiveViewerStyle: GridViewLayoutType {
+private enum LiveViewerStyle: GridViewLayoutType {
     case line
     case two
     fileprivate var numberOfItemInRow: UInt {
@@ -58,21 +58,19 @@ class LiveListViewController: RxViewController {
 
         let section = NameSectionData(items: data)
 
-
         let dataSource = RxCollectionViewSectionedReloadDataSource<NameSectionData>(
-                configureCell: { (ds, v, indexPath, item) -> UICollectionViewCell in
-                    let cell = v.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+                configureCell: { (_, view, indexPath, item) -> UICollectionViewCell in
+                    let cell = view.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
                     _ = cell.retrieveView(type: UILabel.self, tag: 10)
                             |> UILabel.lens.text .~ item
         return cell
     })
 
         Observable.just([section])
-        .bind(to:collectionView.rx.items(dataSource:dataSource))
-        .disposed(by:disposeBag)
+        .bind(to: collectionView.rx.items(dataSource: dataSource))
+        .disposed(by: disposeBag)
 
         super.viewDidLoad()
-
 
         _ = collectionViewLayout()
         |> ELWaterFlowLayout.lens.edge .~ .zero

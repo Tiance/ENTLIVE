@@ -6,9 +6,8 @@
 //  Copyright © 2016 Krunoslav Zaher. All rights reserved.
 //
 
-
 #if os(iOS)
-    
+
     import RxSwift
     import RxCocoa
     import UIKit
@@ -18,7 +17,7 @@
         /**
          Reactive wrapper for `delegate` message.
          */
-        public var didFinishPickingMediaWithInfo: Observable<[String : AnyObject]> {
+        public var didFinishPickingMediaWithInfo: Observable<[String: AnyObject]> {
             return delegate
                 .methodInvoked(#selector(UIImagePickerControllerDelegate.imagePickerController(_:didFinishPickingMediaWithInfo:)))
                 .map({ (a) in
@@ -34,12 +33,12 @@
                 .methodInvoked(#selector(UIImagePickerControllerDelegate.imagePickerControllerDidCancel(_:)))
                 .map {_ in () }
         }
-        
+
     }
-    
+
 #endif
 
-fileprivate func castOrThrow<T>(_ resultType: T.Type, _ object: Any) throws -> T {
+private func castOrThrow<T>(_ resultType: T.Type, _ object: Any) throws -> T {
     guard let returnValue = object as? T else {
         throw RxCocoaError.castingError(object: object, targetType: resultType)
     }

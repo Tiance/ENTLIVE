@@ -110,7 +110,6 @@
 		A31FDD540617E61F33D73DE0 /* AccessTokenCheckerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD79F3E33F03529FBA017 /* AccessTokenCheckerPlugin.swift */; };
 		A31FDD7533A736F81903E0D3 /* NSMutableParagraphStyleLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD0B3D8704F5EF7E780A1 /* NSMutableParagraphStyleLenses.swift */; };
 		A31FDD75D6307BCE3B09A838 /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD24C9798BFBF4C753617 /* RouterType.swift */; };
-		A31FDDBB28217904E605658D /* 规范.md in Sources */ = {isa = PBXBuildFile; fileRef = A31FDF48DA83DFBD2B499B63 /* 规范.md */; };
 		A31FDDCE04667479C4C093B3 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDFD616F4832146ECCE2E /* Client.swift */; };
 		A31FDDD5DE252B1473AF6555 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD7BB2FC9ED2295F53553 /* LoginViewController.swift */; };
 		A31FDDE982A1771751C9DD05 /* UITextViewLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD96BAF24A35E6FA21902 /* UITextViewLenses.swift */; };
@@ -132,6 +131,7 @@
 		ED0D1EE0205B9FDF00288B22 /* ServerConfigImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD0824D785B9B6351D448 /* ServerConfigImp.swift */; };
 		ED0D1EE1205BA02E00288B22 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD83CF647CA2FA37DC31C /* User.swift */; };
 		ED0D1EE2205BA02F00288B22 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD83CF647CA2FA37DC31C /* User.swift */; };
+		ED48C0E720650EAE00CC68CB /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = ED48C0E620650EAE00CC68CB /* .swiftlint.yml */; };
 		ED81EDD720525D1400A63733 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81EDD620525D1400A63733 /* AppDelegate.swift */; };
 		ED81EDDE20525D1400A63733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED81EDDD20525D1400A63733 /* Assets.xcassets */; };
 		ED81EDE120525D1400A63733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED81EDDF20525D1400A63733 /* LaunchScreen.storyboard */; };
@@ -343,6 +343,7 @@
 		DF65E30F611A747F87C3632F /* Pods-LiveStream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStream.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveStream/Pods-LiveStream.release.xcconfig"; sourceTree = "<group>"; };
 		E5ADC7C20C1EAFCC326C9107 /* Pods_LiveStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveStream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED14F4DB6B3488F813293188 /* Pods-ApiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApiTests/Pods-ApiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED48C0E620650EAE00CC68CB /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		ED81EDD320525D1400A63733 /* ENTLIVE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ENTLIVE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED81EDD620525D1400A63733 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED81EDDD20525D1400A63733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -723,6 +724,7 @@
 				E36F53417B562FBF6E013B98 /* Pods */,
 				226EBA70ECC39FF60C0A195D /* Frameworks */,
 				A31FDD90AB7D96DA44392727 /* Library */,
+				ED48C0E620650EAE00CC68CB /* .swiftlint.yml */,
 				A31FDC5B4550FE4E4EA9C9C7 /* README.md */,
 			);
 			sourceTree = "<group>";
@@ -837,6 +839,7 @@
 				554C55A35B287D0110EEEC05 /* [CP] Embed Pods Frameworks */,
 				46A9493BBB4DDE6E2CE69BE3 /* [CP] Copy Pods Resources */,
 				ED0D1EDB205B63C200288B22 /* ProtoBuffer */,
+				ED48C0E520650DF200CC68CB /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -995,6 +998,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED48C0E720650EAE00CC68CB /* .swiftlint.yml in Resources */,
 				ED81EDE120525D1400A63733 /* LaunchScreen.storyboard in Resources */,
 				9C13BC84206502D700224D47 /* HomeV2.storyboard in Resources */,
 				ED81EDDE20525D1400A63733 /* Assets.xcassets in Resources */,
@@ -1310,6 +1314,20 @@
 			shellPath = /bin/sh;
 			shellScript = "protoc --swift_out=. App/Library/IM/IMMessage.proto";
 		};
+		ED48C0E520650DF200CC68CB /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1363,7 +1381,6 @@
 				A31FD312A8E2EE44F363753E /* IMMessageMockService.swift in Sources */,
 				9C13BC88206886FA00224D47 /* RoomChatCell.swift in Sources */,
 				A31FD8E0F9DA65C0AAA5124C /* ApplicationViewModelType.swift in Sources */,
-				A31FDDBB28217904E605658D /* 规范.md in Sources */,
 				A31FD65B9FC8F254F2C79788 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
 				A31FDF7037FD6994A0BD49D8 /* UIImagePickerController+Rx.swift in Sources */,
 				A31FD458F2D10BFC42279BD2 /* RxImagePickerDelegateProxy.swift in Sources */,

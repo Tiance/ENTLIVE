@@ -5,7 +5,6 @@
 
 import Foundation
 
-
 /// 环境用户发生更新
 ///
 /// - USER_KICKED: 被踢

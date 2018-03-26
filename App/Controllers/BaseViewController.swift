@@ -32,7 +32,6 @@ class RxViewController: BaseViewController {
 #if TRACE_RESOURCES
         print("View controller disposed with \(Resources.total) resources")
 
-
         let numberOfResourcesThatShouldRemain = startResourceCount
         let mainQueue = DispatchQueue.main
 
@@ -45,4 +44,3 @@ class RxViewController: BaseViewController {
 #endif
     }
 }
-

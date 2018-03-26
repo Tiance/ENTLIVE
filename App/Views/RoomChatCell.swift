@@ -9,7 +9,7 @@
 import UIKit
 
 class RoomChatCell: UICollectionViewCell {
-    
+
     private let chatBGView: UIImageView = {
         let imageView = UIImageView.init(image: UIImage.init(named: "charBG.jpeg"))
         imageView.layer.masksToBounds = true
@@ -17,7 +17,7 @@ class RoomChatCell: UICollectionViewCell {
         imageView.alpha = 0.6
         return imageView
     }()
-    
+
     private let contentLabel: UILabel = {
         let label = UILabel.init(frame: CGRect.zero)
         label.textColor = .white
@@ -31,7 +31,7 @@ class RoomChatCell: UICollectionViewCell {
         label.shadowOffset = CGSize.init(width: 0.7, height: 0.7)
         return label
     }()
-    
+
     var model: Message! {
         didSet {
             let str = NSMutableAttributedString.init(string: model.content)
@@ -39,12 +39,12 @@ class RoomChatCell: UICollectionViewCell {
             contentLabel.attributedText = str
         }
     }
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         contentView.addSubview(chatBGView)
         contentView.addSubview(contentLabel)
-        
+
         NSLayoutConstraint(item: chatBGView,
                            attribute: .top,
                            relatedBy: .equal,
@@ -75,11 +75,11 @@ class RoomChatCell: UICollectionViewCell {
                            constant: 3).isActive = true
         contentLabel.frame = chatBGView.bounds
     }
-    
+
     func setupUI() {
-        
+
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

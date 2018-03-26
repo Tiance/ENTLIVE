@@ -12,9 +12,9 @@ import RxDataSources
 
 class Home2ViewModel: NSObject {
     func getItems() -> Observable<[ItemData]> {
-        return Observable.create{ (observable) -> Disposable in
+        return Observable.create { (observable) -> Disposable in
             var items: [ItemData] = []
-            for i in 0..<10{
+            for i in 0..<10 {
                 let h = Home2Item(name: "麦小兜\(i)", image: "", fans: i*10)
                 let d = ItemData(items: [h])
                 items.append(d)

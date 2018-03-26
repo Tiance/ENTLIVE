@@ -14,10 +14,7 @@ extension CLLocationManager: HasDelegate {
     public typealias Delegate = CLLocationManagerDelegate
 }
 
-public class RxCLLocationManagerDelegateProxy
-    : DelegateProxy<CLLocationManager, CLLocationManagerDelegate>
-    , DelegateProxyType
-    , CLLocationManagerDelegate {
+public class RxCLLocationManagerDelegateProxy: DelegateProxy<CLLocationManager, CLLocationManagerDelegate>, DelegateProxyType, CLLocationManagerDelegate {
 
     public init(locationManager: CLLocationManager) {
         super.init(parentObject: locationManager, delegateProxy: RxCLLocationManagerDelegateProxy.self)

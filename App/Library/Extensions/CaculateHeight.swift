@@ -10,7 +10,7 @@ import UIKit
 
 //计算描述的高度
 func caculateContentHeight(contentString: NSString, maxWidth: CGFloat, fontSize: CGFloat, lineSpacing: CGFloat) -> CGSize {
-    
+
     if contentString.length > 0 {
         let paragrapghStyle: NSMutableParagraphStyle = NSMutableParagraphStyle()
         paragrapghStyle.lineSpacing = lineSpacing
@@ -23,4 +23,3 @@ func caculateContentHeight(contentString: NSString, maxWidth: CGFloat, fontSize:
     }
     return CGSize.init(width: lineSpacing, height: UIFont.systemFont(ofSize: fontSize).lineHeight)
 }
-

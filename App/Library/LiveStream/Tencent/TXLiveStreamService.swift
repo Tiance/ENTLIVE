@@ -7,7 +7,6 @@ import Foundation
 import UIKit
 import RxSwift
 
-
 class TXLiveStreamService: NSObject {
 
     let appId: UInt32 = 0

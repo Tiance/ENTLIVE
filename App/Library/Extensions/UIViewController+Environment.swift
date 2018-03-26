@@ -7,8 +7,7 @@ import Foundation
 import UIKit
 import RxSwift
 
-
-fileprivate struct RouterNode {
+private struct RouterNode {
     let pre: UIViewController
     let requestCode: Int
 }
@@ -34,7 +33,6 @@ class RouterManager<T: MessageRouterType> {
 }
 
 extension UIViewController {
-
 
     func push(routerType: ControllerRouterType, requestCode: Int, intent: Intent? = nil) {
         assert(self.navigationController != nil, "没有发现可用的UINavigationController")
@@ -65,11 +63,9 @@ extension UIViewController {
 
     }
 
-
     private struct AssociatedIntentKeys {
         static var intent = "intent"
     }
-
 
     private (set) var intent: Intent? {
         get {

@@ -8,11 +8,9 @@
 
 import UIKit
 
-
 public protocol ELWaterFlowLayoutDelegate: NSObjectProtocol {
-    func el_flowLayout(_ flowLayout: ELWaterFlowLayout, heightForRowAt index: Int) -> CGFloat;
+    func el_flowLayout(_ flowLayout: ELWaterFlowLayout, heightForRowAt index: Int) -> CGFloat
 }
-
 
 open class ELWaterFlowLayout: UICollectionViewFlowLayout {
 
@@ -57,7 +55,6 @@ open class ELWaterFlowLayout: UICollectionViewFlowLayout {
         }
     }
 
-
     override public init() {
         super.init()
 
@@ -82,13 +79,12 @@ open class ELWaterFlowLayout: UICollectionViewFlowLayout {
     func resetLineWidth() {
         switch self.scrollDirection {
         case .vertical:
-            self.lineWidth = ((self.collectionView?.frame.size.width)! - self.edge.left - self.edge.right - CGFloat(self.lineCount - 1) * self.hItemSpace) / CGFloat(self.lineCount);
+            self.lineWidth = ((self.collectionView?.frame.size.width)! - self.edge.left - self.edge.right - CGFloat(self.lineCount - 1) * self.hItemSpace) / CGFloat(self.lineCount)
         default:
-            self.lineWidth = ((self.collectionView?.frame.size.height)! - self.edge.top - self.edge.bottom - CGFloat(self.lineCount - 1) * self.vItemSpace) / CGFloat(self.lineCount);
+            self.lineWidth = ((self.collectionView?.frame.size.height)! - self.edge.top - self.edge.bottom - CGFloat(self.lineCount - 1) * self.vItemSpace) / CGFloat(self.lineCount)
         }
 
     }
-
 
     override open func prepare() {
         super.prepare()
@@ -109,9 +105,7 @@ open class ELWaterFlowLayout: UICollectionViewFlowLayout {
             }
         }
 
-
     }
-
 
     override open func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         return attrArr[indexPath.item]
@@ -120,7 +114,6 @@ open class ELWaterFlowLayout: UICollectionViewFlowLayout {
     override open func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         return attrArr
     }
-
 
     func modifyLayoutAttributes(attr: UICollectionViewLayoutAttributes?) {
         if let a = attr {
@@ -149,11 +142,9 @@ open class ELWaterFlowLayout: UICollectionViewFlowLayout {
                 self.updateLineHeightRec(at: sl.index, with: x + width!)
             }
 
-
         }
 
     }
-
 
     func findShortestLine() -> (index: Int, height: CGFloat) {
         var shortestHeight = CGFloat.greatestFiniteMagnitude
@@ -167,7 +158,6 @@ open class ELWaterFlowLayout: UICollectionViewFlowLayout {
         return (shortestIndex, shortestHeight)
     }
 
-
     func fineLongestLine() -> (index: Int, height: CGFloat) {
         var longestHeight: CGFloat = 0.0
         var longestIndex = 0
@@ -180,13 +170,11 @@ open class ELWaterFlowLayout: UICollectionViewFlowLayout {
         return (longestIndex, longestHeight)
     }
 
-
     func updateLineHeightRec(at index: Int, with height: CGFloat) {
 
         self.lineHeightRecArr[index] = height
 
     }
-
 
     override open var collectionViewContentSize: CGSize {
         get {
@@ -199,6 +187,5 @@ open class ELWaterFlowLayout: UICollectionViewFlowLayout {
 
         }
     }
-
 
 }

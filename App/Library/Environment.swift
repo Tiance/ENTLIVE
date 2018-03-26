@@ -88,7 +88,6 @@ extension EnvironmentType {
     }
 }
 
-
 extension ApiProvider {
     static var provider: ApiProvider {
         return ApiProvider(baseURL: EnvironmentType.dev.serverConfig.apiBaseURL)

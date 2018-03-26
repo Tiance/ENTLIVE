@@ -15,7 +15,7 @@ struct ItemData {
 
 extension ItemData: SectionModelType {
     typealias Item = Home2Item
-    
+
     init(original: ItemData, items: [Home2Item]) {
         self.items = items
         self = original
@@ -27,4 +27,3 @@ public struct Home2Item {
     var image: String = ""
     var fans: Int = 3231
 }
-

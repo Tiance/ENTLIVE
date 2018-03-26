@@ -39,7 +39,4 @@ internal struct LoginViewModel: LoginViewModelInputs, LoginViewModelOutputs, Log
         loginResultSubject.onNext(1)
     }
 
-
 }
-
-

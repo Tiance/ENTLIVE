@@ -8,14 +8,13 @@
 import Foundation
 import UIKit
 
-
 enum AppControllerRouter: String, ControllerRouterType {
     case one
     case two
     case login
     case test
     case RoomChat
-
+    case Login
 
     var controller: UIViewController {
         return instantiate
@@ -23,7 +22,7 @@ enum AppControllerRouter: String, ControllerRouterType {
 
     var instantiate: UIViewController {
         let typeStr = self.rawValue
-        let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String;
+        let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String
         if let vc = UIStoryboard(name: typeStr, bundle: nil).instantiateInitialViewController() {
             return vc
         }
@@ -35,7 +34,6 @@ enum AppControllerRouter: String, ControllerRouterType {
         fatalError("没有能够找到\(typeStr)ViewController")
     }
 }
-
 
 enum MessageRouter: MessageRouterType {
     case gift(name: String)

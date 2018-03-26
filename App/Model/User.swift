@@ -24,7 +24,6 @@ public func ==(lhs: User, rhs: User) -> Bool {
     return lhs.id == rhs.id
 }
 
-
 extension User {
     static var template: User {
         return User.init(id: 0, login: "Yamazhiki")
