@@ -18,14 +18,14 @@ message UserSubMessage {
 
 message IMMessage {
 
-    enum CMD {
+    enum CMDTYPE {
         user = 0; //用户类型
         system = 1; //系统消息类型
         live = 2; //直播消息
         chat = 3; //聊天信息
     }
 
-    enum CMDTYPE {
+    enum CMD {
         none = 0;
         user_recharge = 100;
 

@@ -135,7 +135,7 @@ struct IMMessage {
 
   var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  enum CMD: SwiftProtobuf.Enum {
+    enum CMDTYPE: SwiftProtobuf.Enum {
     typealias RawValue = Int
 
     ///用户类型
@@ -177,7 +177,7 @@ struct IMMessage {
 
   }
 
-  enum CMDTYPE: SwiftProtobuf.Enum {
+    enum CMD: SwiftProtobuf.Enum {
     typealias RawValue = Int
     case none // = 0
     case userRecharge // = 100
@@ -340,8 +340,8 @@ extension IMMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
   ]
 
   fileprivate class _StorageClass {
-    var _cmdType: IMMessage.CMDTYPE = .none
-    var _cmd: IMMessage.CMD = .user
+      var _cmdType: IMMessage.CMDTYPE = .user
+      var _cmd: IMMessage.CMD = .none
       var _userMsg: UserSubMessage?
       var _systemMsg: SystemSubMessage?
       var _liveMsg: LiveSubMessage?
@@ -385,10 +385,10 @@ extension IMMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
 
   func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
-      if _storage._cmdType != .none {
+        if _storage._cmdType != .user {
         try visitor.visitSingularEnumField(value: _storage._cmdType, fieldNumber: 1)
       }
-      if _storage._cmd != .user {
+      if _storage._cmd != .none {
           try visitor.visitSingularEnumField(value: _storage._cmd, fieldNumber: 2)
       }
       if let v = _storage._userMsg {
@@ -435,7 +435,7 @@ extension IMMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
   }
 }
 
-extension IMMessage.CMD: SwiftProtobuf._ProtoNameProviding {
+extension IMMessage.CMDTYPE: SwiftProtobuf._ProtoNameProviding {
   static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "user"),
     1: .same(proto: "system"),
@@ -444,7 +444,7 @@ extension IMMessage.CMD: SwiftProtobuf._ProtoNameProviding {
   ]
 }
 
-extension IMMessage.CMDTYPE: SwiftProtobuf._ProtoNameProviding {
+extension IMMessage.CMD: SwiftProtobuf._ProtoNameProviding {
   static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "none"),
     100: .same(proto: "user_recharge"),

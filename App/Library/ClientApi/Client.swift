@@ -13,7 +13,6 @@ enum Client {
     case singleUser(id: Int)
     case detail(id: Int)
 
-
     public var path: String {
         switch self {
         case .users: return "users"

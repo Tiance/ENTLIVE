@@ -51,7 +51,6 @@ class GeolocationService {
                     $0.coordinate
                 }
 
-
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
     }

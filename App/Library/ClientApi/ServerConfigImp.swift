@@ -37,7 +37,6 @@ public func ==(lhs: ServerConfigImp, rhs: ServerConfigImp) -> Bool {
             lhs.webBaseURL == rhs.webBaseURL
 }
 
-
 extension ServerConfigImp {
     static func from(env: EnvironmentType) -> ServerConfigType {
         switch env {

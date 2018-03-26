@@ -8,11 +8,9 @@ import Foundation
 protocol CacheType {
 }
 
-
 struct MemoryCache {
 
     private let cache = NSCache<NSString, AnyObject>()
-
 
     init() {
         cache.evictsObjectsWithDiscardedContent = true

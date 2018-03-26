@@ -21,7 +21,6 @@ struct IMUserIdentifier {
     let appId: String
 }
 
-
 protocol IMServiceType {
     func login(id: IMUserIdentifier)
     func send(type: IMConversionType, message: IMMessage, receiver: String) -> Observable<(Int, String?)>

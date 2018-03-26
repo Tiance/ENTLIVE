@@ -17,7 +17,6 @@ enum IMMsgType {
     case custom
 }
 
-
 struct IMMsgFactory {
     static func textMsg<T>(type: IMSDK = IMSDK.tencent,
                            text: String = "") -> T {

@@ -29,7 +29,6 @@ class TXIMService: NSObject, IMServiceType {
 
         })
 
-
     }
 
     func send(type: IMConversionType, message: IMMessage, receiver: String) -> Observable<(Int, String?)> {

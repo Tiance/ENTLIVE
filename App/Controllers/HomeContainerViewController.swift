@@ -17,7 +17,6 @@ class HomeContainerViewController: RxViewController {
 
         NotificationCenter.default.post(name: Notification.Name.update, object: nil)
 
-
         _ = AppEnvironment.userEvents.subscribe(onNext: { _ in
             print("------")
         })
@@ -27,7 +26,6 @@ class HomeContainerViewController: RxViewController {
                 .subscribe(onNext: { rlt in
                     print(rlt)
                 })
-
 
     }
 

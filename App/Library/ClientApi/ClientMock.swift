@@ -23,7 +23,7 @@ extension Client: ApiTargetType {
     }
 }
 
-fileprivate func stub(type: Client) -> Data {
+private func stub(type: Client) -> Data {
     if let url = Bundle.main.url(forResource: "\(type)", withExtension: "json"),
        let data = try? Data.init(contentsOf: url) {
         return data

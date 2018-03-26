@@ -29,7 +29,6 @@ class ApplicationViewModel: ApplicationViewModelType {
         return self
     }
 
-
 }
 
 extension ApplicationViewModel: ApplicationViewModelOutputs {

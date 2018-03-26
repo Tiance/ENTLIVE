@@ -9,14 +9,12 @@ import RxSwift
 import Moya
 import Api
 
-
 struct AppEnvironment {
     private static let userEventsSubject = PublishSubject<UserEvents>()
     private static let defaults_user_key = "com.ent.live.user"
     private static let defaults_token_key = "com.ent.live.token"
     private static let defaults_tokenType_key = "com.ent.live.tokenType"
     private static let authStatusSubject = PublishSubject<Void>()
-
 
     private static var stack: [Environment] = [Environment()]
     private static var type = EnvironmentType.simulate
