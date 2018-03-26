@@ -18,7 +18,7 @@ struct Environment {
     let api: ApiProvider<Client>
 
     /// 实时聊天
-    let imService: IMServiceType
+    let imService: IMServiceType & IMMessageMockService
 
     let liveStream: LiveStreamType
 
@@ -43,7 +43,7 @@ struct Environment {
     init(
             user: User = User.template,
             api: ApiProvider<Client> = ApiProvider.provider,
-            imService: IMServiceType = TXIMService(),
+            imService: IMServiceType & IMMessageMockService = TXIMService(),
             liveStream: LiveStreamType = TXLiveStreamService(),
             reachability: ReachabilityService = try! DefaultReachabilityService(),
             cache: MemoryCache = MemoryCache(),

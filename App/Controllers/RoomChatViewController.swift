@@ -34,7 +34,7 @@ struct Message {
     let type: MessageType
     let name: String
     let content: String
-    let color: UIColor
+    var color: UIColor
 }
 
 /*******************************************************************************************/
@@ -45,10 +45,14 @@ class RoomChatViewController: RxViewController {
     let viewModel = RoomChatViewModel()
     let data: [RoomMessage] = []
 
-    let messages = [Message(type: .share, name: "霍金", content: "太阳消失，你还有8分钟的光明", color: .purple)]
+    let messages = [Message(type: .share, name: "霍金", content: "太阳消失，你还有8分钟的光明", color: .purple),
+                    Message(type: .share, name: "爱因斯坦", content: "霍金说的对,霍金说的对,霍金说的对,霍金说的对,霍金说的对,霍金说的对,霍金说的对,霍金说的对,霍金说的对,霍金说的对,霍金说的对,霍金说的对,霍金说的对,霍金说的对,霍金说的对,霍金说的对,霍金说的对,霍金说的对,霍金说的对,霍金说的对,霍金说的对,霍金说的对,霍金说的对,霍金说的对,", color: .orange)
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        AppEnvironment.current.imService.testMessage(type: <#T##IMMessage.CMDTYPE#>, cmd: .chat)
 
         collectionView.register(RoomChatCell.classForCoder(), forCellWithReuseIdentifier: "RoomChatCell")
         collectionViewLayout()
@@ -60,7 +64,7 @@ class RoomChatViewController: RxViewController {
         })
 
         viewModel.output.bind(to: collectionView.rx.items(dataSource: dataSource)).disposed(by: disposeBag)
-        viewModel.input(message: messages[0])
+        viewModel.input(message: messages)
 
     }
 
@@ -78,14 +82,14 @@ class RoomChatViewController: RxViewController {
 
 extension RoomChatViewController: ELWaterFlowLayoutDelegate {
     func el_flowLayout(_ flowLayout: ELWaterFlowLayout, heightForRowAt index: Int) -> CGFloat {
-        return 50
+        return RoomChatCell.summaryCellHeight(model: messages[index])
     }
 }
 
 /*****************************************************************************************/
 
 internal protocol RoomChatViewModelInputs {
-    func input(message: Message)
+    func input(message: [Message])
 }
 
 internal protocol RoomChatViewModelOutputs {
@@ -114,8 +118,12 @@ internal struct RoomChatViewModel: RoomChatViewModelType, RoomChatViewModelInput
         output = resultSubject.asObservable()
     }
 
-    func input(message: Message) {
-        let roomMessage = RoomMessage(items: [message])
+    func input(message: [Message]) {
+        var msgs: [Message] = []
+        for m in message {
+            msgs.append(m)
+        }
+        let roomMessage = RoomMessage(items: msgs)
         resultSubject.onNext([roomMessage])
     }
 
