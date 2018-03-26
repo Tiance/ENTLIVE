@@ -22,7 +22,7 @@ PODS:
     - RxSwift (~> 4.0)
   - RxSwift (4.1.2)
   - SwiftProtobuf (1.0.3)
-  - TXLiteAVSDK_Professional (4.2.3423)
+  - TXLiteAVSDK_Professional (4.4.3774)
   - XLPagerTabStrip (8.0.0)
 
 DEPENDENCIES:
@@ -53,7 +53,7 @@ SPEC CHECKSUMS:
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   SwiftProtobuf: 5ccc0e4054e37c75800e5744acb2aa80bb72b39c
-  TXLiteAVSDK_Professional: caa066fc13a5439ac6d9ef10025b18a5cdc55ab1
+  TXLiteAVSDK_Professional: 440db16b4545d1900034713ea7b36c64a1600eca
   XLPagerTabStrip: d1ab378af0923320ec0b5eab11d7b2f803d31261
 
 PODFILE CHECKSUM: 93743e63c6ee8fd17877d0522a7e902b65340bdc

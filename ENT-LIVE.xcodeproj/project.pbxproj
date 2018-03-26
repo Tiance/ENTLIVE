@@ -10,6 +10,15 @@
 		1F95EE526E0EA2B1AD4ABFC8 /* Pods_ApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23AA6FAC0DC0E8E8C55BFB8 /* Pods_ApiTests.framework */; };
 		2535C7F36150A805285B090F /* Pods_ENTLIVE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83FB6B9A59991A96B6CC8D5 /* Pods_ENTLIVE.framework */; };
 		665C55D2D93717B2A9B75C86 /* Pods_ENTLIVEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501A148FED28365FC02E2D20 /* Pods_ENTLIVEUITests.framework */; };
+		9C13BC782064E6FE00224D47 /* Home2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC772064E6FE00224D47 /* Home2ViewModel.swift */; };
+		9C13BC7A2064E71A00224D47 /* RoomChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC792064E71A00224D47 /* RoomChatViewController.swift */; };
+		9C13BC7C2064E72400224D47 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC7B2064E72400224D47 /* Item.swift */; };
+		9C13BC7E2064E73000224D47 /* RoomChat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C13BC7D2064E73000224D47 /* RoomChat.storyboard */; };
+		9C13BC802064EB5F00224D47 /* RoomChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC7F2064EB5F00224D47 /* RoomChatViewModel.swift */; };
+		9C13BC822064EF9000224D47 /* HomeV2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC812064EF9000224D47 /* HomeV2ViewController.swift */; };
+		9C13BC84206502D700224D47 /* HomeV2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C13BC83206502D700224D47 /* HomeV2.storyboard */; };
+		9C13BC862067585700224D47 /* CaculateHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC852067585700224D47 /* CaculateHeight.swift */; };
+		9C13BC88206886FA00224D47 /* RoomChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC87206886FA00224D47 /* RoomChatCell.swift */; };
 		A31FD001CEEB8E0C96AB3E9C /* CacheType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDA312DE44FF8A07AA2E0 /* CacheType.swift */; };
 		A31FD03CC60B2DC1270F17EC /* UIWebViewLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD7659344D387B89407C3 /* UIWebViewLenses.swift */; };
 		A31FD04C1780D0C0010524DF /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD5514C38DA0E5BC546AC /* RxImagePickerDelegateProxy.swift */; };
@@ -60,7 +69,6 @@
 		A31FD70FEDA800E17DA39F1A /* UINavigationBarLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD917CA956FC56DE30B9E /* UINavigationBarLenses.swift */; };
 		A31FD72538F2B90C016909D7 /* LiveStreamBeautyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD277ECB4B93069B6CA5F /* LiveStreamBeautyType.swift */; };
 		A31FD72B3883D270D4A577A9 /* CGRectLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDC29B9A758278DF4082C /* CGRectLenses.swift */; };
-		A31FD7A3A240B241EDDDD0E3 /* HomeV2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDFD9682430979CF5E6F2 /* HomeV2ViewController.swift */; };
 		A31FD7B0E4DE445419143473 /* UITableViewControllerLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD35C685176858025B396 /* UITableViewControllerLenses.swift */; };
 		A31FD7D2224F0A3B5FE28A35 /* GridViewLayoutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD7CF1DBAC4256F4989FF /* GridViewLayoutType.swift */; };
 		A31FD8A6B7BF2A1E3CAE6920 /* UITraitEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD68BA7CFDC44045A5506 /* UITraitEnvironment.swift */; };
@@ -128,7 +136,6 @@
 		ED81EDDE20525D1400A63733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED81EDDD20525D1400A63733 /* Assets.xcassets */; };
 		ED81EDE120525D1400A63733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED81EDDF20525D1400A63733 /* LaunchScreen.storyboard */; };
 		EDAB299A206259B500BDA3AB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDAB2999206259B500BDA3AB /* Home.storyboard */; };
-		EDAB299C206259C500BDA3AB /* HomeV2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDAB299B206259C500BDA3AB /* HomeV2.storyboard */; };
 		EDAB299E20625F6400BDA3AB /* HomeContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB299D20625F6400BDA3AB /* HomeContainerViewController.swift */; };
 		EDAB29A0206264DD00BDA3AB /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB299F206264DD00BDA3AB /* FlowLayout.swift */; };
 		EDC19BAE205FBF610072FF41 /* LiveStreamUserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDCD1D8AFABFC516664B4 /* LiveStreamUserType.swift */; };
@@ -222,6 +229,15 @@
 		6FF0D218FB2E2130CCC67735 /* Pods_Api.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Api.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DAE42F37B80739155BE7742 /* Pods-TXLiveSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXLiveSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TXLiveSDK/Pods-TXLiveSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		9A39DA99D185E19BE2FFCEED /* Pods-Api.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Api.release.xcconfig"; path = "Pods/Target Support Files/Pods-Api/Pods-Api.release.xcconfig"; sourceTree = "<group>"; };
+		9C13BC772064E6FE00224D47 /* Home2ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home2ViewModel.swift; sourceTree = "<group>"; };
+		9C13BC792064E71A00224D47 /* RoomChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomChatViewController.swift; sourceTree = "<group>"; };
+		9C13BC7B2064E72400224D47 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		9C13BC7D2064E73000224D47 /* RoomChat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RoomChat.storyboard; sourceTree = "<group>"; };
+		9C13BC7F2064EB5F00224D47 /* RoomChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomChatViewModel.swift; sourceTree = "<group>"; };
+		9C13BC812064EF9000224D47 /* HomeV2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeV2ViewController.swift; sourceTree = "<group>"; };
+		9C13BC83206502D700224D47 /* HomeV2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeV2.storyboard; sourceTree = "<group>"; };
+		9C13BC852067585700224D47 /* CaculateHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaculateHeight.swift; sourceTree = "<group>"; };
+		9C13BC87206886FA00224D47 /* RoomChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomChatCell.swift; sourceTree = "<group>"; };
 		A31FD0292DE88A79ED90F74F /* BearerAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearerAccessToken.swift; sourceTree = "<group>"; };
 		A31FD06CCB40155F7792BF7E /* AppEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		A31FD0824D785B9B6351D448 /* ServerConfigImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConfigImp.swift; sourceTree = "<group>"; };
@@ -321,7 +337,6 @@
 		A31FDF48DA83DFBD2B499B63 /* 规范.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "规范.md"; sourceTree = "<group>"; };
 		A31FDF53E5EDEF784C7F0E03 /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
 		A31FDFD616F4832146ECCE2E /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
-		A31FDFD9682430979CF5E6F2 /* HomeV2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeV2ViewController.swift; sourceTree = "<group>"; };
 		A31FDFDEF943CCDD4EDE0497 /* UIViewController+Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Environment.swift"; sourceTree = "<group>"; };
 		B23AA6FAC0DC0E8E8C55BFB8 /* Pods_ApiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83FB6B9A59991A96B6CC8D5 /* Pods_ENTLIVE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ENTLIVE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -337,7 +352,6 @@
 		ED81EDE720525D1400A63733 /* ENTLIVETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ENTLIVETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED81EDF220525D1400A63733 /* ENTLIVEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ENTLIVEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDAB2999206259B500BDA3AB /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		EDAB299B206259C500BDA3AB /* HomeV2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeV2.storyboard; sourceTree = "<group>"; };
 		EDAB299D20625F6400BDA3AB /* HomeContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContainerViewController.swift; sourceTree = "<group>"; };
 		EDAB299F206264DD00BDA3AB /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
 		EDF884C820525D76004554B9 /* Api.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Api.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -457,8 +471,10 @@
 		A31FD1D7DC29B55CBE6FFF0C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				9C13BC772064E6FE00224D47 /* Home2ViewModel.swift */,
 				A31FDC12292250907F6A29DD /* LoginViewModelType.swift */,
 				A31FDE6E54E9849DA6FA6DCC /* ApplicationViewModelType.swift */,
+				9C13BC7F2064EB5F00224D47 /* RoomChatViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -466,8 +482,9 @@
 		A31FD31765E00598DAAEC9CA /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				9C13BC83206502D700224D47 /* HomeV2.storyboard */,
 				EDAB2999206259B500BDA3AB /* Home.storyboard */,
-				EDAB299B206259C500BDA3AB /* HomeV2.storyboard */,
+				9C13BC7D2064E73000224D47 /* RoomChat.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -526,6 +543,7 @@
 			isa = PBXGroup;
 			children = (
 				A31FD83CF647CA2FA37DC31C /* User.swift */,
+				9C13BC7B2064E72400224D47 /* Item.swift */,
 				A31FD65754FC32C8C0E88547 /* Live.swift */,
 			);
 			path = Model;
@@ -578,6 +596,7 @@
 			children = (
 				A31FD31765E00598DAAEC9CA /* Storyboard */,
 				EDAB299F206264DD00BDA3AB /* FlowLayout.swift */,
+				9C13BC87206886FA00224D47 /* RoomChatCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -630,10 +649,11 @@
 		A31FDEB25DC3DD9B166C58D7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9C13BC812064EF9000224D47 /* HomeV2ViewController.swift */,
+				9C13BC792064E71A00224D47 /* RoomChatViewController.swift */,
 				A31FD7BB2FC9ED2295F53553 /* LoginViewController.swift */,
 				A31FD8D4237CBF1B0F8AFAA2 /* BaseViewController.swift */,
 				A31FDA525B303B66D92733B4 /* LiveListViewController.swift */,
-				A31FDFD9682430979CF5E6F2 /* HomeV2ViewController.swift */,
 				EDAB299D20625F6400BDA3AB /* HomeContainerViewController.swift */,
 			);
 			path = Controllers;
@@ -668,6 +688,7 @@
 				A31FD468E137C77F543ABB20 /* UIView+Ext.swift */,
 				A31FDFDEF943CCDD4EDE0497 /* UIViewController+Environment.swift */,
 				A31FDA3D58E2FED9E222E9A4 /* UIViewController+Preparation.swift */,
+				9C13BC852067585700224D47 /* CaculateHeight.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -979,12 +1000,13 @@
 			files = (
 				ED48C0E720650EAE00CC68CB /* .swiftlint.yml in Resources */,
 				ED81EDE120525D1400A63733 /* LaunchScreen.storyboard in Resources */,
+				9C13BC84206502D700224D47 /* HomeV2.storyboard in Resources */,
 				ED81EDDE20525D1400A63733 /* Assets.xcassets in Resources */,
 				A31FD37DE351F15B2C32B1C4 /* Main.storyboard in Resources */,
 				EDAB299A206259B500BDA3AB /* Home.storyboard in Resources */,
-				EDAB299C206259C500BDA3AB /* HomeV2.storyboard in Resources */,
 				A31FD3534D3F813C738E860F /* users.json in Resources */,
 				A31FDD2EDCA378EEAD48B0B3 /* README in Resources */,
+				9C13BC7E2064E73000224D47 /* RoomChat.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1344,9 +1366,9 @@
 				A31FDB3AEEB29F68090BE480 /* UserEvents.swift in Sources */,
 				A31FD68F7B4C3A2FEF2934B8 /* UIDataStatus.swift in Sources */,
 				A31FD72538F2B90C016909D7 /* LiveStreamBeautyType.swift in Sources */,
+				9C13BC7A2064E71A00224D47 /* RoomChatViewController.swift in Sources */,
 				A31FD27C9B749B4D9D0186B1 /* LiveStreamRoomType.swift in Sources */,
 				A31FD0FF2FE844E85A13A54B /* LiveListViewController.swift in Sources */,
-				A31FD7A3A240B241EDDDD0E3 /* HomeV2ViewController.swift in Sources */,
 				A31FD3ADC88DA967A5E0F55A /* Live.swift in Sources */,
 				A31FD7D2224F0A3B5FE28A35 /* GridViewLayoutType.swift in Sources */,
 				A31FDBC80C2DECE883CB1618 /* Notification.swift in Sources */,
@@ -1357,6 +1379,7 @@
 				A31FD0FC0AA5979257075BB8 /* UserLenes.swift in Sources */,
 				A31FD9CB150197A1C5EB689F /* ELWaterFlowLayoutLenes.swift in Sources */,
 				A31FD312A8E2EE44F363753E /* IMMessageMockService.swift in Sources */,
+				9C13BC88206886FA00224D47 /* RoomChatCell.swift in Sources */,
 				A31FD8E0F9DA65C0AAA5124C /* ApplicationViewModelType.swift in Sources */,
 				A31FD65B9FC8F254F2C79788 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
 				A31FDF7037FD6994A0BD49D8 /* UIImagePickerController+Rx.swift in Sources */,
@@ -1379,13 +1402,16 @@
 				A31FD55E00A1E2E728B3D96B /* WKWebViewLenses.swift in Sources */,
 				A31FDDE982A1771751C9DD05 /* UITextViewLenses.swift in Sources */,
 				A31FD25D59B34D46D2707E31 /* UIImageViewLenses.swift in Sources */,
+				9C13BC862067585700224D47 /* CaculateHeight.swift in Sources */,
 				A31FD40E7DE3BF6D919C8B88 /* UIStackViewLenses.swift in Sources */,
 				A31FDCF1B91AC2E35EC34260 /* UITableViewLenses.swift in Sources */,
+				9C13BC822064EF9000224D47 /* HomeV2ViewController.swift in Sources */,
 				A31FD0AC2132FE19635D88DE /* UITextFieldLenses.swift in Sources */,
 				A31FD5F69BBACF6395BC3F66 /* UIEdgeInsetsLenses.swift in Sources */,
 				A31FD13BE82767DD10737238 /* UIScrollViewLenses.swift in Sources */,
 				A31FDAC1A341D93E82F82D9B /* UITabBarItemLenses.swift in Sources */,
 				A31FD8A6B7BF2A1E3CAE6920 /* UITraitEnvironment.swift in Sources */,
+				9C13BC782064E6FE00224D47 /* Home2ViewModel.swift in Sources */,
 				A31FDAB0146629CEDC013A5F /* UIProgressViewLenses.swift in Sources */,
 				A31FD9BA838674C2EBFD5585 /* NSTextContainerLenses.swift in Sources */,
 				A31FDB4B99291187C3F407E6 /* UIAccessibilityLenses.swift in Sources */,
@@ -1400,6 +1426,8 @@
 				A31FDD7533A736F81903E0D3 /* NSMutableParagraphStyleLenses.swift in Sources */,
 				A31FDCF32837CAC1ED192A54 /* UIActivityIndicatorViewLenses.swift in Sources */,
 				A31FD8B55AD41960699CE8F3 /* UIImage.swift in Sources */,
+				9C13BC7C2064E72400224D47 /* Item.swift in Sources */,
+				9C13BC802064EB5F00224D47 /* RoomChatViewModel.swift in Sources */,
 				A31FD0EBEE42B5D9A8FC5ED2 /* UIButton.swift in Sources */,
 				A31FD321498B491BE94B47D9 /* LensHolder.swift in Sources */,
 				A31FD5840E26CA5FB2B44B8F /* UIEdgeInsets.swift in Sources */,

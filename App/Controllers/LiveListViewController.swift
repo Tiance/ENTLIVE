@@ -67,8 +67,8 @@ class LiveListViewController: RxViewController {
     })
 
         Observable.just([section])
-        .bind(to:collectionView.rx.items(dataSource:dataSource))
-        .disposed(by:disposeBag)
+        .bind(to: collectionView.rx.items(dataSource: dataSource))
+        .disposed(by: disposeBag)
 
         super.viewDidLoad()
 

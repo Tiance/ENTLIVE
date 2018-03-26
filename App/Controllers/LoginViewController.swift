@@ -16,7 +16,7 @@ class LoginViewController: RxViewController {
         view.backgroundColor = .white
 
         let btn = UIButton(type: .infoDark)
-                |> UIButton.lens.frame .~ CGRect.init(x:100, y: 100, width:100, height:100)
+                |> UIButton.lens.frame .~ CGRect.init(x: 100, y: 100, width: 100, height: 100)
         |> UIButton.lens.targets .~ [(self, #selector(loginHandle), .touchUpInside)]
 
         view.addSubview(btn)

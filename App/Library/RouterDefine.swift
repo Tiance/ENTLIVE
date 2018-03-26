@@ -9,6 +9,11 @@ import Foundation
 import UIKit
 
 enum AppControllerRouter: String, ControllerRouterType {
+    case one
+    case two
+    case login
+    case test
+    case RoomChat
     case Login
 
     var controller: UIViewController {
