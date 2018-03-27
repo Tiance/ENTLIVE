@@ -10,6 +10,7 @@
 		1F95EE526E0EA2B1AD4ABFC8 /* Pods_ApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23AA6FAC0DC0E8E8C55BFB8 /* Pods_ApiTests.framework */; };
 		2535C7F36150A805285B090F /* Pods_ENTLIVE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83FB6B9A59991A96B6CC8D5 /* Pods_ENTLIVE.framework */; };
 		665C55D2D93717B2A9B75C86 /* Pods_ENTLIVEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501A148FED28365FC02E2D20 /* Pods_ENTLIVEUITests.framework */; };
+		9C10AF572069E2A900ED63EA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C10AF562069E2A900ED63EA /* Message.swift */; };
 		9C13BC782064E6FE00224D47 /* Home2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC772064E6FE00224D47 /* Home2ViewModel.swift */; };
 		9C13BC7A2064E71A00224D47 /* RoomChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC792064E71A00224D47 /* RoomChatViewController.swift */; };
 		9C13BC7C2064E72400224D47 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC7B2064E72400224D47 /* Item.swift */; };
@@ -229,6 +230,7 @@
 		6FF0D218FB2E2130CCC67735 /* Pods_Api.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Api.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DAE42F37B80739155BE7742 /* Pods-TXLiveSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXLiveSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TXLiveSDK/Pods-TXLiveSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		9A39DA99D185E19BE2FFCEED /* Pods-Api.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Api.release.xcconfig"; path = "Pods/Target Support Files/Pods-Api/Pods-Api.release.xcconfig"; sourceTree = "<group>"; };
+		9C10AF562069E2A900ED63EA /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		9C13BC772064E6FE00224D47 /* Home2ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home2ViewModel.swift; sourceTree = "<group>"; };
 		9C13BC792064E71A00224D47 /* RoomChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomChatViewController.swift; sourceTree = "<group>"; };
 		9C13BC7B2064E72400224D47 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -545,6 +547,7 @@
 				A31FD83CF647CA2FA37DC31C /* User.swift */,
 				9C13BC7B2064E72400224D47 /* Item.swift */,
 				A31FD65754FC32C8C0E88547 /* Live.swift */,
+				9C10AF562069E2A900ED63EA /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1362,6 +1365,7 @@
 				A31FDDCE04667479C4C093B3 /* Client.swift in Sources */,
 				A31FD611D463C4384559454C /* ClientMock.swift in Sources */,
 				ED0D1EE1205BA02E00288B22 /* User.swift in Sources */,
+				9C10AF572069E2A900ED63EA /* Message.swift in Sources */,
 				EDC19BB2205FBF6C0072FF41 /* TXLiveStreamService.swift in Sources */,
 				A31FDB3AEEB29F68090BE480 /* UserEvents.swift in Sources */,
 				A31FD68F7B4C3A2FEF2934B8 /* UIDataStatus.swift in Sources */,

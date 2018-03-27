@@ -4,7 +4,10 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
 protocol IMMessageMockService {
+    var messages: Observable<[IMMessage]> { get }
     func testMessage(type: IMMessage.CMDTYPE, cmd: IMMessage.CMD)
 }
