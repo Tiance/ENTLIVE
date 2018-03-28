@@ -15,6 +15,7 @@ enum AppControllerRouter: String, ControllerRouterType {
     case test
     case RoomChat
     case Login
+    case TestLive
 
     var controller: UIViewController {
         return instantiate

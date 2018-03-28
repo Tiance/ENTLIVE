@@ -13,6 +13,10 @@
 		9C10AF572069E2A900ED63EA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C10AF562069E2A900ED63EA /* Message.swift */; };
 		9C10AF5B206A191F00ED63EA /* RoomUsers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C10AF5A206A191F00ED63EA /* RoomUsers.storyboard */; };
 		9C10AF5D206A1C3D00ED63EA /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C10AF5C206A1C3C00ED63EA /* UIView.swift */; };
+		9C10AF5F206A22C200ED63EA /* TestLive.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C10AF5E206A22C200ED63EA /* TestLive.storyboard */; };
+		9C10AF61206A2C9D00ED63EA /* RoomUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C10AF60206A2C9D00ED63EA /* RoomUsersViewController.swift */; };
+		9C10AF63206A2D1D00ED63EA /* RoomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C10AF62206A2D1D00ED63EA /* RoomUser.swift */; };
+		9C10AF65206A2EF100ED63EA /* RoomUsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C10AF64206A2EF100ED63EA /* RoomUsersViewModel.swift */; };
 		9C13BC782064E6FE00224D47 /* Home2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC772064E6FE00224D47 /* Home2ViewModel.swift */; };
 		9C13BC7A2064E71A00224D47 /* RoomChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC792064E71A00224D47 /* RoomChatViewController.swift */; };
 		9C13BC7C2064E72400224D47 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC7B2064E72400224D47 /* Item.swift */; };
@@ -234,6 +238,10 @@
 		9C10AF562069E2A900ED63EA /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		9C10AF5A206A191F00ED63EA /* RoomUsers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoomUsers.storyboard; sourceTree = "<group>"; };
 		9C10AF5C206A1C3C00ED63EA /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		9C10AF5E206A22C200ED63EA /* TestLive.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestLive.storyboard; sourceTree = "<group>"; };
+		9C10AF60206A2C9D00ED63EA /* RoomUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomUsersViewController.swift; sourceTree = "<group>"; };
+		9C10AF62206A2D1D00ED63EA /* RoomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomUser.swift; sourceTree = "<group>"; };
+		9C10AF64206A2EF100ED63EA /* RoomUsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomUsersViewModel.swift; sourceTree = "<group>"; };
 		9C13BC772064E6FE00224D47 /* Home2ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home2ViewModel.swift; sourceTree = "<group>"; };
 		9C13BC792064E71A00224D47 /* RoomChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomChatViewController.swift; sourceTree = "<group>"; };
 		9C13BC7B2064E72400224D47 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -479,6 +487,7 @@
 				A31FDC12292250907F6A29DD /* LoginViewModelType.swift */,
 				A31FDE6E54E9849DA6FA6DCC /* ApplicationViewModelType.swift */,
 				9C13BC7F2064EB5F00224D47 /* RoomChatViewModel.swift */,
+				9C10AF64206A2EF100ED63EA /* RoomUsersViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -490,6 +499,7 @@
 				EDAB2999206259B500BDA3AB /* Home.storyboard */,
 				9C13BC7D2064E73000224D47 /* RoomChat.storyboard */,
 				9C10AF5A206A191F00ED63EA /* RoomUsers.storyboard */,
+				9C10AF5E206A22C200ED63EA /* TestLive.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -551,6 +561,7 @@
 				9C13BC7B2064E72400224D47 /* Item.swift */,
 				A31FD65754FC32C8C0E88547 /* Live.swift */,
 				9C10AF562069E2A900ED63EA /* Message.swift */,
+				9C10AF62206A2D1D00ED63EA /* RoomUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -661,6 +672,7 @@
 				A31FD8D4237CBF1B0F8AFAA2 /* BaseViewController.swift */,
 				A31FDA525B303B66D92733B4 /* LiveListViewController.swift */,
 				EDAB299D20625F6400BDA3AB /* HomeContainerViewController.swift */,
+				9C10AF60206A2C9D00ED63EA /* RoomUsersViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1007,6 +1019,7 @@
 				ED48C0E720650EAE00CC68CB /* .swiftlint.yml in Resources */,
 				ED81EDE120525D1400A63733 /* LaunchScreen.storyboard in Resources */,
 				9C13BC84206502D700224D47 /* HomeV2.storyboard in Resources */,
+				9C10AF5F206A22C200ED63EA /* TestLive.storyboard in Resources */,
 				ED81EDDE20525D1400A63733 /* Assets.xcassets in Resources */,
 				A31FD37DE351F15B2C32B1C4 /* Main.storyboard in Resources */,
 				EDAB299A206259B500BDA3AB /* Home.storyboard in Resources */,
@@ -1358,6 +1371,7 @@
 				A31FDF28AC8538BA1337303E /* LoginViewModelType.swift in Sources */,
 				A31FDDD5DE252B1473AF6555 /* LoginViewController.swift in Sources */,
 				A31FDAA4EDBA9F23EC9A052C /* BaseViewController.swift in Sources */,
+				9C10AF65206A2EF100ED63EA /* RoomUsersViewModel.swift in Sources */,
 				A31FDE5F0449133FFDF612B6 /* CLLocationManager+Rx.swift in Sources */,
 				EDAB29A0206264DD00BDA3AB /* FlowLayout.swift in Sources */,
 				A31FDCBCD30C1AEF0395338B /* CacheType.swift in Sources */,
@@ -1367,6 +1381,7 @@
 				A31FDB0B80C12441C0F58B44 /* RouterDefine.swift in Sources */,
 				A31FD06FF8FE704E5BE1E028 /* IMMessage.pb.swift in Sources */,
 				A31FDDCE04667479C4C093B3 /* Client.swift in Sources */,
+				9C10AF63206A2D1D00ED63EA /* RoomUser.swift in Sources */,
 				A31FD611D463C4384559454C /* ClientMock.swift in Sources */,
 				ED0D1EE1205BA02E00288B22 /* User.swift in Sources */,
 				9C10AF572069E2A900ED63EA /* Message.swift in Sources */,
@@ -1405,6 +1420,7 @@
 				A31FDCF2E8FCE34E777277FD /* UITabBarLenses.swift in Sources */,
 				A31FDBF1D286F27DA55B53CF /* UIBarItemLenses.swift in Sources */,
 				A31FDC793BFC646A981C270B /* UIControlLenses.swift in Sources */,
+				9C10AF61206A2C9D00ED63EA /* RoomUsersViewController.swift in Sources */,
 				A31FD03CC60B2DC1270F17EC /* UIWebViewLenses.swift in Sources */,
 				A31FD55E00A1E2E728B3D96B /* WKWebViewLenses.swift in Sources */,
 				A31FDDE982A1771751C9DD05 /* UITextViewLenses.swift in Sources */,

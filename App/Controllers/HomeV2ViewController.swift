@@ -31,16 +31,11 @@ class HomeV2ViewController: RxViewController {
         })
 
         collectionView.rx.itemSelected.asObservable().subscribe({ [weak self] _ in
-            self?.present(routerType: AppControllerRouter.RoomChat, requestCode: 0)
+            self?.present(routerType: AppControllerRouter.TestLive, requestCode: 0)
         }).disposed(by: disposeBag)
 
         viewModel.getItems().bind(to: collectionView.rx.items(dataSource: dataSource)).disposed(by: disposeBag)
     }
-
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-    }
-
     fileprivate func collectionViewLayout() {
         let layout = ELWaterFlowLayout()
         collectionView.collectionViewLayout = layout
