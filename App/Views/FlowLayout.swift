@@ -123,7 +123,6 @@ open class ELWaterFlowLayout: UICollectionViewFlowLayout {
                 let x = CGFloat(sl.index) * (self.lineWidth + self.hItemSpace) + self.edge.left
                 let y = sl.height + self.vItemSpace
                 let width = self.lineWidth
-
                 let height = self.delegate?.el_flowLayout(self, heightForRowAt: a.indexPath.row)
 
                 a.frame = CGRect(x: x, y: y, width: width, height: height!)

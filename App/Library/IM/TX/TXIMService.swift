@@ -5,6 +5,7 @@
 
 import Foundation
 import RxSwift
+import RxCocoa
 
 class TXIMService: NSObject, IMServiceType {
 
@@ -74,6 +75,11 @@ extension TXIMService: TIMMessageListener {
 }
 
 extension TXIMService: IMMessageMockService {
+
+    var messages: Observable<[IMMessage]> {
+        return self.messageSubject.asObserver()
+    }
+
     func testMessage(type: IMMessage.CMDTYPE, cmd: IMMessage.CMD) {
         let msg = IMMessage.with {
             $0.cmdType = type

@@ -10,6 +10,13 @@
 		1F95EE526E0EA2B1AD4ABFC8 /* Pods_ApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23AA6FAC0DC0E8E8C55BFB8 /* Pods_ApiTests.framework */; };
 		2535C7F36150A805285B090F /* Pods_ENTLIVE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83FB6B9A59991A96B6CC8D5 /* Pods_ENTLIVE.framework */; };
 		665C55D2D93717B2A9B75C86 /* Pods_ENTLIVEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501A148FED28365FC02E2D20 /* Pods_ENTLIVEUITests.framework */; };
+		9C10AF572069E2A900ED63EA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C10AF562069E2A900ED63EA /* Message.swift */; };
+		9C10AF5B206A191F00ED63EA /* RoomUsers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C10AF5A206A191F00ED63EA /* RoomUsers.storyboard */; };
+		9C10AF5D206A1C3D00ED63EA /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C10AF5C206A1C3C00ED63EA /* UIView.swift */; };
+		9C10AF5F206A22C200ED63EA /* TestLive.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C10AF5E206A22C200ED63EA /* TestLive.storyboard */; };
+		9C10AF61206A2C9D00ED63EA /* RoomUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C10AF60206A2C9D00ED63EA /* RoomUsersViewController.swift */; };
+		9C10AF63206A2D1D00ED63EA /* RoomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C10AF62206A2D1D00ED63EA /* RoomUser.swift */; };
+		9C10AF65206A2EF100ED63EA /* RoomUsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C10AF64206A2EF100ED63EA /* RoomUsersViewModel.swift */; };
 		9C13BC782064E6FE00224D47 /* Home2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC772064E6FE00224D47 /* Home2ViewModel.swift */; };
 		9C13BC7A2064E71A00224D47 /* RoomChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC792064E71A00224D47 /* RoomChatViewController.swift */; };
 		9C13BC7C2064E72400224D47 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC7B2064E72400224D47 /* Item.swift */; };
@@ -64,7 +71,6 @@
 		A31FD64F85D64BD3E7F06F1B /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD838AF139F36F0FC3F71 /* ReachabilityService.swift */; };
 		A31FD65B9FC8F254F2C79788 /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD562DB396DD1B00A4C3D /* RxCLLocationManagerDelegateProxy.swift */; };
 		A31FD68F7B4C3A2FEF2934B8 /* UIDataStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD191DF4892E583C42DBC /* UIDataStatus.swift */; };
-		A31FD6A4BAA3CCE01196AE0A /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD468E137C77F543ABB20 /* UIView+Ext.swift */; };
 		A31FD70F1DF2B1D030C58A01 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD06CCB40155F7792BF7E /* AppEnvironment.swift */; };
 		A31FD70FEDA800E17DA39F1A /* UINavigationBarLenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD917CA956FC56DE30B9E /* UINavigationBarLenses.swift */; };
 		A31FD72538F2B90C016909D7 /* LiveStreamBeautyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD277ECB4B93069B6CA5F /* LiveStreamBeautyType.swift */; };
@@ -229,6 +235,13 @@
 		6FF0D218FB2E2130CCC67735 /* Pods_Api.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Api.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DAE42F37B80739155BE7742 /* Pods-TXLiveSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXLiveSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TXLiveSDK/Pods-TXLiveSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		9A39DA99D185E19BE2FFCEED /* Pods-Api.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Api.release.xcconfig"; path = "Pods/Target Support Files/Pods-Api/Pods-Api.release.xcconfig"; sourceTree = "<group>"; };
+		9C10AF562069E2A900ED63EA /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		9C10AF5A206A191F00ED63EA /* RoomUsers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoomUsers.storyboard; sourceTree = "<group>"; };
+		9C10AF5C206A1C3C00ED63EA /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		9C10AF5E206A22C200ED63EA /* TestLive.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestLive.storyboard; sourceTree = "<group>"; };
+		9C10AF60206A2C9D00ED63EA /* RoomUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomUsersViewController.swift; sourceTree = "<group>"; };
+		9C10AF62206A2D1D00ED63EA /* RoomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomUser.swift; sourceTree = "<group>"; };
+		9C10AF64206A2EF100ED63EA /* RoomUsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomUsersViewModel.swift; sourceTree = "<group>"; };
 		9C13BC772064E6FE00224D47 /* Home2ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home2ViewModel.swift; sourceTree = "<group>"; };
 		9C13BC792064E71A00224D47 /* RoomChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomChatViewController.swift; sourceTree = "<group>"; };
 		9C13BC7B2064E72400224D47 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -263,7 +276,6 @@
 		A31FD36879E89F560C930E85 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		A31FD389C46C1C8CE7B03AC3 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		A31FD3C262DFEC1538C4774A /* WKWebViewLenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebViewLenses.swift; sourceTree = "<group>"; };
-		A31FD468E137C77F543ABB20 /* UIView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		A31FD4DA93F1C1EBF176E3E3 /* IMMessage.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMMessage.pb.swift; sourceTree = "<group>"; };
 		A31FD4DC309AA94142B53119 /* UserEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEvents.swift; sourceTree = "<group>"; };
 		A31FD5514C38DA0E5BC546AC /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
@@ -475,6 +487,7 @@
 				A31FDC12292250907F6A29DD /* LoginViewModelType.swift */,
 				A31FDE6E54E9849DA6FA6DCC /* ApplicationViewModelType.swift */,
 				9C13BC7F2064EB5F00224D47 /* RoomChatViewModel.swift */,
+				9C10AF64206A2EF100ED63EA /* RoomUsersViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -485,6 +498,8 @@
 				9C13BC83206502D700224D47 /* HomeV2.storyboard */,
 				EDAB2999206259B500BDA3AB /* Home.storyboard */,
 				9C13BC7D2064E73000224D47 /* RoomChat.storyboard */,
+				9C10AF5A206A191F00ED63EA /* RoomUsers.storyboard */,
+				9C10AF5E206A22C200ED63EA /* TestLive.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -545,6 +560,8 @@
 				A31FD83CF647CA2FA37DC31C /* User.swift */,
 				9C13BC7B2064E72400224D47 /* Item.swift */,
 				A31FD65754FC32C8C0E88547 /* Live.swift */,
+				9C10AF562069E2A900ED63EA /* Message.swift */,
+				9C10AF62206A2D1D00ED63EA /* RoomUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -655,6 +672,7 @@
 				A31FD8D4237CBF1B0F8AFAA2 /* BaseViewController.swift */,
 				A31FDA525B303B66D92733B4 /* LiveListViewController.swift */,
 				EDAB299D20625F6400BDA3AB /* HomeContainerViewController.swift */,
+				9C10AF60206A2C9D00ED63EA /* RoomUsersViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -681,11 +699,11 @@
 		A31FDFABFB0ACC6230BD1810 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9C10AF5C206A1C3C00ED63EA /* UIView.swift */,
 				A31FD87DDA281E0771586595 /* Moya.swift */,
 				A31FD64FFAB246077A416416 /* CommonAccessToken.swift */,
 				A31FDF53E5EDEF784C7F0E03 /* CLLocationManager+Rx.swift */,
 				A31FD2429A5A3D4E8A683B3E /* OauthAccessToken.swift */,
-				A31FD468E137C77F543ABB20 /* UIView+Ext.swift */,
 				A31FDFDEF943CCDD4EDE0497 /* UIViewController+Environment.swift */,
 				A31FDA3D58E2FED9E222E9A4 /* UIViewController+Preparation.swift */,
 				9C13BC852067585700224D47 /* CaculateHeight.swift */,
@@ -1001,11 +1019,13 @@
 				ED48C0E720650EAE00CC68CB /* .swiftlint.yml in Resources */,
 				ED81EDE120525D1400A63733 /* LaunchScreen.storyboard in Resources */,
 				9C13BC84206502D700224D47 /* HomeV2.storyboard in Resources */,
+				9C10AF5F206A22C200ED63EA /* TestLive.storyboard in Resources */,
 				ED81EDDE20525D1400A63733 /* Assets.xcassets in Resources */,
 				A31FD37DE351F15B2C32B1C4 /* Main.storyboard in Resources */,
 				EDAB299A206259B500BDA3AB /* Home.storyboard in Resources */,
 				A31FD3534D3F813C738E860F /* users.json in Resources */,
 				A31FDD2EDCA378EEAD48B0B3 /* README in Resources */,
+				9C10AF5B206A191F00ED63EA /* RoomUsers.storyboard in Resources */,
 				9C13BC7E2064E73000224D47 /* RoomChat.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1351,6 +1371,7 @@
 				A31FDF28AC8538BA1337303E /* LoginViewModelType.swift in Sources */,
 				A31FDDD5DE252B1473AF6555 /* LoginViewController.swift in Sources */,
 				A31FDAA4EDBA9F23EC9A052C /* BaseViewController.swift in Sources */,
+				9C10AF65206A2EF100ED63EA /* RoomUsersViewModel.swift in Sources */,
 				A31FDE5F0449133FFDF612B6 /* CLLocationManager+Rx.swift in Sources */,
 				EDAB29A0206264DD00BDA3AB /* FlowLayout.swift in Sources */,
 				A31FDCBCD30C1AEF0395338B /* CacheType.swift in Sources */,
@@ -1360,8 +1381,10 @@
 				A31FDB0B80C12441C0F58B44 /* RouterDefine.swift in Sources */,
 				A31FD06FF8FE704E5BE1E028 /* IMMessage.pb.swift in Sources */,
 				A31FDDCE04667479C4C093B3 /* Client.swift in Sources */,
+				9C10AF63206A2D1D00ED63EA /* RoomUser.swift in Sources */,
 				A31FD611D463C4384559454C /* ClientMock.swift in Sources */,
 				ED0D1EE1205BA02E00288B22 /* User.swift in Sources */,
+				9C10AF572069E2A900ED63EA /* Message.swift in Sources */,
 				EDC19BB2205FBF6C0072FF41 /* TXLiveStreamService.swift in Sources */,
 				A31FDB3AEEB29F68090BE480 /* UserEvents.swift in Sources */,
 				A31FD68F7B4C3A2FEF2934B8 /* UIDataStatus.swift in Sources */,
@@ -1384,7 +1407,6 @@
 				A31FD65B9FC8F254F2C79788 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
 				A31FDF7037FD6994A0BD49D8 /* UIImagePickerController+Rx.swift in Sources */,
 				A31FD458F2D10BFC42279BD2 /* RxImagePickerDelegateProxy.swift in Sources */,
-				A31FD6A4BAA3CCE01196AE0A /* UIView+Ext.swift in Sources */,
 				A31FD2C38D9681560854B690 /* UIViewController+Environment.swift in Sources */,
 				A31FDFE8759E58BDD88908B9 /* UIViewController+Preparation.swift in Sources */,
 				A31FD55447836D9443E9F52C /* NSObject.swift in Sources */,
@@ -1398,6 +1420,7 @@
 				A31FDCF2E8FCE34E777277FD /* UITabBarLenses.swift in Sources */,
 				A31FDBF1D286F27DA55B53CF /* UIBarItemLenses.swift in Sources */,
 				A31FDC793BFC646A981C270B /* UIControlLenses.swift in Sources */,
+				9C10AF61206A2C9D00ED63EA /* RoomUsersViewController.swift in Sources */,
 				A31FD03CC60B2DC1270F17EC /* UIWebViewLenses.swift in Sources */,
 				A31FD55E00A1E2E728B3D96B /* WKWebViewLenses.swift in Sources */,
 				A31FDDE982A1771751C9DD05 /* UITextViewLenses.swift in Sources */,
@@ -1413,6 +1436,7 @@
 				A31FD8A6B7BF2A1E3CAE6920 /* UITraitEnvironment.swift in Sources */,
 				9C13BC782064E6FE00224D47 /* Home2ViewModel.swift in Sources */,
 				A31FDAB0146629CEDC013A5F /* UIProgressViewLenses.swift in Sources */,
+				9C10AF5D206A1C3D00ED63EA /* UIView.swift in Sources */,
 				A31FD9BA838674C2EBFD5585 /* NSTextContainerLenses.swift in Sources */,
 				A31FDB4B99291187C3F407E6 /* UIAccessibilityLenses.swift in Sources */,
 				A31FDAC4BE4499AA1CE08B8D /* UIBarButtonItemLenses.swift in Sources */,

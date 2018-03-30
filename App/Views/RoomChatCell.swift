@@ -11,7 +11,7 @@ import UIKit
 class RoomChatCell: UICollectionViewCell {
 
     private let chatBGView: UIImageView = {
-        let imageView = UIImageView.init(image: UIImage.init(named: "charBG.jpeg"))
+        let imageView = UIImageView.init(image: UIImage.init(named: "chatBG.jpeg"))
         imageView.layer.masksToBounds = true
         imageView.layer.cornerRadius = 8.0
         imageView.alpha = 0.6
@@ -34,8 +34,8 @@ class RoomChatCell: UICollectionViewCell {
 
     var model: Message! {
         didSet {
-            let str = NSMutableAttributedString.init(string: model.content)
-            str.addAttribute(NSAttributedStringKey.foregroundColor, value: self.model.color, range: NSMakeRange(self.model.name.count, model.content.utf16.count - self.model.name.count))
+            let str = NSMutableAttributedString.init(string: "\(model.name):\(model.content)")
+            str.addAttribute(NSAttributedStringKey.foregroundColor, value: self.model.color, range: NSMakeRange(self.model.name.count+1, model.content.count))
             contentLabel.attributedText = str
         }
     }
@@ -45,34 +45,7 @@ class RoomChatCell: UICollectionViewCell {
         contentView.addSubview(chatBGView)
         contentView.addSubview(contentLabel)
 
-        NSLayoutConstraint(item: chatBGView,
-                           attribute: .top,
-                           relatedBy: .equal,
-                           toItem: contentView,
-                           attribute: .top,
-                           multiplier: 1,
-                           constant: 0).isActive = true
-        NSLayoutConstraint(item: chatBGView,
-                           attribute: .leading,
-                           relatedBy: .equal,
-                           toItem: contentView,
-                           attribute: .trailing,
-                           multiplier: 1,
-                           constant: 3).isActive = true
-        NSLayoutConstraint(item: contentView,
-                           attribute: .bottom,
-                           relatedBy: .equal,
-                           toItem: chatBGView,
-                           attribute: .bottom,
-                           multiplier: 1,
-                           constant: 0).isActive = true
-        NSLayoutConstraint(item: contentView,
-                           attribute: .trailing,
-                           relatedBy: .equal,
-                           toItem: chatBGView,
-                           attribute: .trailing,
-                           multiplier: 1,
-                           constant: 3).isActive = true
+        chatBGView.frame = contentView.bounds
         contentLabel.frame = chatBGView.bounds
     }
 
@@ -82,5 +55,13 @@ class RoomChatCell: UICollectionViewCell {
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+}
+
+extension RoomChatCell {
+    class func summaryCellHeight(model: Message) -> CGFloat {
+        let textSize: CGSize = caculateContentHeight(contentString: model.content+model.name as NSString, maxWidth: UIScreen.main.bounds.size.width, fontSize: 17, lineSpacing: 0)
+
+        return 4 + textSize.height
     }
 }

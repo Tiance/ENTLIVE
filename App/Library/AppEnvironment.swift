@@ -59,7 +59,7 @@ struct AppEnvironment {
 
     private static func replace(user: User = current.currentUser,
                                 api: ApiProvider<Client> = current.api,
-                                imService: IMServiceType = current.imService,
+                                imService: IMServiceType & IMMessageMockService = current.imService,
                                 liveStream: LiveStreamType = current.liveStream,
                                 reachability: ReachabilityService = current.reachability,
                                 cache: MemoryCache = current.cache,

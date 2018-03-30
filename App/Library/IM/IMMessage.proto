@@ -36,6 +36,10 @@ message IMMessage {
         live_archor_resume = 303;
         live_archor_close = 304;
         live_support = 305;
+
+        chat_normal = 401;
+        chat_praise = 402;
+        chat_share = 403;   
     }
 
     CMDTYPE cmdType = 1;

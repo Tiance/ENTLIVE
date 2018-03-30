@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ye0-yj-nAI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="M2X-tJ-bsh">
+            <objects>
+                <viewController id="Ye0-yj-nAI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0gg-W9-W9s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="mr1-pJ-kqm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wAi-aY-brK">
+                                <rect key="frame" x="0.0" y="364" width="304" height="211"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="rdR-Jj-Cc3" kind="embed" id="XcD-sX-8Pd"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWH-Kb-6Up">
+                                <rect key="frame" x="64" y="20" width="311" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="ifR-ta-kIm"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="bYj-j4-ZqK" kind="embed" id="qb7-Zs-7Ly"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dWH-Kb-6Up" firstAttribute="leading" secondItem="qDQ-Tx-8eZ" secondAttribute="leading" constant="64" id="Cwo-V7-WcL"/>
+                            <constraint firstItem="dWH-Kb-6Up" firstAttribute="trailing" secondItem="qDQ-Tx-8eZ" secondAttribute="trailing" id="UPN-zU-DPE"/>
+                            <constraint firstItem="mr1-pJ-kqm" firstAttribute="leading" secondItem="qDQ-Tx-8eZ" secondAttribute="leading" id="gWs-8p-A75"/>
+                            <constraint firstItem="qDQ-Tx-8eZ" firstAttribute="trailing" secondItem="mr1-pJ-kqm" secondAttribute="trailing" id="hot-NU-AMb"/>
+                            <constraint firstItem="mr1-pJ-kqm" firstAttribute="top" secondItem="qDQ-Tx-8eZ" secondAttribute="top" constant="-20" id="seU-Gy-F3P"/>
+                            <constraint firstItem="qDQ-Tx-8eZ" firstAttribute="bottom" secondItem="mr1-pJ-kqm" secondAttribute="bottom" id="thq-TM-ojV"/>
+                            <constraint firstItem="dWH-Kb-6Up" firstAttribute="top" secondItem="0gg-W9-W9s" secondAttribute="top" constant="20" id="wTA-Ug-OVC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qDQ-Tx-8eZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GBB-yx-mKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-407.19999999999999" y="-69.715142428785612"/>
+        </scene>
+        <!--RoomChat-->
+        <scene sceneID="gI8-eP-1jv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RoomChat" id="rdR-Jj-Cc3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o7M-eN-l15" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="330" y="-46"/>
+        </scene>
+        <!--RoomUsers-->
+        <scene sceneID="biP-tI-VsI">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="RoomUsers" storyboardName="RoomUsers" id="bYj-j4-ZqK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pwv-Vs-7ms" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="335" y="-94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="4" width="1200" height="1200"/>
+    </resources>
+</document>
