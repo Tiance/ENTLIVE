@@ -3,45 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b044c182-51b5-41ad-b0e1-1c06649825da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/ApiProvider.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Api/ApiProvider.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/OAuth/CommonAccessToken.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Api/OAuth/CommonAccessToken.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/OAuth/JWTTokenAccess.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Api/OAuth/JWTTokenAccess.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/AppDelegate.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controllers/BaseViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/BaseViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controllers/HomeContainerViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/HomeContainerViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controllers/LiveListViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/LiveListViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controllers/LoginViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/LoginViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/AppEnvironment.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/AppEnvironment.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/CacheType.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/CacheType.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/ClientApi/Client.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/ClientApi/Client.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/ClientApi/ClientMock.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/ClientApi/ClientMock.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/ClientApi/ServerConfigImp.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/ClientApi/ServerConfigImp.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/Environment.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/Environment.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/Extensions/CLLocationManager+Rx.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/Extensions/CLLocationManager+Rx.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/Extensions/OauthAccessToken.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/Extensions/OauthAccessToken.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/Extensions/UIView+Ext.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/Extensions/UIView+Ext.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/Extensions/UIViewController+Environment.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/Extensions/UIViewController+Environment.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/IM/IMMessage.pb.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/IM/IMMessage.pb.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/IM/IMMessage.proto" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/IM/IMMessage.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/IM/IMMsgFactory.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/IM/IMMsgFactory.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/IM/IMServiceType.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/IM/IMServiceType.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/IM/TX/TXIMService.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/IM/TX/TXIMService.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/Lens/ELWaterFlowLayoutLenes.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/Lens/ELWaterFlowLayoutLenes.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/LiveStream/Tencent/TXLiveStreamService.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/LiveStream/Tencent/TXLiveStreamService.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/Notification.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/Notification.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/RouterDefine.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/RouterDefine.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Library/UserEvents.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Library/UserEvents.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Model/User.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Model/User.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/ViewModels/ApplicationViewModelType.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/ViewModels/ApplicationViewModelType.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/ViewModels/LoginViewModelType.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/ViewModels/LoginViewModelType.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Views/FlowLayout.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/Views/FlowLayout.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/GeolocationService.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/GeolocationService.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Reachability.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Reachability.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ReachabilityService.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ReachabilityService.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Router/RouterType.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Router/RouterType.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/RxCLLocationManagerDelegateProxy.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/RxCLLocationManagerDelegateProxy.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/RxImagePickerDelegateProxy.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/RxImagePickerDelegateProxy.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/UIImagePickerController+Rx.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Library/UIImagePickerController+Rx.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ENT-LIVE.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ENT-LIVE.xcodeproj/project.pbxproj" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/ENT-LIVE-crtjuaeuylwmsoggummddeltgvhr/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,8 +19,8 @@
       <file leaf-file-name="AppEnvironment.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Library/AppEnvironment.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="86" column="35" lean-forward="true" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
+            <state>
+              <caret line="86" column="35" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
               <folding>
                 <element signature="e#119#136#0" expanded="true" />
               </folding>
@@ -69,17 +31,17 @@
       <file leaf-file-name="FlowLayout.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Views/FlowLayout.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="122" column="95" lean-forward="true" selection-start-line="122" selection-start-column="95" selection-end-line="122" selection-end-column="95" />
+            <state>
+              <caret line="122" column="95" selection-start-line="122" selection-start-column="95" selection-end-line="122" selection-end-column="95" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LiveListViewController.swift" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LiveListViewController.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Controllers/LiveListViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
-              <caret line="80" column="5" lean-forward="true" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+            <state>
+              <caret line="71" selection-start-line="71" selection-end-line="71" />
               <folding>
                 <element signature="e#99#116#0" expanded="true" />
               </folding>
@@ -90,7 +52,7 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
+            <state>
               <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
             </state>
           </provider>
@@ -99,17 +61,17 @@
       <file leaf-file-name="README" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Library/ClientApi/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
+            <state>
               <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Podfile" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Podfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Podfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="600">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -117,7 +79,7 @@
       <file leaf-file-name="Client.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Library/ClientApi/Client.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state>
               <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
             </state>
           </provider>
@@ -126,7 +88,7 @@
       <file leaf-file-name="LoginViewController.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Controllers/LoginViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
+            <state>
               <caret line="41" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
@@ -135,7 +97,7 @@
       <file leaf-file-name="BaseViewController.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Controllers/BaseViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
+            <state>
               <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
@@ -144,7 +106,7 @@
       <file leaf-file-name="UIViewController+Preparation.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Library/Extensions/UIViewController+Preparation.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="910">
+            <state>
               <caret line="68" selection-start-line="68" selection-end-line="68" />
             </state>
           </provider>
@@ -259,12 +221,16 @@
               <item name="App" type="fcab9f18:XcodeViewNode" />
               <item name="Views" type="fcab9f18:XcodeViewNode" />
             </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="Pods" type="1d218c8b:XcodeProjectNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Cidr.FilesView" />
       <pane id="Scope" />
+      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -338,6 +304,9 @@
       <workItem from="1521799829731" duration="927000" />
       <workItem from="1522028088009" duration="504000" />
       <workItem from="1522046693249" duration="311000" />
+      <workItem from="1522292622392" duration="350000" />
+      <workItem from="1522292999545" duration="2179000" />
+      <workItem from="1522374013170" duration="504000" />
     </task>
     <task id="LOCAL-00001" summary="appcode test commit">
       <created>1521079723935</created>
@@ -525,7 +494,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107698000" />
+    <option name="totallyTimeSpent" value="110731000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -536,17 +505,17 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50078124" side_tool="true" weight="0.32361516" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32944608" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49921876" weight="0.32361516" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32944608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32925072" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49609375" weight="0.23542275" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.49609375" visible="true" weight="0.23542275" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32925072" />
@@ -839,57 +808,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
+        <state>
           <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Library/ClientApi/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
+        <state>
           <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Library/Extensions/UIViewController+Preparation.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="910">
+        <state>
           <caret line="68" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Controllers/BaseViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
+        <state>
           <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Controllers/LoginViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
+        <state>
           <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Podfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Library/ClientApi/Client.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
+        <state>
           <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Library/AppEnvironment.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="86" column="35" lean-forward="true" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
+        <state>
+          <caret line="86" column="35" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
           <folding>
             <element signature="e#119#136#0" expanded="true" />
           </folding>
@@ -898,18 +860,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Views/FlowLayout.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="122" column="95" lean-forward="true" selection-start-line="122" selection-start-column="95" selection-end-line="122" selection-end-column="95" />
+        <state>
+          <caret line="122" column="95" selection-start-line="122" selection-start-column="95" selection-end-line="122" selection-end-column="95" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Controllers/LiveListViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="80" column="5" lean-forward="true" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+        <state>
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
           <folding>
             <element signature="e#99#116#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Podfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
